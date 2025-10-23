@@ -3,6 +3,10 @@
 #include <string>
 #include <fstream>
 
+#ifdef UNITED
+#include "gate2.h"
+#endif
+
 enum UnitTypes {
    e_Infantry,
    e_Tank,
@@ -34,6 +38,10 @@ std::vector<Tile> MAP;
 void GenerateMap() {
     std::ifstream mapadiasz;
     mapadiasz.open("mapa.diasz");
+    if(!mapadiasz.is_open()){
+        std::cout << "err";
+        return;
+    }
     int numID = 0;
     while (!mapadiasz.eof()) {
         std::string line;
@@ -86,6 +94,7 @@ void playerTurn(int playerNum) {
 
 int main()
 {
+
     GenerateMap();
 
 

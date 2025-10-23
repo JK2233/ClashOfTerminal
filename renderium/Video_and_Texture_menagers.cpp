@@ -143,7 +143,7 @@ public:
         std::vector<uint8_t> fileBuffer;
         for (uint16_t i = 0; i < frames.size(); ++i)
         {
-            fileBuffer.push_back(i)
+            fileBuffer.push_back(i);
         }
 
     }
