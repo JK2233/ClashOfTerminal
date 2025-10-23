@@ -1,0 +1,765 @@
+[1760894640] initializing the render namespace
+[1760894640] render Version: b_0.1.1
+[1760894640]  unicode test : '▧' + U'▩' + U'▦' + U'▚'
+[1760894640] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894640] currently rendering ScreenObject at idx: 0
+[1760894640] currently rendering ScreenObject at idx: 1
+[1760894640] currently rendering ScreenObject at idx: 2
+[1760894640] ./frames-ascii/out0002.jpg.txt
+[1760894640] file not found
+[1760894640] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894640] currently rendering ScreenObject at idx: 0
+[1760894640] currently rendering ScreenObject at idx: 1
+[1760894640] currently rendering ScreenObject at idx: 2
+[1760894640] ./frames-ascii/out0003.jpg.txt
+[1760894640] file not found
+[1760894640] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894640] currently rendering ScreenObject at idx: 0
+[1760894640] currently rendering ScreenObject at idx: 1
+[1760894640] currently rendering ScreenObject at idx: 2
+[1760894640] ./frames-ascii/out0004.jpg.txt
+[1760894640] file not found
+[1760894640] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894640] currently rendering ScreenObject at idx: 0
+[1760894640] currently rendering ScreenObject at idx: 1
+[1760894640] currently rendering ScreenObject at idx: 2
+[1760894640] ./frames-ascii/out0005.jpg.txt
+[1760894640] file not found
+[1760894640] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894640] currently rendering ScreenObject at idx: 0
+[1760894640] currently rendering ScreenObject at idx: 1
+[1760894640] currently rendering ScreenObject at idx: 2
+[1760894640] ./frames-ascii/out0006.jpg.txt
+[1760894640] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0007.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0008.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0009.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0010.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0011.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0012.jpg.txt
+[1760894641] file not found
+[1760894641] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894641] currently rendering ScreenObject at idx: 0
+[1760894641] currently rendering ScreenObject at idx: 1
+[1760894641] currently rendering ScreenObject at idx: 2
+[1760894641] ./frames-ascii/out0013.jpg.txt
+[1760894641] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0014.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0015.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0016.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0017.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0018.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0019.jpg.txt
+[1760894642] file not found
+[1760894642] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894642] currently rendering ScreenObject at idx: 0
+[1760894642] currently rendering ScreenObject at idx: 1
+[1760894642] currently rendering ScreenObject at idx: 2
+[1760894642] ./frames-ascii/out0020.jpg.txt
+[1760894642] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0021.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0022.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0023.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0024.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0025.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0026.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0027.jpg.txt
+[1760894643] file not found
+[1760894643] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894643] currently rendering ScreenObject at idx: 0
+[1760894643] currently rendering ScreenObject at idx: 1
+[1760894643] currently rendering ScreenObject at idx: 2
+[1760894643] ./frames-ascii/out0028.jpg.txt
+[1760894643] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0029.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0030.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0031.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0032.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0033.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0034.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0035.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0036.jpg.txt
+[1760894644] file not found
+[1760894644] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894644] currently rendering ScreenObject at idx: 0
+[1760894644] currently rendering ScreenObject at idx: 1
+[1760894644] currently rendering ScreenObject at idx: 2
+[1760894644] ./frames-ascii/out0037.jpg.txt
+[1760894644] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0038.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0039.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0040.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0041.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0042.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0043.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0044.jpg.txt
+[1760894645] file not found
+[1760894645] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894645] currently rendering ScreenObject at idx: 0
+[1760894645] currently rendering ScreenObject at idx: 1
+[1760894645] currently rendering ScreenObject at idx: 2
+[1760894645] ./frames-ascii/out0045.jpg.txt
+[1760894645] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0046.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0047.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0048.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0049.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0050.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0051.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0052.jpg.txt
+[1760894646] file not found
+[1760894646] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894646] currently rendering ScreenObject at idx: 0
+[1760894646] currently rendering ScreenObject at idx: 1
+[1760894646] currently rendering ScreenObject at idx: 2
+[1760894646] ./frames-ascii/out0053.jpg.txt
+[1760894646] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0054.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0055.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0056.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0057.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0058.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0059.jpg.txt
+[1760894647] file not found
+[1760894647] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894647] currently rendering ScreenObject at idx: 0
+[1760894647] currently rendering ScreenObject at idx: 1
+[1760894647] currently rendering ScreenObject at idx: 2
+[1760894647] ./frames-ascii/out0060.jpg.txt
+[1760894647] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0061.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0062.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0063.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0064.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0065.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0066.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0067.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0068.jpg.txt
+[1760894648] file not found
+[1760894648] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894648] currently rendering ScreenObject at idx: 0
+[1760894648] currently rendering ScreenObject at idx: 1
+[1760894648] currently rendering ScreenObject at idx: 2
+[1760894648] ./frames-ascii/out0069.jpg.txt
+[1760894648] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0070.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0071.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0072.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0073.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0074.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0075.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0076.jpg.txt
+[1760894649] file not found
+[1760894649] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894649] currently rendering ScreenObject at idx: 0
+[1760894649] currently rendering ScreenObject at idx: 1
+[1760894649] currently rendering ScreenObject at idx: 2
+[1760894649] ./frames-ascii/out0077.jpg.txt
+[1760894649] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0078.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0079.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0080.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0081.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0082.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0083.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0084.jpg.txt
+[1760894650] file not found
+[1760894650] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894650] currently rendering ScreenObject at idx: 0
+[1760894650] currently rendering ScreenObject at idx: 1
+[1760894650] currently rendering ScreenObject at idx: 2
+[1760894650] ./frames-ascii/out0085.jpg.txt
+[1760894650] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0086.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0087.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0088.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0089.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0090.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0091.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0092.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0093.jpg.txt
+[1760894651] file not found
+[1760894651] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894651] currently rendering ScreenObject at idx: 0
+[1760894651] currently rendering ScreenObject at idx: 1
+[1760894651] currently rendering ScreenObject at idx: 2
+[1760894651] ./frames-ascii/out0094.jpg.txt
+[1760894651] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0095.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0096.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0097.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0098.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0099.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0100.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0101.jpg.txt
+[1760894652] file not found
+[1760894652] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894652] currently rendering ScreenObject at idx: 0
+[1760894652] currently rendering ScreenObject at idx: 1
+[1760894652] currently rendering ScreenObject at idx: 2
+[1760894652] ./frames-ascii/out0102.jpg.txt
+[1760894652] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0103.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0104.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0105.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0106.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0107.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0108.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0109.jpg.txt
+[1760894653] file not found
+[1760894653] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894653] currently rendering ScreenObject at idx: 0
+[1760894653] currently rendering ScreenObject at idx: 1
+[1760894653] currently rendering ScreenObject at idx: 2
+[1760894653] ./frames-ascii/out0110.jpg.txt
+[1760894653] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0111.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0112.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0113.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0114.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0115.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0116.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0117.jpg.txt
+[1760894654] file not found
+[1760894654] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894654] currently rendering ScreenObject at idx: 0
+[1760894654] currently rendering ScreenObject at idx: 1
+[1760894654] currently rendering ScreenObject at idx: 2
+[1760894654] ./frames-ascii/out0118.jpg.txt
+[1760894654] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0119.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0120.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0121.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0122.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0123.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0124.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0125.jpg.txt
+[1760894655] file not found
+[1760894655] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894655] currently rendering ScreenObject at idx: 0
+[1760894655] currently rendering ScreenObject at idx: 1
+[1760894655] currently rendering ScreenObject at idx: 2
+[1760894655] ./frames-ascii/out0126.jpg.txt
+[1760894655] file not found
+[1760894656] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894656] currently rendering ScreenObject at idx: 0
+[1760894656] currently rendering ScreenObject at idx: 1
+[1760894656] currently rendering ScreenObject at idx: 2
+[1760894656] ./frames-ascii/out0127.jpg.txt
+[1760894656] file not found
+[1760894656] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760894656] currently rendering ScreenObject at idx: 0
+[1760894656] currently rendering ScreenObject at idx: 1
+[1760894656] currently rendering ScreenObject at idx: 2
+[1760894656] ./frames-ascii/out0128.jpg.txt
+[1760894656] file not found

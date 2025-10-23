@@ -1,0 +1,35 @@
+﻿  renderium.cpp
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(40,20): warning C4244: 'argument': conversion from 'char32_t' to '_Elem', possible loss of data
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(40,20): warning C4244:         with
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(40,20): warning C4244:         [
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(40,20): warning C4244:             _Elem=char
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(40,20): warning C4244:         ]
+  (compiling source file 'renderium.cpp')
+  
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(68,37): warning C4244: 'argument': conversion from 'char32_t' to '_Elem', possible loss of data
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(68,37): warning C4244:         with
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(68,37): warning C4244:         [
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(68,37): warning C4244:             _Elem=char
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(68,37): warning C4244:         ]
+  (compiling source file 'renderium.cpp')
+  
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(352,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+  (compiling source file 'renderium.cpp')
+  
+D:\git-repositories\renderium_upgraded\renderium\reender.cpp(353,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+  (compiling source file 'renderium.cpp')
+  
+D:\git-repositories\renderium_upgraded\renderium\renderium.cpp(20,9): warning C4005: 'SCREEN_SIZE_X': macro redefinition
+      D:\git-repositories\renderium_upgraded\renderium\reender.cpp(22,9):
+      see previous definition of 'SCREEN_SIZE_X'
+  
+D:\git-repositories\renderium_upgraded\renderium\renderium.cpp(21,9): warning C4005: 'SCREEN_SIZE_Y': macro redefinition
+      D:\git-repositories\renderium_upgraded\renderium\reender.cpp(23,9):
+      see previous definition of 'SCREEN_SIZE_Y'
+  
+  Generating code
+  12 of 425 functions ( 2.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  renderium.vcxproj -> D:\git-repositories\renderium_upgraded\x64\Release\renderium.exe

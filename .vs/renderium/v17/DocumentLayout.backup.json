@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\git-repositories\\renderium_upgraded\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\git-repositories\\renderium_upgraded\\renderium\\render.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:renderium\\render.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\git-repositories\\renderium_upgraded\\renderium\\Video_and_Texture_menagers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:renderium\\Video_and_Texture_menagers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\RENDERIUM_UPGRADED\\RENDERIUM\\RENDER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\RENDER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\git-repositories\\renderium_upgraded\\renderium\\CoT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:renderium\\CoT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d3750d8a-574b-4fb3-b7e2-aa8af40e8231}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{34c7837f-3b3a-449c-bdf0-bdad86cbaf4a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Video_and_Texture_menagers.cpp",
+              "DocumentMoniker": "D:\\git-repositories\\renderium_upgraded\\renderium\\Video_and_Texture_menagers.cpp",
+              "RelativeDocumentMoniker": "renderium\\Video_and_Texture_menagers.cpp",
+              "ToolTip": "D:\\git-repositories\\renderium_upgraded\\renderium\\Video_and_Texture_menagers.cpp",
+              "RelativeToolTip": "renderium\\Video_and_Texture_menagers.cpp",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-23T16:00:01.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "render.cpp",
+              "DocumentMoniker": "D:\\git-repositories\\renderium_upgraded\\renderium\\render.cpp",
+              "RelativeDocumentMoniker": "renderium\\render.cpp",
+              "ToolTip": "D:\\git-repositories\\renderium_upgraded\\renderium\\render.cpp",
+              "RelativeToolTip": "renderium\\render.cpp",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAawIAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-23T15:37:24.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "render.h",
+              "DocumentMoniker": "D:\\git-repositories\\renderium_upgraded\\renderium\\render.h",
+              "RelativeDocumentMoniker": "renderium\\render.h",
+              "ToolTip": "D:\\git-repositories\\renderium_upgraded\\renderium\\render.h",
+              "RelativeToolTip": "renderium\\render.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-23T15:32:38.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoT.cpp",
+              "DocumentMoniker": "D:\\git-repositories\\renderium_upgraded\\renderium\\CoT.cpp",
+              "RelativeDocumentMoniker": "renderium\\CoT.cpp",
+              "ToolTip": "D:\\git-repositories\\renderium_upgraded\\renderium\\CoT.cpp",
+              "RelativeToolTip": "renderium\\CoT.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAAAawBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-16T19:53:52.062Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

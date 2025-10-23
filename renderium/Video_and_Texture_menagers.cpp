@@ -1,0 +1,168 @@
+#pragma execution_character_set("utf-8")
+
+//includes
+#include <cstddef>
+#include <cstdint>
+#include <cstdio>
+#include <uchar.h>
+#include <vector>
+#include <string>
+#include <iostream>
+#include <ctime>
+#include <chrono>
+#include <thread>
+#include <mutex>
+#include <atomic>
+#include <fstream>
+
+
+namespace render
+{
+/// <summary>
+/// VideoStreamMenager is a class that can hold and operate on video files
+/// </summary>
+class VideoStreamMenager
+{
+
+public:
+    enum FileFormat : uint8_t
+    {
+        //a folder with a lot of BMP files
+        e_BMP,
+        //a "smart" fileformat for storing entire videos in a single file (or so I hope)
+        e_DzadzV,
+    };
+
+    VideoStreamMenager(std::string _path, uint16_t _amountOfFrames, FileFormat _fileFormat)
+    {
+        for (uint_fast16_t currentFrameIDX = 1; currentFrameIDX <= _amountOfFrames; currentFrameIDX++)
+        {
+            //load the frame
+            std::ifstream file;
+
+            Frame currentFrame = Frame();
+
+            if (format == e_BMP)
+            {
+                isCompresed = false;
+
+                std::string filePath = _path;
+                uint8_t amountOfNumbers = 0;
+                int_fast32_t firstHashtagIDX = 0;
+                for (int_fast16_t i = 0; i < filePath.size(); i++)
+                {
+                    if (filePath[i] == '#')
+                    {
+                        firstHashtagIDX = i;
+                        break;
+                    }
+                }
+                for (int_fast16_t i = 0; i < filePath.size(); i++)
+                {
+                    if (filePath[i] == '#')
+                    {
+                        amountOfNumbers++;
+                    }
+                }
+                if (amountOfNumbers != 0) {
+                    std::string fileNameNumber = std::to_string(currentFrameIDX);
+                    while (fileNameNumber.size() < amountOfNumbers) {
+                        fileNameNumber = "0" + fileNameNumber;
+                    }
+                    filePath.replace(firstHashtagIDX, amountOfNumbers, fileNameNumber);
+                }
+                file.open(filePath, std::ios::binary | std::ios::in);
+                if (!file) {
+                    ReportError("Failed to open the file" + filePath, true);
+                    return;
+                }
+                const int_fast16_t sizeOfFileHeader = 14;
+                const int_fast16_t sizeOfHeaderInformation = 40;
+
+                //read the header of the file and store it in fileHeader
+                uint8_t fileHeader[sizeOfFileHeader];
+                file.read(reinterpret_cast<char*>(fileHeader), sizeOfFileHeader);
+
+                //do the same for the HeaderInformation
+                uint8_t headerInformation[sizeOfHeaderInformation];
+                file.read(reinterpret_cast<char*>(headerInformation), sizeOfHeaderInformation);
+
+                //as per specification the 2. to 5. byte of BMP header contains the size of the file
+                int32_t fileSize = fileHeader[2] + (fileHeader[3] << 8) + (fileHeader[4] << 16) + (fileHeader[5] << 24);
+
+                //geting the height and width of the image
+                currentFrame.sizeX = headerInformation[4] + (headerInformation[5] << 8) + (headerInformation[6] << 16) + (headerInformation[7] << 24);
+                currentFrame.sizeY = headerInformation[8] + (headerInformation[9] << 8) + (headerInformation[10] << 16) + (headerInformation[11] << 24);
+
+                //Nope there ain't no reson to go above 8k
+                if (currentFrame.sizeX > 8192 || currentFrame.sizeY > 8192)
+                {
+                    ReportError("It apears that somebody has tried to load a video of rediculus size... plise don't do that", true, true);
+                }
+
+                currentFrame.color = new uint8_t[currentFrame.sizeX * currentFrame.sizeY];
+
+                //WHY? why did somebody thought that this padding is a good idea for an image file format... BMP is already large enough
+                const int padding = ((4 - (currentFrame.sizeX * 3) % 4) % 4);
+
+                for (int_fast32_t Y = 0; Y < currentFrame.sizeY; ++Y) {
+                    for (int_fast32_t X = 0; X < currentFrame.sizeX; ++X) {
+                        uint8_t color[4];
+                        file.read(reinterpret_cast<char*>(color), 4);
+
+                        currentFrame.color[Y * currentFrame.sizeX + X] = color[1];
+                    }
+
+                    file.ignore(padding);
+                }
+            }
+
+            file.close();
+            frames.push_back(currentFrame);
+        }
+    }
+
+    ~VideoStreamMenager()
+    {
+    }
+
+    int32_t getColorAtFrame(uint16_t Y, uint16_t X) {
+        if (frameNO >= frames.size())
+        {
+            return -2;
+        }
+        if (X > frames[frameNO].sizeX || Y > frames[frameNO].sizeY || X < 0 || Y < 0)
+        {
+            //error code
+            return -1;
+        }
+        return frames[frameNO].color[(Y * frames[frameNO].sizeX) + X];
+    }
+
+    void exportAsDzadzV(std::string _filePath, bool _useCompresion) {
+        std::vector<uint8_t> fileBuffer;
+        for (uint16_t i = 0; i < frames.size(); ++i)
+        {
+            fileBuffer.push_back(i)
+        }
+
+    }
+
+    uint16_t frameNO = 0;
+private:
+    struct Frame
+    {
+        int32_t sizeX;
+        int32_t sizeY;
+        uint8_t* color;
+    };
+
+    FileFormat format;
+
+    std::vector<Frame> frames;
+
+    bool isCompresed;
+};
+
+
+}

@@ -1,0 +1,2543 @@
+[1760705956] initializing the render namespace
+[1760705956] render Version: b_0.1.1
+[1760705956]  unicode test : '▧' + U'▩' + U'▦' + U'▚'
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0001.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0002.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0003.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0004.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0005.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0006.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0007.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0008.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0009.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0010.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0011.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0012.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0013.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0014.jpg.txt
+[1760705956] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705956] currently rendering ScreenObject at idx: 0
+[1760705956] currently rendering ScreenObject at idx: 1
+[1760705956] currently rendering ScreenObject at idx: 2
+[1760705956] ./frames-ascii/out0015.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0016.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0017.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0018.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0019.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0020.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0021.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0022.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0023.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0024.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0025.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0026.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0027.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0028.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0029.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0030.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0031.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0032.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0033.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0034.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0035.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0036.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0037.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0038.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0039.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0040.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0041.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0042.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0043.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0044.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0045.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0046.jpg.txt
+[1760705957] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705957] currently rendering ScreenObject at idx: 0
+[1760705957] currently rendering ScreenObject at idx: 1
+[1760705957] currently rendering ScreenObject at idx: 2
+[1760705957] ./frames-ascii/out0047.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0048.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0049.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0050.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0051.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0052.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0053.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0054.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0055.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0056.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0057.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0058.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0059.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0060.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0061.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0062.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0063.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0064.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0065.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0066.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0067.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0068.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0069.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0070.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0071.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0072.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0073.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0074.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0075.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0076.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0077.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0078.jpg.txt
+[1760705958] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705958] currently rendering ScreenObject at idx: 0
+[1760705958] currently rendering ScreenObject at idx: 1
+[1760705958] currently rendering ScreenObject at idx: 2
+[1760705958] ./frames-ascii/out0079.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0080.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0081.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0082.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0083.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0084.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0085.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0086.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0087.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0088.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0089.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0090.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0091.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0092.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0093.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0094.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0095.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0096.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0097.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0098.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0099.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0100.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0101.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0102.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0103.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0104.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0105.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0106.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0107.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0108.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0109.jpg.txt
+[1760705959] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705959] currently rendering ScreenObject at idx: 0
+[1760705959] currently rendering ScreenObject at idx: 1
+[1760705959] currently rendering ScreenObject at idx: 2
+[1760705959] ./frames-ascii/out0110.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0111.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0112.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0113.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0114.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0115.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0116.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0117.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0118.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0119.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0120.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0121.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0122.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0123.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0124.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0125.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0126.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0127.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0128.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0129.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0130.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0131.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0132.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0133.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0134.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0135.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0136.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0137.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0138.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0139.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0140.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0141.jpg.txt
+[1760705960] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705960] currently rendering ScreenObject at idx: 0
+[1760705960] currently rendering ScreenObject at idx: 1
+[1760705960] currently rendering ScreenObject at idx: 2
+[1760705960] ./frames-ascii/out0142.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0143.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0144.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0145.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0146.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0147.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0148.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0149.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0150.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0151.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0152.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0153.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0154.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0155.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0156.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0157.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0158.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0159.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0160.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0161.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0162.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0163.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0164.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0165.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0166.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0167.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0168.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0169.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0170.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0171.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0172.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0173.jpg.txt
+[1760705961] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705961] currently rendering ScreenObject at idx: 0
+[1760705961] currently rendering ScreenObject at idx: 1
+[1760705961] currently rendering ScreenObject at idx: 2
+[1760705961] ./frames-ascii/out0174.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0175.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0176.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0177.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0178.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0179.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0180.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0181.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0182.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0183.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0184.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0185.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0186.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0187.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0188.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0189.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0190.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0191.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0192.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0193.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0194.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0195.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0196.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0197.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0198.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0199.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0200.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0201.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0202.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0203.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0204.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0205.jpg.txt
+[1760705962] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705962] currently rendering ScreenObject at idx: 0
+[1760705962] currently rendering ScreenObject at idx: 1
+[1760705962] currently rendering ScreenObject at idx: 2
+[1760705962] ./frames-ascii/out0206.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0207.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0208.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0209.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0210.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0211.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0212.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0213.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0214.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0215.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0216.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0217.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0218.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0219.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0220.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0221.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0222.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0223.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0224.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0225.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0226.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0227.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0228.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0229.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0230.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0231.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0232.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0233.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0234.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0235.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0236.jpg.txt
+[1760705963] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705963] currently rendering ScreenObject at idx: 0
+[1760705963] currently rendering ScreenObject at idx: 1
+[1760705963] currently rendering ScreenObject at idx: 2
+[1760705963] ./frames-ascii/out0237.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0238.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0239.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0240.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0241.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0242.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0243.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0244.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0245.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0246.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0247.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0248.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0249.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0250.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0251.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0252.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0253.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0254.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0255.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0256.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0257.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0258.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0259.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0260.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0261.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0262.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0263.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0264.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0265.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0266.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0267.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0268.jpg.txt
+[1760705964] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705964] currently rendering ScreenObject at idx: 0
+[1760705964] currently rendering ScreenObject at idx: 1
+[1760705964] currently rendering ScreenObject at idx: 2
+[1760705964] ./frames-ascii/out0269.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0270.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0271.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0272.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0273.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0274.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0275.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0276.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0277.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0278.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0279.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0280.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0281.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0282.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0283.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0284.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0285.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0286.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0287.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0288.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0289.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0290.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0291.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0292.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0293.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0294.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0295.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0296.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0297.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0298.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0299.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0300.jpg.txt
+[1760705965] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705965] currently rendering ScreenObject at idx: 0
+[1760705965] currently rendering ScreenObject at idx: 1
+[1760705965] currently rendering ScreenObject at idx: 2
+[1760705965] ./frames-ascii/out0301.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0302.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0303.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0304.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0305.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0306.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0307.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0308.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0309.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0310.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0311.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0312.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0313.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0314.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0315.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0316.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0317.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0318.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0319.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0320.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0321.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0322.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0323.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0324.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0325.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0326.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0327.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0328.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0329.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0330.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0331.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0332.jpg.txt
+[1760705966] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705966] currently rendering ScreenObject at idx: 0
+[1760705966] currently rendering ScreenObject at idx: 1
+[1760705966] currently rendering ScreenObject at idx: 2
+[1760705966] ./frames-ascii/out0333.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0334.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0335.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0336.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0337.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0338.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0339.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0340.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0341.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0342.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0343.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0344.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0345.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0346.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0347.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0348.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0349.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0350.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0351.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0352.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0353.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0354.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0355.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0356.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0357.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0358.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0359.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0360.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0361.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0362.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0363.jpg.txt
+[1760705967] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705967] currently rendering ScreenObject at idx: 0
+[1760705967] currently rendering ScreenObject at idx: 1
+[1760705967] currently rendering ScreenObject at idx: 2
+[1760705967] ./frames-ascii/out0364.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0365.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0366.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0367.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0368.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0369.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0370.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0371.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0372.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0373.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0374.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0375.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0376.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0377.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0378.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0379.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0380.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0381.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0382.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0383.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0384.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0385.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0386.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0387.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0388.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0389.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0390.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0391.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0392.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0393.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0394.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0395.jpg.txt
+[1760705968] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705968] currently rendering ScreenObject at idx: 0
+[1760705968] currently rendering ScreenObject at idx: 1
+[1760705968] currently rendering ScreenObject at idx: 2
+[1760705968] ./frames-ascii/out0396.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0397.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0398.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0399.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0400.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0401.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0402.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0403.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0404.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0405.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0406.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0407.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0408.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0409.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0410.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0411.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0412.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0413.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0414.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0415.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0416.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0417.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0418.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0419.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0420.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0421.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0422.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0423.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0424.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0425.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0426.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0427.jpg.txt
+[1760705969] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705969] currently rendering ScreenObject at idx: 0
+[1760705969] currently rendering ScreenObject at idx: 1
+[1760705969] currently rendering ScreenObject at idx: 2
+[1760705969] ./frames-ascii/out0428.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0429.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0430.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0431.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0432.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0433.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0434.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0435.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0436.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0437.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0438.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0439.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0440.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0441.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0442.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0443.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0444.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0445.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0446.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0447.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0448.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0449.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0450.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0451.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0452.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0453.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0454.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0455.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0456.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0457.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0458.jpg.txt
+[1760705970] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705970] currently rendering ScreenObject at idx: 0
+[1760705970] currently rendering ScreenObject at idx: 1
+[1760705970] currently rendering ScreenObject at idx: 2
+[1760705970] ./frames-ascii/out0459.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0460.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0461.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0462.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0463.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0464.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0465.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0466.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0467.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0468.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0469.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0470.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0471.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0472.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0473.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0474.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0475.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0476.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0477.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0478.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0479.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0480.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0481.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0482.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0483.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0484.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0485.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0486.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0487.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0488.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0489.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0490.jpg.txt
+[1760705971] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705971] currently rendering ScreenObject at idx: 0
+[1760705971] currently rendering ScreenObject at idx: 1
+[1760705971] currently rendering ScreenObject at idx: 2
+[1760705971] ./frames-ascii/out0491.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0492.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0493.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0494.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0495.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0496.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0497.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0498.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0499.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0500.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0501.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0502.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0503.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0504.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0505.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0506.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0507.jpg.txt
+[1760705972] Render thread recived data from main thread, starting data transfer to internal buffers
+[1760705972] currently rendering ScreenObject at idx: 0
+[1760705972] currently rendering ScreenObject at idx: 1
+[1760705972] currently rendering ScreenObject at idx: 2
+[1760705972] ./frames-ascii/out0508.jpg.txt
