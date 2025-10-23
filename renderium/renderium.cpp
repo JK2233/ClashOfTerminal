@@ -49,9 +49,50 @@ Bottleneck cases:
     main thread is working:
         - render thread will simply await for the main thread to send the next frame over
 */
+#ifdef UNITED
+int nieMain(){
+    render::Log("initializing the render namespace");
+    render::Initialize();
 
+    render::LockRenderThread.lock();
+    render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
+    render::VideoStreems.push_back(bootVideo);
+    render::ObjectsToRender.clear();
+    render::LockRenderThread.unlock();
 
-
+    static bool gameRunning = true;
+    while (gameRunning) {
+        {
+            render::ScreenObject tmp;
+            tmp.type = render::e_NewFrame;
+            if (render::renderThreadBusIdle) {
+                render::LockRenderThread.lock();
+                render::ObjectsToRender.clear();
+                render::ObjectsToRender.push_back(tmp);
+                tmp.type = render::e_Square;
+                tmp.posX = 0;
+                tmp.posY = 0;
+                tmp.sizeX = 255;
+                tmp.SizeY = 255;
+                tmp.character = U'🮕';
+                tmp.bacColor = 0;
+                tmp.forColor = 250;
+                //render::ObjectsToRender.push_back(tmp);
+                tmp.type = render::e_Video;
+                tmp.resorceID = 0;
+                //render::ObjectsToRender.push_back(tmp);
+                //tmp.type = render::e_BadApple;
+                //render::ObjectsToRender.push_back(tmp);
+                render::LockRenderThread.unlock();
+                render::mainThreadFinnishedDataTransfer = true;
+            }
+            std::this_thread::sleep_for (std::chrono::milliseconds(15)); // Sleep 16 ms
+        }
+    }
+    render::DeInitialize();
+    return 0;
+}
+#else
 int main(int argc, char* argv[])
 {
     render::Log("initializing the render namespace");
@@ -95,3 +136,4 @@ int main(int argc, char* argv[])
     render::DeInitialize();
     return 0;
 }
+#endif

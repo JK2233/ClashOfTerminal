@@ -39,14 +39,16 @@ void GenerateMap() {
     std::ifstream mapadiasz;
     mapadiasz.open("mapa.diasz");
     if(!mapadiasz.is_open()){
-        std::cout << "err";
+        render::Log("error with file opening");
         return;
     }
     int numID = 0;
     while (!mapadiasz.eof()) {
         std::string line;
         getline(mapadiasz, line);
+        #ifdef TRUEDEBUG
         std::cout << "LINIA" << "\n" << line << "\n";
+        #endif
         for (int i = 0; i < line.length(); i++) {
             Tile t1;
             
@@ -96,29 +98,31 @@ int main()
 {
 
     GenerateMap();
-
-
+    
+    render::Log("EEEEEEEEEEEEEEEEEEEEEEEE");
+    render::Log(std::to_string((MAP.size())));
     for (int i = 0; i < MAP.size(); i++) {
         if(i % 29 == 0) {
-            std::cout << "\n";
+            render::Log("\n");
         }
         if (MAP[i].tileType == e_Plains) {
-            std::cout << "-";
+            render::Log("-");
         }
         else if(MAP[i].tileType == e_Water) {
-            std::cout << "~";
+            render::Log("~");
         }
         else if (MAP[i].tileType == e_Base) {
-            std::cout << "U";
+            render::Log("U");
         }
         else if (MAP[i].tileType == e_MainBase) {
-            std::cout << "O";
+            render::Log("O");
         }
         else if (MAP[i].tileType == e_Bridge) {
-            std::cout << "|";
+            render::Log("|");
         }
         else {
-            std::cout << " ";
+            render::Log(" ");
         }
     }
+      nieMain();
 }

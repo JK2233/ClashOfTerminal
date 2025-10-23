@@ -465,7 +465,7 @@ namespace internal{
                 {
                     //acknowlage reciving the data
                     mainThreadFinnishedDataTransfer = false;
-                    render::Log("Render thread recived data from main thread, starting data transfer to internal buffers");
+                    //render::Log("Render thread recived data from main thread, starting data transfer to internal buffers");
 
                     //work asigned, coppy data to internal buffers and work on it
                     AnimationFrameCount = 0;
@@ -552,6 +552,7 @@ std::thread RenderThread(renderThreadMain);
 inline void DeInitialize() {
     std::this_thread::sleep_for(std::chrono::milliseconds(20));
     RenderThread.detach();
+    logFile.close();
     return;
 }
 }
