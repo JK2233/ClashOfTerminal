@@ -59,6 +59,7 @@ int main(int argc, char* argv[])
 
     render::LockRenderThread.lock();
     render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
+    bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
     render::VideoStreems.push_back(bootVideo);
     render::ObjectsToRender.clear();
     render::LockRenderThread.unlock();

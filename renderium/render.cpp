@@ -442,12 +442,12 @@ namespace internal{
 #else
             std::chrono::time_point currentTime = std::chrono::high_resolution_clock::now();
 #endif // _WIN32
-            if (currentTime - previousFrameTime > std::chrono::milliseconds(30))
+            if (currentTime - previousFrameTime > std::chrono::microseconds(33333))
             //if (true)
             {
+                previousFrameTime = currentTime;
                 AnimationFrameCount++;
                 FrameCount++;
-                previousFrameTime = std::chrono::high_resolution_clock::now();
                 if (mainThreadFinnishedDataTransfer == true)
                 {
                     //acknowlage reciving the data
@@ -528,7 +528,7 @@ namespace internal{
                     displayScreenOutputBuffer();
                 }
             }
-            std::this_thread::sleep_for(std::chrono::microseconds(100));
+            std::this_thread::sleep_for(std::chrono::microseconds(1));
         }
         return 0;
     }
