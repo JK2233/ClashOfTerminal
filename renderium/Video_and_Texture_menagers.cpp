@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+﻿#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -35,15 +35,15 @@ public:
 
     VideoStreamMenager(std::string _path, uint16_t _amountOfFrames, FileFormat _fileFormat)
     {
-        for (uint_fast16_t currentFrameIDX = 1; currentFrameIDX <= _amountOfFrames; currentFrameIDX++)
-        {
-            //load the frame
-            std::ifstream file;
-
-            Frame currentFrame = Frame();
-
-            if (format == e_BMP)
+        if (_fileFormat == e_BMP) {
+            for (uint_fast16_t currentFrameIDX = 1; currentFrameIDX <= _amountOfFrames; currentFrameIDX++)
             {
+                //load the frame
+                std::ifstream file;
+
+                Frame currentFrame = Frame();
+
+
                 isCompresed = false;
 
                 std::string filePath = _path;
@@ -114,12 +114,14 @@ public:
                     }
 
                     file.ignore(padding);
-                }
-            }
 
-            file.close();
-            frames.push_back(currentFrame);
+                }
+
+                file.close();
+                frames.push_back(currentFrame);
+            }
         }
+
     }
 
     ~VideoStreamMenager()
@@ -141,11 +143,35 @@ public:
 
     void exportAsDzadzV(std::string _filePath, bool _useCompresion) {
         std::vector<uint8_t> fileBuffer;
+        //DzadzV version metadata
+        fileBuffer.push_back(0);
+
+        fileBuffer.push_back(frames[0].sizeX / 256);
+        fileBuffer.push_back(frames[0].sizeX & 0b0000000011111111);
+        fileBuffer.push_back(frames[0].sizeY / 256);
+        fileBuffer.push_back(frames[0].sizeY & 0b0000000011111111);
+
+        const int32_t frameSize = frames[0].sizeY * frames[0].sizeX;
         for (uint16_t i = 0; i < frames.size(); ++i)
         {
-            fileBuffer.push_back(i);
+            for (size_t j = 0; j < frameSize; ++j)
+            {
+                fileBuffer.push_back(frames[i].color[j]);
+            }
+            fileBuffer.push_back(i / 256);
+            fileBuffer.push_back(i & 0b0000000011111111);
         }
-
+        std::ofstream file;
+        file.open(_filePath, std::ios::out | std::ios::binary);
+        {
+            char* tmp = new char[fileBuffer.size()];
+            for (size_t i = 0; i < fileBuffer.size(); ++i)
+            {
+                tmp[i] = fileBuffer[i];
+            }
+            file.write(tmp, fileBuffer.size());
+        }
+        file.close();
     }
 
     uint16_t frameNO = 0;
