@@ -15,12 +15,25 @@
 #include <atomic>
 #include <fstream>
 
+//in case of a major skill issue
+#ifndef COMPILE_WITH_TOOLS
+#define COMPILE_WITH_TOOLS
+
+#define RENDER_VERSION "b_0.3.1"
+
+#define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
+#define SCREEN_SIZE_X 200
+#define SCREEN_SIZE_Y 60
+#endif
+
+#define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
+#define LOG_OBJECTS_RENDERED false
+
 #include "render_UTF_and_Loging_utils.cpp"
 #include "Video_and_Texture_menagers.cpp"
 
 
-#define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
-#define LOG_OBJECTS_RENDERED false
+
 
 namespace render
 {
@@ -452,7 +465,7 @@ namespace internal{
                 {
                     //acknowlage reciving the data
                     mainThreadFinnishedDataTransfer = false;
-                    render::Log("Render thread recived data from main thread, starting data transfer to internal buffers");
+                    //render::Log("Render thread recived data from main thread, starting data transfer to internal buffers");
 
                     //work asigned, coppy data to internal buffers and work on it
                     AnimationFrameCount = 0;
@@ -539,6 +552,7 @@ std::thread RenderThread(renderThreadMain);
 inline void DeInitialize() {
     std::this_thread::sleep_for(std::chrono::milliseconds(20));
     RenderThread.detach();
+    logFile.close();
     return;
 }
 }
