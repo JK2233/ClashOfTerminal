@@ -43,7 +43,6 @@ public:
 
                 Frame currentFrame = Frame();
 
-
                 isCompresed = false;
 
                 std::string filePath = _path;
@@ -116,9 +115,36 @@ public:
                     file.ignore(padding);
 
                 }
-
                 file.close();
                 frames.push_back(currentFrame);
+            }
+        }
+        if (_fileFormat == e_DzadzV) {
+            std::ifstream file;
+            file.open(_path, std::ios::in | std::ios::binary);
+            if (file.is_open()) {
+                const int_fast16_t sizeOfFileHeader = 5;
+
+                //read the header of the file and store it in fileHeader
+                uint8_t fileHeader[sizeOfFileHeader];
+                file.read(reinterpret_cast<char*>(fileHeader), sizeOfFileHeader);
+
+                uint16_t videoSizeX = fileHeader[1] * 256 + fileHeader[2];
+                uint16_t videoSizeY = fileHeader[3] * 256 + fileHeader[4];
+
+                const int32_t frameSize = videoSizeX * videoSizeY;
+
+                for (int32_t i = 0 ; i < _amountOfFrames ; ++i) {
+                    Frame tmpFrame;
+                    tmpFrame.color = new uint8_t[frameSize];
+                    tmpFrame.sizeX = videoSizeX;
+                    tmpFrame.sizeY = videoSizeY;
+                    file.read(reinterpret_cast<char*>(tmpFrame.color), frameSize);
+                    frames.push_back(tmpFrame);
+                }
+            }
+            else {
+                ReportError("cen't find file " + _path + " plise fix", false);
             }
         }
 
@@ -158,8 +184,6 @@ public:
             {
                 fileBuffer.push_back(frames[i].color[j]);
             }
-            fileBuffer.push_back(i / 256);
-            fileBuffer.push_back(i & 0b0000000011111111);
         }
         std::ofstream file;
         file.open(_filePath, std::ios::out | std::ios::binary);

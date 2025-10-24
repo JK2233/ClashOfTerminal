@@ -1,12 +1,10 @@
-﻿//MSVC exclusive pragma
+//MSVC exclusive pragma
 #include <cstdio>
 #pragma execution_character_set("utf-8")
 
 //includes
 #include <vector>
 #include <string>
-#include <iostream>
-#include <ctime>
 #include <chrono>
 #include <thread>
 #include <mutex>
@@ -14,11 +12,11 @@
 
 #define COMPILE_WITH_TOOLS
 
-#define RENDER_VERSION "b_0.3.1"
+#define RENDER_VERSION "b_0.4.0"
 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #define SCREEN_SIZE_X 200
-#define SCREEN_SIZE_Y 60
+#define SCREEN_SIZE_Y 60 // 120
 
 #include "render.h"
 
@@ -33,34 +31,17 @@
 #endif
 
 
-/*
-render - specification, technical documantation and architecture
-
-Notice: you should not set renderThreadBusIdle or mainThreadFinnishedDataTransfer direcly unless you know what your doing
-
-The main thread can only send data to the render thrad when renderThreadBusIdle is true;
-at the same time render thread can only start copying current frame data to ints internal buffer dater mainThreadFinnishedDataTransfer becomes false;
-after reciving data render thread will pull renderThreadBusIdle to the true state informing the main thread that it can recive more data now.
-BUT render thread WILL NOT do that if its still rendering a frame out, it will wait for that untill it finishes current frame and advances to the next.
-
-Bottleneck cases:
-    render thread is stuck rendering:
-        - main thread will not me able to send additional data to the thread cuz renderThreadBusIdle will be false cosing a frame skip
-    main thread is working:
-        - render thread will simply await for the main thread to send the next frame over
-*/
-
-
-
 int main(int argc, char* argv[])
 {
     render::Log("initializing the render namespace");
     render::Initialize();
 
     render::LockRenderThread.lock();
-    render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
-    bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
-    render::VideoStreems.push_back(bootVideo);
+    // render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
+    // bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
+    render::VideoStreamMenager bootVideo2 = render::VideoStreamMenager("./badExport/apple.dzadzV", 6549, render::VideoStreamMenager::e_DzadzV);
+    
+    render::VideoStreems.push_back(bootVideo2);
     render::ObjectsToRender.clear();
     render::LockRenderThread.unlock();
 
