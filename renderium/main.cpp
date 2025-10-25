@@ -35,7 +35,7 @@ enum TileTypes {
 
 struct Unit {
     int player, unitID, tileID;
-    std::string nazwa;
+    //std::string nazwa;
     enum UnitTypes unitType;
 };
 
@@ -58,7 +58,7 @@ void GenerateMap() {
         std::string line;
         getline(mapadiasz, line);
         #ifdef TRUEDEBUG
-        std::cout << "LINIA" << "\n" << line << "\n";
+        //std::cout << "LINIA" << "\n" << line << "\n";
         #endif
         for (int i = 0; i < line.length(); i++) {
             Tile t1;
@@ -67,27 +67,27 @@ void GenerateMap() {
             switch (line[i])
             {
             case '-':
-                t1.tileID = ++numID;
+                t1.tileID = numID++;
                 t1.tileType = e_Plains;
                 MAP.push_back(t1);
                 break;
             case '~':
-                t1.tileID = ++numID;
+                t1.tileID = numID++;
                 t1.tileType = e_Water;
                 MAP.push_back(t1);
                 break;
             case 'U':
-                t1.tileID = ++numID;
+                t1.tileID = numID++;
                 t1.tileType = e_Base;
                 MAP.push_back(t1);
                 break;
             case 'O':
-                t1.tileID = ++numID;
+                t1.tileID = numID++;
                 t1.tileType = e_MainBase;
                 MAP.push_back(t1);
                 break;
             case '|':
-                t1.tileID = ++numID;
+                t1.tileID = numID++;
                 t1.tileType = e_Bridge;
                 MAP.push_back(t1);
                 break;
@@ -95,13 +95,103 @@ void GenerateMap() {
                 break;
             }
         }
-        numID+=100;
     }
     mapadiasz.close();
 }
 
-void playerTurn(int playerNum) {
+void updateMap(int id) { //this function is for debuging until map render will be ready
+    std::string mapBuffer = "";
+    for (int i = 0; i < MAP.size(); i++) {
+        if(i % 29 == 0) {
+            mapBuffer += "\n";
+        }
+        if (MAP[i].tileType == e_Plains) {
+            if(MAP[i].tileID == id) {
+                mapBuffer += " Y";
+            } else {
+                mapBuffer += " -";
+            }
+        }
+        else if(MAP[i].tileType == e_Water) {
+            if(MAP[i].tileID == id) {
+                mapBuffer += " Y";
+            } else {
+                mapBuffer += " ~";
+            }
+        }
+        else if (MAP[i].tileType == e_Base) {
+            if(MAP[i].tileID == id) {
+                mapBuffer += " Y";
+            } else {
+                mapBuffer += " U";
+            }
+        }
+        else if (MAP[i].tileType == e_MainBase) {
+            if(MAP[i].tileID == id) {
+                mapBuffer += " Y";
+            } else {
+                mapBuffer += " O";
+            }
+        }
+        else if (MAP[i].tileType == e_Bridge) {
+            if(MAP[i].tileID == id) {
+                mapBuffer += " Y";
+            } else {
+                mapBuffer += " |";
+            }
+        }
+        else {
+            mapBuffer += " ";
+        }
+    }
+    render::Log(mapBuffer);
+    render::Log("\n");
+}
 
+void playerTurn(int playerNum) {
+    /*
+        1000 // arrow up
+        1001 // arrow down
+        1002 // arrow right
+        1003 // arrow left
+    */
+    int id = 0;
+    rawInput::changeTerminalState(0);
+    while(true) {
+        int komenda = rawInput::readKey();
+        if((char)komenda == 'f')/*press f every time you finnish moving on the map so it won't destroy your terminal (It should't but do it still) */ { //<---- I can turn it into a switch later
+            break;
+        } else if(komenda == 1000) { //move arrow up
+            if(id > 29) {
+                id -= 29;
+                render::Log("id: " +std::to_string(id));
+                render::Log("\n");
+                updateMap(id);
+            }
+        } else if(komenda == 1001) {
+            if(id < (MAP.size()-1)-29) { //move arrow down
+                id += 29;
+                render::Log("id: " +std::to_string(id));
+                render::Log("\n");
+                updateMap(id);
+            }
+        } else if(komenda == 1002) { //move arrow right
+            if(id != MAP.size() -1) {
+                id++;
+                render::Log("id: " +std::to_string(id));
+                render::Log("\n");
+                updateMap(id);
+            }
+        } else if(komenda == 1003) { //move arrow left
+            if(id != 0) {
+                id--;
+                render::Log("id: " +std::to_string(id));
+                render::Log("\n");
+                updateMap(id);
+            }
+        }
+    }
+    rawInput::resetTerminal();
 }
 
 
@@ -111,32 +201,35 @@ int main()
     render::Initialize();
 
     GenerateMap();
+    //playerTurn(2); //<--- Uncomment this to test the movement of arrows on the map
     
     render::Log("EEEEEEEEEEEEEEEEEEEEEEEE");
     render::Log(std::to_string((MAP.size())));
+    std::string mapBuffer = "";
     for (int i = 0; i < MAP.size(); i++) {
         if(i % 29 == 0) {
-            render::Log("\n");
+            mapBuffer += "\n";
         }
         if (MAP[i].tileType == e_Plains) {
-            render::Log("-");
+            mapBuffer += " -";
         }
         else if(MAP[i].tileType == e_Water) {
-            render::Log("~");
+            mapBuffer += " ~";
         }
         else if (MAP[i].tileType == e_Base) {
-            render::Log("U");
+            mapBuffer += " U";
         }
         else if (MAP[i].tileType == e_MainBase) {
-            render::Log("O");
+            mapBuffer += " O";
         }
         else if (MAP[i].tileType == e_Bridge) {
-            render::Log("|");
+            mapBuffer += " |";
         }
         else {
-            render::Log(" ");
+            mapBuffer += " ";
         }
     }
+    render::Log(mapBuffer + "\n");
 
     render::LockRenderThread.lock();
     // render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
@@ -177,5 +270,4 @@ int main()
         }
     }
     render::DeInitialize();
-
 }

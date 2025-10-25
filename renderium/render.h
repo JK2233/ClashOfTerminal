@@ -1,7 +1,8 @@
 ﻿/*
-Higher beings, this code is for you and you alone.
+Higher beings, this code is for you alone.
 */
 #include "render.cpp"
+#include "inputium.cpp"
 
 /*
 Pieniadze - start 100 + 10/tura
