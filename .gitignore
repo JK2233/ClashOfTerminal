@@ -6,3 +6,6 @@ x64/Debug/renderium.pdb
 renderium/badExport/apple.dzadzV
 /.vs
 /x64/Debug
+/.vs
+*.vsidx
+/.vs/renderium/v17

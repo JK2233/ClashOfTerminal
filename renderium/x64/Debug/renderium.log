@@ -13,10 +13,19 @@ D:\git-repositories\ClashOfTerminal\renderium\render_UTF_and_Loging_utils.cpp(47
 D:\git-repositories\ClashOfTerminal\renderium\render_UTF_and_Loging_utils.cpp(47,37): warning C4244:         ]
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(247,37): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(258,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(248,37): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(259,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+  (compiling source file 'CoT.cpp')
+  
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(619,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+  (compiling source file 'CoT.cpp')
+  
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(641,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
+  (compiling source file 'CoT.cpp')
+  
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(642,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
   renderium.vcxproj -> D:\git-repositories\ClashOfTerminal\x64\Debug\renderium.exe
