@@ -424,7 +424,6 @@ namespace internal{
 #endif // Win32
         std::cout << "test ęąśążźóó,    ♔ ♔♔👍\n" << "version: " << RENDER_VERSION << "\n";
         std::cout.flush();
-        std::this_thread::sleep_for(std::chrono::milliseconds(2000));
         screenCharBuffer = new char32_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
         screenBacColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
         screenForColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];

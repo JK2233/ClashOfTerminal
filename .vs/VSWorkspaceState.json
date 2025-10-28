@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Debug",
-    "\\renderium",
-    "\\renderium\\build\\Debug"
+    "\\renderium"
   ],
-  "SelectedNode": "\\renderium\\render.hpp",
+  "SelectedNode": "\\renderium.sln",
   "PreviewInSolutionExplorer": false
 }

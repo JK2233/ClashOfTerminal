@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+﻿#pragma execution_character_set("utf-8")
 #include <iostream>
 #include <vector>
 #include <string>
@@ -139,8 +139,8 @@ int main()
     }
 
     render::LockRenderThread.lock();
-    // render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
-    // bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
+     render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
+     bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
     render::VideoStreamMenager bootVideo2 = render::VideoStreamMenager("./badExport/apple.dzadzV", 6549, render::VideoStreamMenager::e_DzadzV);
     
     render::VideoStreems.push_back(bootVideo2);

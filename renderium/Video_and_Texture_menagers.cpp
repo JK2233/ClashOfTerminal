@@ -1,4 +1,4 @@
-﻿#pragma execution_character_set("utf-8")
+#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -18,6 +18,16 @@
 
 namespace render
 {
+    //positive numbers only devide and round upwards insted of dawnwards
+    inline uint16_t DevRoundUp(uint16_t numerator, uint16_t denominator) {
+        return (numerator + denominator - 1) / denominator;
+    }
+    inline uint32_t DevRoundUp(uint32_t numerator, uint32_t denominator) {
+        return (numerator + denominator - 1) / denominator;
+    }
+    inline uint64_t DevRoundUp(uint64_t numerator, uint64_t denominator) {
+        return (numerator + denominator - 1) / denominator;
+    }
 /// <summary>
 /// VideoStreamMenager is a class that can hold and operate on video files
 /// </summary>
@@ -152,6 +162,10 @@ public:
 
     ~VideoStreamMenager()
     {
+        for (size_t i = 0; i < frames.size(); i++)
+        {
+            delete[] frames[i].color;
+        }
     }
 
     int32_t getColorAtFrame(uint16_t Y, uint16_t X) {
@@ -169,22 +183,104 @@ public:
 
     void exportAsDzadzV(std::string _filePath, bool _useCompresion) {
         std::vector<uint8_t> fileBuffer;
-        //DzadzV version metadata
-        fileBuffer.push_back(0);
-
-        fileBuffer.push_back(frames[0].sizeX / 256);
-        fileBuffer.push_back(frames[0].sizeX & 0b0000000011111111);
-        fileBuffer.push_back(frames[0].sizeY / 256);
-        fileBuffer.push_back(frames[0].sizeY & 0b0000000011111111);
-
-        const int32_t frameSize = frames[0].sizeY * frames[0].sizeX;
-        for (uint16_t i = 0; i < frames.size(); ++i)
+        
+        if (_useCompresion == false)
         {
-            for (size_t j = 0; j < frameSize; ++j)
+            //DzadzV version metadata
+            fileBuffer.push_back(0);
+
+            fileBuffer.push_back(frames[0].sizeX / 256);
+            fileBuffer.push_back(frames[0].sizeX & 0b0000000011111111);
+            fileBuffer.push_back(frames[0].sizeY / 256);
+            fileBuffer.push_back(frames[0].sizeY & 0b0000000011111111);
+
+            const int32_t frameSize = frames[0].sizeY * frames[0].sizeX;
+            for (uint16_t i = 0; i < frames.size(); ++i)
             {
-                fileBuffer.push_back(frames[i].color[j]);
+                for (size_t j = 0; j < frameSize; ++j)
+                {
+                    fileBuffer.push_back(frames[i].color[j]);
+                }
             }
         }
+        else
+        {
+            //DzadzV version metadata
+            fileBuffer.push_back(1); //compresion was introduced after verion 1
+
+            fileBuffer.push_back(frames[0].sizeX / 256);
+            fileBuffer.push_back(frames[0].sizeX & 0b0000000011111111);
+            fileBuffer.push_back(frames[0].sizeY / 256);
+            fileBuffer.push_back(frames[0].sizeY & 0b0000000011111111);
+            const int32_t frameSize = frames[0].sizeY * frames[0].sizeX;
+
+            //chunks from whitch the image will be reconstructed
+            std::vector<std::vector<uint8_t>> chunks;
+            //amount of times a certain chunks was repeated (used for lossy compresion)
+            std::vector<uint32_t> chunkRepeat;
+
+            uint16_t amountOfChunksOnX = DevRoundUp(frames[0].sizeX, 8);
+            uint16_t amountOfChunksOnY = DevRoundUp(frames[0].sizeY, 8);
+            for (uint16_t frameIDX = 0; frameIDX < frames.size(); ++frameIDX)
+            {
+                for (int_fast16_t Y = 0; Y < amountOfChunksOnY; ++Y)
+                {
+                    for (int_fast16_t X = 0; X < amountOfChunksOnX; ++X)
+                    {
+                        std::vector<uint8_t> tmpChunk;
+
+                        for (int_fast16_t CY = 0; CY < 8; ++CY)
+                        {
+                            for (int_fast16_t CX = 0; CX < 8; ++CX)
+                            {
+                                tmpChunk.push_back(getColorAtFrame(Y, X));
+                            }
+                        }
+                        uint16_t PositionsChunkID;
+
+                        bool isChunkUnique = true;
+                        for (int_fast16_t i = 0; i < chunks.size(); ++i)
+                        {
+                            bool areChunksTheSame = true;
+                            for (int_fast16_t j = 0; j < 64; ++j)
+                            {
+                                if (tmpChunk[j] != chunks[i][j])
+                                {
+                                    areChunksTheSame = false;
+                                    break;
+                                }
+                            }
+                            //reuse the old chunk
+                            if (areChunksTheSame)
+                            {
+                                isChunkUnique = false;
+                                PositionsChunkID = i;
+                                chunkRepeat[i]++;
+                                break;
+                            }
+                        }
+
+                        //if chunk is unique add it to chunks if not reuse the old one
+                        if (isChunkUnique)
+                        {
+                            chunkRepeat.push_back(1);
+                            chunks.push_back(tmpChunk);
+                            PositionsChunkID = chunks.size() - 1; // last id
+                        }
+                        fileBuffer.push_back(PositionsChunkID / 256);
+                        fileBuffer.push_back(PositionsChunkID & 0b0000000011111111);
+                    }
+                }
+            }
+
+            for (uint_fast16_t i = 0; i < chunks.size(); ++i)
+            {
+                for (uint_fast16_t j = 0; j < 64; ++j) {
+                    fileBuffer.push_back(chunks[i][j]);
+                }
+            }
+        }
+
         std::ofstream file;
         file.open(_filePath, std::ios::out | std::ios::binary);
         {
@@ -202,16 +298,25 @@ public:
 private:
     struct Frame
     {
-        int32_t sizeX;
-        int32_t sizeY;
+        uint16_t sizeX;
+        uint16_t sizeY;
         uint8_t* color;
+
+        //each bit represents a seprate compresion type on frame
+        //0x0000000X using frame chunk optymization
+        //0x000000X0 repeat previous frame
+        uint8_t  compresion;
     };
 
     FileFormat format;
 
     std::vector<Frame> frames;
 
+
     bool isCompresed;
+    //only used if the Video is compresed
+    //8 x 8 chunks used for saving on repeating paterns
+    std::vector<uint8_t> repeatedChunks;
 };
 
 
