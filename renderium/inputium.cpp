@@ -1,5 +1,6 @@
-﻿#include <iostream>
-
+﻿#ifdef TRUEDEBUG
+#include <iostream>
+#endif
 //LINUX LIBRARIES
 
 #ifdef __unix__
@@ -60,7 +61,7 @@ namespace rawInput {
         }
         return (int)c[0];
     }
-
+#ifdef TRUEDEBUG
     //DEBUG FUNCTION TO OUTPUT ARROWS FOR BOTH LINUX AND WINDOWS
     std::string arrowsRead(int c) {
         switch (c) {
@@ -78,8 +79,8 @@ namespace rawInput {
         return "???";
     }
     //-----------------------------------------------
+#endif
 }
-
 //WINDOWS LIBRARIES
 
 #elif defined(_WIN32)
@@ -113,6 +114,7 @@ namespace rawInput {
         return c; // Zwróć zwykły kod ASCII 
     }
     //DEBUG FUNCTION TO OUTPUT ARROWS FOR BOTH LINUX AND WINDOWS
+    #ifdef TRUEDEBUG
     std::string arrowsRead(int c) {
         switch (c) {
         case 1000:
@@ -129,7 +131,7 @@ namespace rawInput {
         return "???";
     }
     //-----------------------------------------------
-
+    #endif
 }
 #endif
 

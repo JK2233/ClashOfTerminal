@@ -6,7 +6,7 @@
 
 #define COMPILE_WITH_TOOLS
 
-#define RENDER_VERSION "0.4.0"
+//#define RENDER_VERSION "0.4.0"
 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #define SCREEN_SIZE_X 200
@@ -45,6 +45,8 @@ struct Tile {
 };
 
 std::vector<Tile> MAP;
+
+int id = 0;
 
 void GenerateMap() {
     std::ifstream mapadiasz;
@@ -161,7 +163,7 @@ void playerTurn(uint8_t playerNum) {
         1003 // arrow left
     */
 
-    int id = 0;
+    
     int komenda = rawInput::readKey();
     if (komenda == 1000) { //move arrow up
         if (id > 29) {
@@ -217,9 +219,8 @@ int main()
     while (gameRunning) {
         {
 
-            render::StartNewFrame();
             playerTurn(2); //<--- Uncomment this to test the movement of arrows on the map
-
+            render::StartNewFrame();
             {
                 int16_t currentLine = 0;
                 std::u32string mapBuffer = U"mapBuffer";

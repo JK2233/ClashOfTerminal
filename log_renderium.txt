@@ -1,4 +1,0 @@
-[1761252344] initializing the render namespace
-=ERROR==============================================
-Failed to open the file./bad apple/frame-00001.bmp
-====================================================

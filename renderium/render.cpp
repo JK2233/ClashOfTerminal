@@ -16,8 +16,6 @@
 #include <fstream>
 
 
-#include "render_UTF_and_Loging_utils.cpp"
-#include "Video_and_Texture_menagers.cpp"
 
 #define COMPILE_WITH_TOOLS
 
@@ -29,6 +27,9 @@
 
 #define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
 #define LOG_OBJECTS_RENDERED false
+
+#include "render_UTF_and_Loging_utils.cpp"
+#include "Video_and_Texture_menagers.cpp"
 
 namespace render
 {
