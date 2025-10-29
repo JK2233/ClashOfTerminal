@@ -1,6 +1,8 @@
-﻿/*
-Higher beings, this code is for you and you alone.
+/*
+Higher beings, this code is for you alone.
 */
+#include "inputium.cpp"
+
 #include "render.cpp"
 
 /*

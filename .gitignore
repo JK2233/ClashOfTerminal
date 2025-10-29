@@ -1,0 +1,11 @@
+renderium/x64/Debug/renderium.log
+*.tlog
+x64/Debug/renderium.exe
+x64/Debug/renderium.pdb
+/renderium/x64
+renderium/badExport/apple.dzadzV
+/.vs
+/x64/Debug
+/.vs
+*.vsidx
+/.vs/renderium/v17
