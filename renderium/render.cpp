@@ -1,4 +1,4 @@
-﻿#pragma execution_character_set("utf-8")
+#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -16,10 +16,11 @@
 #include <fstream>
 
 
+#include "render_UTF_and_Loging_utils.cpp"
+#include "Video_and_Texture_menagers.cpp"
 
 #define COMPILE_WITH_TOOLS
 
-#define RENDER_VERSION "b_0.4.0"
 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #define SCREEN_SIZE_X 200
@@ -27,9 +28,6 @@
 
 #define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
 #define LOG_OBJECTS_RENDERED false
-
-#include "render_UTF_and_Loging_utils.cpp"
-#include "Video_and_Texture_menagers.cpp"
 
 namespace render
 {
@@ -39,6 +37,7 @@ namespace render
         e_NewFrame,
         //renders a single char on the screen
         e_Point,
+        e_BlinkingCursor,
         //Texture render a texture from resorceID, those textures are stored in a seprate txt file
         e_Texture,
         //renders a Texture but only within a set Square
@@ -75,6 +74,9 @@ namespace render
             break;
         case e_Point:
             ret = "Point";
+            break;
+        case e_BlinkingCursor:
+            ret = "BlinkingCursor";
             break;
         case e_Texture:
             ret = "Texture";
@@ -231,7 +233,7 @@ namespace render
 
             for (int_fast32_t y = 0; y < SCREEN_SIZE_Y; y++)
             {
-                for (int_fast16_t x = 0; x < SCREEN_SIZE_X; x++)
+                for (int_fast16_t x = 0; x < SCREEN_SIZE_X - 1; x++)
                 {
                     if (previousBacColor != screenBacColorBuffer[y * SCREEN_SIZE_X + x])
                     {
@@ -245,7 +247,7 @@ namespace render
                     }
                     screenOutputBuffer += codeToUTF8(screenCharBuffer[y * SCREEN_SIZE_X + x]);
                 }
-                if (y < (SCREEN_SIZE_Y))
+                if (y < (SCREEN_SIZE_Y) && y < SCREEN_SIZE_Y - 1)
                 {
                     screenOutputBuffer += "\n";
                 }
@@ -309,6 +311,29 @@ namespace render
                     screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
                 }
                 break;
+            case e_BlinkingCursor:
+                {
+                    if (objectPosXBuffer[idx] >= SCREEN_SIZE_X || objectPosXBuffer[idx] < 0 || objectPosYBuffer[idx] >= SCREEN_SIZE_Y || objectPosYBuffer[idx] < 0)
+                    {
+                        break;
+                    }
+                    if (AnimationFrameCount % 30 < 15) {
+                        screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectCharacterBuffer[idx];
+                        screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectForColorBuffer[idx];
+                        if (objectBacColorBuffer[idx] != 0)
+                        {
+                            screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
+                        }
+                    }
+                    else {
+                        if (objectBacColorBuffer[idx] != 0)
+                        {
+                            screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
+                        }
+                    }
+
+                    break;
+                }
             case e_Texture:
 
                 break;
@@ -367,8 +392,25 @@ namespace render
                 break;
             }
             case e_Ellipse:
-
+            {
+                for (int_fast32_t i = 0; i < objectSizeYBuffer[idx]; ++i) {
+                    for (int_fast32_t j = 0; j < objectSizeXBuffer[idx]; ++j) {
+                        if (X < 0 || Y < 0 || Y >= SCREEN_SIZE_Y || X >= SCREEN_SIZE_X) {
+                            continue;
+                        }
+                        if (objectCharacterBuffer[idx] != U' ' && X * X )
+                        {
+                            screenCharBuffer[(Y * SCREEN_SIZE_X) + X] = objectCharacterBuffer[idx];
+                            screenForColorBuffer[(Y * SCREEN_SIZE_X) + X] = objectForColorBuffer[idx];
+                        }
+                        screenBacColorBuffer[(Y * SCREEN_SIZE_X) + X] = objectBacColorBuffer[idx];
+                        X++;
+                    }
+                    Y++;
+                    X = objectPosXBuffer[idx];
+                }
                 break;
+            }
             case e_Circle:
 
                 break;
@@ -413,8 +455,8 @@ namespace render
                 }
                 BadAppleFrame.close();
                 // getchar();
+                break;
             }
-            break;
             case e_Video:
             {
                 for (int_fast16_t i = 0; i < SCREEN_SIZE_Y; ++i)
@@ -456,9 +498,6 @@ namespace render
 #ifdef _WIN32
             system("chcp 65001");
 #endif // Win32
-            std::cout << "test ęąśążźóó,    ♔ ♔♔👍\n" << "version: " << RENDER_VERSION << "\n";
-            std::cout.flush();
-            std::this_thread::sleep_for(std::chrono::milliseconds(500));
             screenCharBuffer = new char32_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenBacColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenForColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
@@ -623,19 +662,30 @@ namespace render
     }
 
     void AddPoint(char32_t _char, int16_t _posY, int16_t _posX, uint8_t _forColor, uint8_t _bacColor) {
-            ScreenObject tmpObject;
-            tmpObject.posY = _posY;
-            tmpObject.posX = _posX;
-            tmpObject.forColor = _forColor;
-            tmpObject.bacColor = _bacColor;
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = _bacColor;
 
-            tmpObject.character = _char;
+        tmpObject.character = _char;
 
-            tmpObject.type = e_Point;
-            ObjectsToRender.push_back(tmpObject);
-        }
+        tmpObject.type = e_Point;
+        ObjectsToRender.push_back(tmpObject);
+    }
+    void AddCursor(char32_t _char, int16_t _posY, int16_t _posX, uint8_t _forColor, uint8_t _bacColor) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = _bacColor;
 
-    void AddBox(char32_t _char , int16_t _posY, int16_t _posX, int16_t _sizeX, int16_t _sizeY, uint8_t _forColor, uint8_t _bacColor) {
+        tmpObject.character = _char;
+
+        tmpObject.type = e_BlinkingCursor;
+        ObjectsToRender.push_back(tmpObject);
+    }
+    void AddBox(char32_t _char , int16_t _posY, int16_t _posX, int16_t _sizeY, int16_t _sizeX, uint8_t _forColor, uint8_t _bacColor) {
         ScreenObject tmpObject;
         tmpObject.posY = _posY;
         tmpObject.posX = _posX;
@@ -647,6 +697,20 @@ namespace render
         tmpObject.character = _char;
 
         tmpObject.type = e_Square;
+        ObjectsToRender.push_back(tmpObject);
+    }
+    void AddEllipse(char32_t _char , int16_t _posY, int16_t _posX, int16_t _sizeY, int16_t _sizeX, uint8_t _forColor, uint8_t _bacColor) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.SizeY = _sizeY;
+        tmpObject.sizeX = _sizeX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = _bacColor;
+
+        tmpObject.character = _char;
+
+        tmpObject.type = e_Ellipse;
         ObjectsToRender.push_back(tmpObject);
     }
 }

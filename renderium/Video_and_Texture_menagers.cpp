@@ -134,14 +134,29 @@ public:
 
                 const int32_t frameSize = videoSizeX * videoSizeY;
 
-                for (int32_t i = 0 ; i < _amountOfFrames ; ++i) {
-                    Frame tmpFrame;
-                    tmpFrame.color = new uint8_t[frameSize];
-                    tmpFrame.sizeX = videoSizeX;
-                    tmpFrame.sizeY = videoSizeY;
-                    file.read(reinterpret_cast<char*>(tmpFrame.color), frameSize);
-                    frames.push_back(tmpFrame);
+                //original uncompressed dzadzV fileformat
+                if (fileHeader[0] == 0) {
+                    for (int32_t i = 0 ; i < _amountOfFrames ; ++i) {
+                        Frame tmpFrame;
+                        tmpFrame.color = new uint8_t[frameSize];
+                        tmpFrame.sizeX = videoSizeX;
+                        tmpFrame.sizeY = videoSizeY;
+                        file.read(reinterpret_cast<char*>(tmpFrame.color), frameSize);
+                        frames.push_back(tmpFrame);
+                    }
                 }
+                if (fileHeader[0] == 1) {
+                    isCompresed = true;
+                    for (int32_t i = 0 ; i < _amountOfFrames ; ++i) {
+                        Frame tmpFrame;
+                        tmpFrame.color = new uint8_t[frameSize];
+                        tmpFrame.sizeX = videoSizeX;
+                        tmpFrame.sizeY = videoSizeY;
+                        file.read(reinterpret_cast<char*>(tmpFrame.color), frameSize);
+                        frames.push_back(tmpFrame);
+                    }
+                }
+
             }
             else {
                 ReportError("cen't find file " + _path + " plise fix", false);
@@ -170,7 +185,7 @@ public:
     void exportAsDzadzV(std::string _filePath, bool _useCompresion) {
         std::vector<uint8_t> fileBuffer;
         //DzadzV version metadata
-        fileBuffer.push_back(0);
+        fileBuffer.push_back(1);
 
         fileBuffer.push_back(frames[0].sizeX / 256);
         fileBuffer.push_back(frames[0].sizeX & 0b0000000011111111);
@@ -178,11 +193,33 @@ public:
         fileBuffer.push_back(frames[0].sizeY & 0b0000000011111111);
 
         const int32_t frameSize = frames[0].sizeY * frames[0].sizeX;
+
+        uint8_t frameSimulatiry = 20;
+
         for (uint16_t i = 0; i < frames.size(); ++i)
         {
+            if (i == 0) {
+                frameSimulatiry = 0;
+                continue;
+            }
             for (size_t j = 0; j < frameSize; ++j)
             {
-                fileBuffer.push_back(frames[i].color[j]);
+                if (frames[i].color[j] == frames[i-1].color[j]) {
+                    frameSimulatiry--;
+                    if (frameSimulatiry == 0) {
+                        break;
+                    }
+                } 
+            }
+            if (frameSimulatiry != 0) {
+                fileBuffer.push_back(0);
+                for (size_t j = 0; j < frameSize; ++j)
+                {
+                    fileBuffer.push_back(frames[i].color[j]);
+                }
+            }
+            else {
+                fileBuffer.push_back(1);
             }
         }
         std::ofstream file;
