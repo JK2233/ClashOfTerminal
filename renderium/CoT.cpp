@@ -1,4 +1,6 @@
-﻿#pragma execution_character_set("utf-8")
+﻿#include <cstdint>
+#include <cstdio>
+#pragma execution_character_set("utf-8")
 #include <iostream>
 #include <vector>
 #include <string>
@@ -18,11 +20,11 @@
 #include "render.h"
 
 
-enum UnitTypes {
-    e_Infantry,
+enum UnitTypes : uint8_t{
+    e_Infantry = 0,
     e_Tank,
     e_Artillery,
-    e_Farm
+    e_Farm //Remember child, thou shall not moveth thine e_Farms in mine Uniteth.
 };
 
 enum TileTypes {
@@ -45,8 +47,10 @@ struct Tile {
 };
 
 std::vector<Tile> MAP;
+std::vector<Unit> UNITS;
 
-int id = 0;
+int CURSOR = 0;
+UnitTypes SELECTED_UNIT = e_Artillery;
 
 void GenerateMap() {
     std::ifstream mapadiasz;
@@ -100,15 +104,15 @@ void GenerateMap() {
     }
     mapadiasz.close();
 }
-
-void updateMap(int id) { //this function is for debuging until map render will be ready
+#ifdef TRUEDEBUG
+void updateMap(int CURSOR) { //this function is for debuging until map render will be ready
     std::string mapBuffer = "";
     for (int i = 0; i < MAP.size(); i++) {
         if (i % 29 == 0) {
             mapBuffer += "\n";
         }
         if (MAP[i].tileType == e_Plains) {
-            if (MAP[i].tileID == id) {
+            if (MAP[i].tileID == CURSOR) {
                 mapBuffer += " Y";
             }
             else {
@@ -116,7 +120,7 @@ void updateMap(int id) { //this function is for debuging until map render will b
             }
         }
         else if (MAP[i].tileType == e_Water) {
-            if (MAP[i].tileID == id) {
+            if (MAP[i].tileID == CURSOR) {
                 mapBuffer += " Y";
             }
             else {
@@ -124,7 +128,7 @@ void updateMap(int id) { //this function is for debuging until map render will b
             }
         }
         else if (MAP[i].tileType == e_Base) {
-            if (MAP[i].tileID == id) {
+            if (MAP[i].tileID == CURSOR) {
                 mapBuffer += " Y";
             }
             else {
@@ -132,7 +136,7 @@ void updateMap(int id) { //this function is for debuging until map render will b
             }
         }
         else if (MAP[i].tileType == e_MainBase) {
-            if (MAP[i].tileID == id) {
+            if (MAP[i].tileID == CURSOR) {
                 mapBuffer += " Y";
             }
             else {
@@ -140,7 +144,7 @@ void updateMap(int id) { //this function is for debuging until map render will b
             }
         }
         else if (MAP[i].tileType == e_Bridge) {
-            if (MAP[i].tileID == id) {
+            if (MAP[i].tileID == CURSOR) {
                 mapBuffer += " Y";
             }
             else {
@@ -154,6 +158,26 @@ void updateMap(int id) { //this function is for debuging until map render will b
     render::Log(mapBuffer);
     render::Log("\n");
 }
+#endif
+
+void spawnUnit(int place, UnitTypes unit){
+    Unit u = {1, (int)UNITS.size(), place, unit};
+    UNITS.push_back(u);
+}
+char32_t detectUnitType(UnitTypes unit){
+    switch (unit) {
+        case e_Artillery:
+            return U'A';
+        case e_Infantry:
+            return U'I';
+        case e_Farm:
+            return U'F';
+        case e_Tank:
+            return U'T';
+        default:
+            return U'"';
+    }
+}
 
 void playerTurn(uint8_t playerNum) {
     /*
@@ -165,38 +189,62 @@ void playerTurn(uint8_t playerNum) {
 
     
     int komenda = rawInput::readKey();
-    if (komenda == 1000) { //move arrow up
-        if (id > 29) {
-            id -= 29;
-            render::Log("id: " + std::to_string(id));
+    if (komenda == 1000 || komenda == 'w') { //move arrow up
+        if (CURSOR >= 29) {
+            CURSOR -= 29;
+            render::Log("CURSOR: " + std::to_string(CURSOR));
             render::Log("\n");
-            updateMap(id);
         }
     }
-    else if (komenda == 1001) {
-        if (id < (MAP.size() - 1) - 29) { //move arrow down
-            id += 29;
-            render::Log("id: " + std::to_string(id));
+    else if (komenda == 1001 || komenda == 's') {
+        if (CURSOR <= (MAP.size() - 1) - 29) { //move arrow down
+            CURSOR += 29;
+            render::Log("CURSOR: " + std::to_string(CURSOR));
             render::Log("\n");
-            updateMap(id);
         }
     }
-    else if (komenda == 1002) { //move arrow right
-        if (id != MAP.size() - 1) {
-            id++;
-            render::Log("id: " + std::to_string(id));
+    else if (komenda == 1002 || komenda == 'd') { //move arrow right
+        if (CURSOR != MAP.size() - 1) {
+            CURSOR++;
+            render::Log("CURSOR: " + std::to_string(CURSOR));
             render::Log("\n");
-            updateMap(id);
         }
     }
-    else if (komenda == 1003) { //move arrow left
-        if (id != 0) {
-            id--;
-            render::Log("id: " + std::to_string(id));
+    else if (komenda == 1003 || komenda == 'a') { //move arrow left
+        if (CURSOR != 0) {
+            CURSOR--;
+            render::Log("CURSOR: " + std::to_string(CURSOR));
             render::Log("\n");
-            updateMap(id);
         }
     }
+    else if(komenda == 'u'){
+        // switch (SELECTED_UNIT) {
+        // case e_Artillery:
+        //     SELECTED_UNIT = e_Infantry;
+        //     break;
+        // case e_Infantry:
+        //     SELECTED_UNIT = e_Farm;
+        //     break;
+        // case e_Farm:
+        //     SELECTED_UNIT = e_Tank;
+        //     break;
+        // case e_Tank:
+        //     SELECTED_UNIT = e_Artillery;
+        //     break;
+        // default:
+        //     SELECTED_UNIT = e_Infantry;
+        //     break;
+        SELECTED_UNIT = (UnitTypes)((uint8_t)SELECTED_UNIT + (uint8_t)1);
+        if (SELECTED_UNIT > e_Farm) {
+            SELECTED_UNIT = e_Infantry;
+        }
+    }
+    else if (komenda == 'r'){
+        spawnUnit(CURSOR, SELECTED_UNIT);
+    }
+    #ifdef TRUEDEBUG
+    updateMap(CURSOR);
+    #endif
 }
 
 
@@ -213,8 +261,7 @@ int main()
     // bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
     //render::VideoStreamMenager bootVideo2 = render::VideoStreamMenager("./badExport/apple.dzadzV", 6549, render::VideoStreamMenager::e_DzadzV);
     //render::VideoStreems.push_back(bootVideo2);
-
-
+    
     static bool gameRunning = true;
     while (gameRunning) {
         {
@@ -226,10 +273,11 @@ int main()
                 std::u32string mapBuffer = U"mapBuffer";
 
                 for (int i = 0; i < MAP.size(); i++) {
+                    
                     if (i % 29 == 0) {
                         currentLine++;
                         render::AddLabel(mapBuffer, currentLine, 0, 255);
-                        mapBuffer = U"";
+                        mapBuffer = U" ";
                     }
                     if (MAP[i].tileType == e_Plains) {
                         mapBuffer += U" -";
@@ -246,12 +294,16 @@ int main()
                     else if (MAP[i].tileType == e_Bridge) {
                         mapBuffer += U" |";
                     }
-                    else {
-                        mapBuffer += U" ";
-                    }
                 }
                 currentLine++;
                 render::AddLabel(mapBuffer, currentLine, 0, 255);
+
+                for(int i = 0; i < UNITS.size(); i++){
+                    render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 100, 16);
+                }
+
+                render::AddPoint(U'▉', CURSOR/29 + 2, CURSOR%29*2 + 2, 100, 16);
+                render::AddPoint(detectUnitType(SELECTED_UNIT), 16, 31*2,  100,  16);
 
             }
 
