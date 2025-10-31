@@ -12,7 +12,7 @@
 #include <fstream>
 
 namespace render {
-    std::ofstream logFile("log_renderium.txt", std::ios::out);
+    std::ofstream logFile("log_renderium.log", std::ios::out);
 
     std::string codeToUTF8(char32_t code)
     {
