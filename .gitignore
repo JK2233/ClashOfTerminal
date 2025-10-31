@@ -1,14 +1,20 @@
-renderium/x64/Debug/renderium.log
+# Build outputs and binaries
+**/x64/Debug/
+**/x64/Release/
+*.exe
+*.pdb
 *.tlog
-x64/Debug/renderium.exe
-x64/Debug/renderium.pdb
-/renderium/x64
-renderium/badExport/apple.dzadzV
-/.vs
-/x64/Debug
-/.vs
 *.vsidx
-/.vs/renderium/v17
+*.out
+
+# Visual Studio files
+.vs/
+*.vsidx
+
+# Log files
+*.log
 renderium/log_renderium.txt
+
+# Specific problematic directories
+renderium/badExport/
 renderium/"bad apple"/*.bmp
-renderium/*.out
