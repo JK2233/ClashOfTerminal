@@ -1,188 +1,535 @@
-[1761919929] initializing the render namespace
-[1761919929] EEEEEEEEEEEEEEEEEEEEEEEE
-[1761919929] 870
-[1761919929] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919933] CURSOR: 1
-[1761919933] 
+[1761924723] initializing the render namespace
+[1761924723] EEEEEEEEEEEEEEEEEEEEEEEE
+[1761924723] 870
+[1761924723] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924725] CURSOR: 1
+[1761924725] 
 
-[1761919933] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919933] CURSOR: 2
-[1761919933] 
+[1761924725] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924725] CURSOR: 2
+[1761924725] 
 
-[1761919933] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919934] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919934] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919934] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919934] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919935] CURSOR: 31
-[1761919935] 
+[1761924725] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 3
+[1761924726] 
 
-[1761919935] CURSOR: 2
-[1761919935] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 4
+[1761924726] 
 
-[1761919935] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919935] CURSOR: 31
-[1761919935] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 5
+[1761924726] 
 
-[1761919935] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919935] CURSOR: 60
-[1761919935] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 6
+[1761924726] 
 
-[1761919935] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919935] CURSOR: 89
-[1761919935] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 7
+[1761924726] 
 
-[1761919935] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919935] CURSOR: 118
-[1761919935] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 8
+[1761924726] 
 
-[1761919935] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919936] CURSOR: 119
-[1761919936] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 9
+[1761924726] 
 
-[1761919936] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919936] CURSOR: 120
-[1761919936] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 10
+[1761924726] 
 
-[1761919936] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919936] CURSOR: 121
-[1761919936] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 11
+[1761924726] 
 
-[1761919936] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919936] CURSOR: 122
-[1761919936] 
+[1761924726] CURSOR: 12
+[1761924726] 
 
-[1761919936] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919936] CURSOR: 123
-[1761919936] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 13
+[1761924726] 
 
-[1761919936] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919939] CURSOR: 124
-[1761919939] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 14
+[1761924726] 
 
-[1761919939] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919940] CURSOR: 125
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 15
+[1761924726] 
 
-[1761919940] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919940] CURSOR: 126
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 16
+[1761924726] 
 
-[1761919940] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919940] CURSOR: 127
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 17
+[1761924726] 
 
-[1761919940] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919940] CURSOR: 156
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 18
+[1761924726] 
 
-[1761919940] CURSOR: 157
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 19
+[1761924726] 
 
-[1761919940] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919940] CURSOR: 186
-[1761919940] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924726] CURSOR: 48
+[1761924726] 
 
-[1761919940] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 215
-[1761919941] 
+[1761924726] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 77
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 216
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 106
+[1761924727] 
 
-[1761919941] CURSOR: 245
-[1761919941] 
+[1761924727] CURSOR: 135
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 246
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 164
+[1761924727] 
 
-[1761919941] CURSOR: 275
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 193
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 304
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 222
+[1761924727] 
 
-[1761919941] CURSOR: 305
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 251
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 334
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 280
+[1761924727] 
 
-[1761919941] CURSOR: 335
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 309
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919941] CURSOR: 336
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 338
+[1761924727] 
 
-[1761919941] CURSOR: 365
-[1761919941] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 367
+[1761924727] 
 
-[1761919941] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919942] CURSOR: 366
-[1761919942] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 396
+[1761924727] 
 
-[1761919942] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919942] CURSOR: 367
-[1761919942] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924727] CURSOR: 425
+[1761924727] 
 
-[1761919942] CURSOR: 396
-[1761919942] 
+[1761924727] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924728] CURSOR: 396
+[1761924728] 
 
-[1761919942] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919942] CURSOR: 425
-[1761919942] 
+[1761924728] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924728] CURSOR: 367
+[1761924728] 
 
-[1761919942] CURSOR: 426
-[1761919942] 
+[1761924728] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924729] CURSOR: 338
+[1761924729] 
 
-[1761919942] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919942] CURSOR: 455
-[1761919942] 
+[1761924729] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924729] CURSOR: 309
+[1761924729] 
 
-[1761919942] CURSOR: 456
-[1761919942] 
+[1761924729] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924729] CURSOR: 308
+[1761924729] 
 
-[1761919942] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919942] CURSOR: 485
-[1761919942] 
+[1761924729] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924730] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924730] CURSOR: 307
+[1761924730] 
 
-[1761919942] CURSOR: 486
-[1761919942] 
+[1761924730] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924730] CURSOR: 306
+[1761924730] 
 
-[1761919942] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919943] CURSOR: 487
-[1761919943] 
+[1761924730] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924731] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924732] CURSOR: 307
+[1761924732] 
 
-[1761919943] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919943] CURSOR: 516
-[1761919943] 
+[1761924732] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924732] CURSOR: 306
+[1761924732] 
 
-[1761919943] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919943] CURSOR: 545
-[1761919943] 
+[1761924732] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924734] UNIT MOVED TO: 307
+[1761924734] 
 
-[1761919943] CURSOR: 546
-[1761919943] 
+[1761924734] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924734] CURSOR: 306
+[1761924734] 
 
-[1761919943] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919947] CURSOR: 545
-[1761919947] 
+[1761924734] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924735] CURSOR: 307
+[1761924735] 
 
-[1761919947] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919947] CURSOR: 544
-[1761919947] 
+[1761924735] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924736] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924738] CURSOR: 278
+[1761924738] 
 
-[1761919947] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919947] CURSOR: 543
-[1761919947] 
+[1761924738] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924739] CURSOR: 307
+[1761924739] 
 
-[1761919947] Render thread recived data from main thread, starting data transfer to internal buffers
-[1761919947] CURSOR: 542
-[1761919947] 
+[1761924739] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924739] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924740] CURSOR: 278
+[1761924740] 
 
-[1761919947] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924740] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924740] CURSOR: 307
+[1761924740] 
+
+[1761924741] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924741] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924741] CURSOR: 278
+[1761924741] 
+
+[1761924741] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924742] CURSOR: 307
+[1761924742] 
+
+[1761924742] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924742] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924742] CURSOR: 278
+[1761924742] 
+
+[1761924742] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924756] CURSOR: 277
+[1761924756] 
+
+[1761924756] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924756] CURSOR: 276
+[1761924756] 
+
+[1761924756] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924757] CURSOR: 277
+[1761924757] 
+
+[1761924757] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924757] CURSOR: 278
+[1761924757] 
+
+[1761924757] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924757] CURSOR: 279
+[1761924757] 
+
+[1761924757] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924757] CURSOR: 280
+[1761924757] 
+
+[1761924757] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924758] CURSOR: 281
+[1761924758] 
+
+[1761924758] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924758] CURSOR: 282
+[1761924758] 
+
+[1761924758] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924758] CURSOR: 283
+[1761924758] 
+
+[1761924758] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924758] CURSOR: 284
+[1761924758] 
+
+[1761924758] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924762] CURSOR: 283
+[1761924762] 
+
+[1761924762] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 282
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 281
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 280
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 279
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 278
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924763] CURSOR: 277
+[1761924763] 
+
+[1761924763] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924764] CURSOR: 276
+[1761924764] 
+
+[1761924764] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924764] CURSOR: 275
+[1761924764] 
+
+[1761924764] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924766] CURSOR: 246
+[1761924766] 
+
+[1761924766] CURSOR: 275
+[1761924766] 
+
+[1761924766] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924766] CURSOR: 304
+[1761924766] 
+
+[1761924766] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924766] CURSOR: 305
+[1761924766] 
+
+[1761924766] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924767] CURSOR: 306
+[1761924767] 
+
+[1761924767] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924767] CURSOR: 307
+[1761924767] 
+
+[1761924767] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924767] CURSOR: 306
+[1761924767] 
+
+[1761924767] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924767] CURSOR: 305
+[1761924767] 
+
+[1761924767] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924767] CURSOR: 306
+[1761924767] 
+
+[1761924768] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924768] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924768] CURSOR: 305
+[1761924768] 
+
+[1761924768] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924769] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924770] CURSOR: 306
+[1761924770] 
+
+[1761924770] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924771] CURSOR: 307
+[1761924771] 
+
+[1761924771] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924771] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924771] CURSOR: 306
+[1761924771] 
+
+[1761924771] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924772] CURSOR: 305
+[1761924772] 
+
+[1761924772] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924772] CURSOR: 306
+[1761924772] 
+
+[1761924772] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924773] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924773] CURSOR: 307
+[1761924773] 
+
+[1761924773] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924774] UNIT MOVED TO: 306
+[1761924774] 
+
+[1761924774] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924774] CURSOR: 305
+[1761924774] 
+
+[1761924774] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924775] UNIT MOVED TO: 306
+[1761924775] 
+
+[1761924775] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924775] CURSOR: 335
+[1761924775] 
+
+[1761924776] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924780] CURSOR: 306
+[1761924780] 
+
+[1761924780] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924781] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924782] UNIT MOVED TO: 277
+[1761924782] 
+
+[1761924782] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924782] CURSOR: 278
+[1761924782] 
+
+[1761924782] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924783] CURSOR: 307
+[1761924783] 
+
+[1761924783] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924783] CURSOR: 306
+[1761924783] 
+
+[1761924783] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924783] UNIT MOVED TO: 305
+[1761924783] 
+
+[1761924783] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924784] CURSOR: 334
+[1761924784] 
+
+[1761924784] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924815] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924816] CURSOR: 305
+[1761924816] 
+
+[1761924816] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924818] UNIT MOVED TO: 276
+[1761924818] 
+
+[1761924818] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924818] CURSOR: 277
+[1761924818] 
+
+[1761924818] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924819] UNIT MOVED TO: 248
+[1761924819] 
+
+[1761924819] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924820] CURSOR: 247
+[1761924820] 
+
+[1761924820] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924820] CURSOR: 246
+[1761924820] 
+
+[1761924820] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924820] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924820] CURSOR: 245
+[1761924820] 
+
+[1761924820] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924820] CURSOR: 244
+[1761924820] 
+
+[1761924820] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924821] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924821] CURSOR: 273
+[1761924821] 
+
+[1761924821] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] CURSOR: 302
+[1761924822] 
+
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] CURSOR: 331
+[1761924822] 
+
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924822] CURSOR: 360
+[1761924822] 
+
+[1761924822] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924823] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924823] CURSOR: 359
+[1761924823] 
+
+[1761924823] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924825] CURSOR: 360
+[1761924825] 
+
+[1761924825] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924825] UNIT MOVED TO: 361
+[1761924825] 
+
+[1761924825] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924825] CURSOR: 390
+[1761924825] 
+
+[1761924825] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924826] CURSOR: 361
+[1761924826] 
+
+[1761924826] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924826] CURSOR: 332
+[1761924826] 
+
+[1761924826] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924826] CURSOR: 361
+[1761924826] 
+
+[1761924826] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924827] CURSOR: 332
+[1761924827] 
+
+[1761924827] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924827] CURSOR: 331
+[1761924827] 
+
+[1761924827] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924827] UNIT MOVED TO: 330
+[1761924827] 
+
+[1761924827] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924828] CURSOR: 301
+[1761924828] 
+
+[1761924828] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924828] CURSOR: 302
+[1761924828] 
+
+[1761924828] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924828] UNIT MOVED TO: 303
+[1761924828] 
+
+[1761924828] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924829] CURSOR: 274
+[1761924829] 
+
+[1761924829] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924829] CURSOR: 273
+[1761924829] 
+
+[1761924829] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924829] UNIT MOVED TO: 272
+[1761924829] 
+
+[1761924829] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924830] CURSOR: 243
+[1761924830] 
+
+[1761924830] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924830] CURSOR: 244
+[1761924830] 
+
+[1761924830] Render thread recived data from main thread, starting data transfer to internal buffers
+[1761924830] UNIT MOVED TO: 245
+[1761924830] 
+
+[1761924830] Render thread recived data from main thread, starting data transfer to internal buffers

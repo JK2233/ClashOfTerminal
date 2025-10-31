@@ -1,4 +1,6 @@
-﻿#pragma execution_character_set("utf-8")
+﻿#ifndef RENDER_UTF8_AND_LOGGING
+#define RENDER_UTF8_AND_LOGGING
+#pragma execution_character_set("utf-8")
 
 #include <cstddef>
 #include <cstdint>
@@ -128,3 +130,4 @@ namespace render {
         }
     }
 }
+#endif
