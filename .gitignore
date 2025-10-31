@@ -11,3 +11,4 @@ renderium/badExport/apple.dzadzV
 /.vs/renderium/v17
 renderium/log_renderium.txt
 renderium/"bad apple"/*.bmp
+renderium/*.out
