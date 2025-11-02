@@ -76,7 +76,12 @@ int main()
                 render::AddLabel(mapBuffer, currentLine, 0, 255);
 
                 for(int i = 0; i < UNITS.size(); i++){
-                    render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 100, 16);
+                    if(UNITS[i].player == 1){
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 100, 16);
+                    }
+                    else {
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 150, 16);
+                    }
                 }
 
                 render::AddCursor(U'▉', CURSOR/29 + 2, CURSOR%29*2 + 2, 100, 16);
