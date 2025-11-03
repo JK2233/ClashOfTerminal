@@ -11,7 +11,7 @@
 
 #include "render_UTF_and_Loging_utils.cpp"
 
-enum UnitTypes : uint8_t{
+enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT ICON, HP AND DMG ASSIGNING | assignDamage
     e_Infantry = 0,
     e_Tank,
     e_Artillery,
@@ -33,6 +33,9 @@ struct Unit {
 
     uint16_t unitID; //Mabye to remove? whats the point of this
     uint16_t tileID;
+
+    uint8_t health;
+    uint8_t damage;
 };
 
 struct Tile {
@@ -171,10 +174,7 @@ inline uint8_t setMoves(UnitTypes unit){
     }
 }
 
-void spawnUnit(uint16_t place, UnitTypes unit){
-    Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, };
-    UNITS.push_back(u);
-}
+
 char32_t detectUnitType(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
@@ -189,6 +189,42 @@ char32_t detectUnitType(UnitTypes unit){
             return U'"';
     }
 }
+uint8_t assignStrenght(UnitTypes unit){
+    switch (unit) {
+        case e_Artillery:
+            return 30;
+        case e_Infantry:
+            return 10;
+        case e_Farm:
+            return 0;
+        case e_Tank:
+            return 20;
+        default:
+            return 0;
+    }
+}
+
+uint8_t assingHealth(UnitTypes unit){
+        switch (unit) {
+        case e_Artillery:
+            return 10;
+        case e_Infantry:
+            return 30;
+        case e_Farm:
+            return 10;
+        case e_Tank:
+            return 50;
+        default:
+            return 0;
+    }
+}
+
+
+
+void spawnUnit(uint16_t place, UnitTypes unit){
+    Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit)};
+    UNITS.push_back(u);
+}
 
 void moveUnit(){
     for(uint16_t i = 0; i < UNITS.size(); i++){
@@ -202,9 +238,16 @@ void moveUnit(){
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
                             if(UNITS[j].tileID == UNITS[i].tileID - 29){
-                                if(UNITS[i].player != UNITS[j].player){
-                                    render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
-                                    unitIdToDelete = j;
+                                if(UNITS[i].player != UNITS[j].player){ 
+                                    if(UNITS[j].health <= UNITS[i].damage){
+                                        render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
+                                        unitIdToDelete = j;
+                                    }
+                                    else {
+                                        UNITS[j].health -= UNITS[i].damage;
+                                        render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
+                                        isMoving++;
+                                    }
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
@@ -228,8 +271,15 @@ void moveUnit(){
                         for(int j = 0; j < UNITS.size(); j++){
                             if(UNITS[j].tileID == UNITS[i].tileID + 29){
                                 if(UNITS[i].player != UNITS[j].player){
-                                    render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
-                                    unitIdToDelete = j;
+                                    if(UNITS[j].health <= UNITS[i].damage){
+                                        render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
+                                        unitIdToDelete = j;
+                                    }
+                                    else {
+                                        UNITS[j].health -= UNITS[i].damage;
+                                        render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
+                                        isMoving++;
+                                    }
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
@@ -253,8 +303,15 @@ void moveUnit(){
                         for(int j = 0; j < UNITS.size(); j++){
                             if(UNITS[j].tileID == UNITS[i].tileID + 1){
                                 if(UNITS[i].player != UNITS[j].player){
-                                    render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
-                                    unitIdToDelete = j;
+                                    if(UNITS[j].health <= UNITS[i].damage){
+                                        render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
+                                        unitIdToDelete = j;
+                                    }
+                                    else {
+                                        UNITS[j].health -= UNITS[i].damage;
+                                        render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
+                                        isMoving++;
+                                    }
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
@@ -278,8 +335,15 @@ void moveUnit(){
                         for(int j = 0; j < UNITS.size(); j++){
                             if(UNITS[j].tileID == UNITS[i].tileID - 1){
                                 if(UNITS[i].player != UNITS[j].player){
-                                    render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID) + " " + std::to_string(UNITS[i].player));
-                                    unitIdToDelete = j;
+                                    if(UNITS[j].health <= UNITS[i].damage){
+                                        render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
+                                        unitIdToDelete = j;
+                                    }
+                                    else {
+                                        UNITS[j].health -= UNITS[i].damage;
+                                        render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
+                                        isMoving++;
+                                    }
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
