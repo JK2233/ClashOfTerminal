@@ -40,10 +40,15 @@ int main()
     
     static bool gameRunning = true;
     currentPlayerTurn = 1;
+    //MONEY!
+    playersCash[0] = 100;
+    playersCash[1] = 100;
+    playersIncome[0] = 10;
+    playersIncome[1] = 10;
     while (gameRunning) {
         {
 
-            playerTurn(2); //<--- Uncomment this to test the movement of arrows on the map
+            playerTurn(currentPlayerTurn); //<--- Uncomment this to test the movement of arrows on the map
             render::StartNewFrame();
             {
                 int16_t currentLine = 0;

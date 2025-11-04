@@ -10,6 +10,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 namespace render {
     std::ofstream logFile("log_renderium.log", std::ios::out);

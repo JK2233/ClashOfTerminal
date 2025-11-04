@@ -2,6 +2,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <cstdio>
+#include <locale>
 #include <sys/types.h>
 #pragma execution_character_set("utf-8")
 #include <iostream>
@@ -11,7 +12,7 @@
 
 #include "render_UTF_and_Loging_utils.cpp"
 
-enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT ICON, HP AND DMG ASSIGNING | assignDamage
+enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT VALUE ASSIGNING | check ctrl + f -> STATS ASSIGNING
     e_Infantry = 0,
     e_Tank,
     e_Artillery,
@@ -27,15 +28,20 @@ enum TileTypes {
 };
 
 struct Unit {
+    //Unit general (moves left is here cause its how many moves does a unit have left so its not really a stat)
     uint8_t player;
     uint8_t movesLeft;
     enum UnitTypes unitType;
 
+    //Unit info
     uint16_t unitID; //Mabye to remove? whats the point of this
     uint16_t tileID;
 
+    //Unit stats
     uint8_t health;
     uint8_t damage;
+    uint8_t range;
+    uint8_t price; // i have realised that this is pointless uh, mabye to remove later?
 };
 
 struct Tile {
@@ -43,13 +49,23 @@ struct Tile {
     enum TileTypes tileType;
 };
 
+//Map/Units vector
 std::vector<Tile> MAP;
 std::vector<Unit> UNITS;
 
 int CURSOR = 0;
+
+
+//Player information
 uint8_t currentPlayerTurn;
+uint16_t playersCash[2];
+uint16_t playersIncome[2];
+
+//"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
 
+
+//Generating the base for the map (see mapa.diasz for the map)
 void GenerateMap() {
     std::ifstream mapadiasz;
     mapadiasz.open("mapa.diasz");
@@ -158,6 +174,8 @@ void updateMap(int CURSOR) { //this function is for debuging until map render wi
 }
 #endif
 
+//STATS (+ moves) ASSIGNING
+
 inline uint8_t setMoves(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
@@ -173,7 +191,6 @@ inline uint8_t setMoves(UnitTypes unit){
             return 0;
     }
 }
-
 
 char32_t detectUnitType(UnitTypes unit){
     switch (unit) {
@@ -219,37 +236,88 @@ uint8_t assingHealth(UnitTypes unit){
     }
 }
 
-
-
-void spawnUnit(uint16_t place, UnitTypes unit){
-    Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit)};
-    UNITS.push_back(u);
+uint8_t assignCost(UnitTypes unit){
+            switch (unit) {
+        case e_Artillery:
+            return 50;
+        case e_Infantry:
+            return 10;
+        case e_Farm:
+            return 10;
+        case e_Tank:
+            return 50;
+        default:
+            return 0;
+    }
 }
 
+uint8_t assingRange(UnitTypes unit){
+        switch (unit) {
+        case e_Artillery:
+            return 2;
+        case e_Infantry:
+            return 1;
+        case e_Farm:
+            return 0;
+        case e_Tank:
+            return 1;
+        default:
+            return 0;
+    }
+}
+
+//
+// end of stats assigning
+//
+
+// Unit spawning
+
+void spawnUnit(uint16_t place, UnitTypes unit){
+    if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
+        playersCash[currentPlayerTurn-1] -= assignCost(unit);
+        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit)};
+        UNITS.push_back(u);
+    }
+    else { //If the player doesnt have cash
+        render::Log("Player" + std::to_string(currentPlayerTurn) + " did not have enough money: " + std::to_string(playersCash[currentPlayerTurn-1]));
+    }
+}
+
+//debug function for infinite cash (technicaly speaking it could overflow, and it will 100% but i dont care its for debug only)
+
+void cashExploit(){
+    playersCash[0] = 65535;
+    playersCash[1] = 65535;
+    playersIncome[0] = 65535;
+    playersIncome[1] = 65535;
+}
+
+
+//The bad function
 void moveUnit(){
-    for(uint16_t i = 0; i < UNITS.size(); i++){
-        if(CURSOR == UNITS[i].tileID){
-            if(UNITS[i].movesLeft != 0){
-                uint16_t unitIdToDelete = 10000;
+    for(uint16_t i = 0; i < UNITS.size(); i++){ //checking if the cursor is on a tile with a unit
+        if(CURSOR == UNITS[i].tileID){ //up
+            if(UNITS[i].movesLeft != 0){ //if the unit has moves left
+                uint16_t unitIdToDelete = 10000; //placeholder
                 UNITS[i].movesLeft--;
                 char32_t komenda = rawInput::readKey();
                 if (komenda == 1000 || komenda == 'w') { //move arrow up
                     if (UNITS[i].tileID >= 29) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
-                            if(UNITS[j].tileID == UNITS[i].tileID - 29){
-                                if(UNITS[i].player != UNITS[j].player){ 
-                                    if(UNITS[j].health <= UNITS[i].damage){
+                            if(UNITS[j].tileID == UNITS[i].tileID - 29){ //is the tile occupied?
+                                if(UNITS[i].player != UNITS[j].player){ //is it an ally or not
+                                    if(UNITS[j].health <= UNITS[i].damage){  //enemy - can we kill it?
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
                                     }
                                     else {
-                                        UNITS[j].health -= UNITS[i].damage;
+                                        UNITS[j].health -= UNITS[i].damage; //enemy - it survives
                                         render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
                                         isMoving++;
                                     }
                                 }
-                                else { // ILLEGAL MOVE
+                                else { // ally - ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
                                     render::Log("Unit from" +  std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
                                     isMoving++;
@@ -257,7 +325,7 @@ void moveUnit(){
                                 break;
                             }
                         }
-                        if(isMoving == 0){
+                        if(isMoving == 0){ //if the isMoving variable didnt change, the unit is allowed to move
                             UNITS[i].tileID -= 29;
                             CURSOR -= 29;
                             render::Log("UNIT MOVED TO: " + std::to_string(UNITS[i].tileID));
@@ -265,7 +333,7 @@ void moveUnit(){
                         }
                     }
                 }
-                else if (komenda == 1001 || komenda == 's') {
+                else if (komenda == 1001 || komenda == 's') { //Same as everything above, but for moving down
                     if (UNITS[i].tileID <= (MAP.size() - 1) - 29) { //move arrow down
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
@@ -361,7 +429,7 @@ void moveUnit(){
                         }
                     }
                 }
-                if(unitIdToDelete != 10000){
+                if(unitIdToDelete != 10000){ //if the variable was changed, then an unit was killed, so we remove it
                     UNITS.erase(UNITS.begin() + unitIdToDelete);
                 }
             }
@@ -370,7 +438,83 @@ void moveUnit(){
         }
     }
 }
+
+//The 2nd bad function
+void unitShooting(){
+    for(uint16_t i = 0; i < UNITS.size(); i++){ //checking if the cursor is on a tile with a unit
+        if(CURSOR == UNITS[i].tileID){ //up
+            if(UNITS[i].movesLeft != 0){ //if the unit has moves left
+                if(UNITS[i].range == 0){
+                    return;
+                }
+                else if(UNITS[i].range == 1){
+                    moveUnit();
+                    return;
+                }
+                UNITS[i].movesLeft--;
+                for(uint8_t j = 0; j < UNITS[i].range; j++){
+                    char32_t komenda = rawInput::readKey();
+                    if (komenda == 1000 || komenda == 'w') { //move arrow up
+                        if (CURSOR >= 29) {
+                            CURSOR -= 29;
+                            render::Log("CURSOR: " + std::to_string(CURSOR));
+                            render::Log("\n");
+                        }
+                    }
+                    else if (komenda == 1001 || komenda == 's') {
+                        if (CURSOR <= (MAP.size() - 1) - 29) { //move arrow down
+                            CURSOR += 29;
+                            render::Log("CURSOR: " + std::to_string(CURSOR));
+                            render::Log("\n");
+                        }
+                    }
+                    else if (komenda == 1002 || komenda == 'd') { //move arrow right
+                        if (CURSOR != MAP.size() - 1) {
+                            CURSOR++;
+                            render::Log("CURSOR: " + std::to_string(CURSOR));
+                            render::Log("\n");
+                        }
+                    }
+                    else if (komenda == 1003 || komenda == 'a') { //move arrow left
+                        if (CURSOR != 0) {
+                            CURSOR--;
+                            render::Log("CURSOR: " + std::to_string(CURSOR));
+                            render::Log("\n");
+                        }
+                    }
+                    else{
+                        break;
+                    }
+                    render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 150, 16);
+
+                }
+                for(uint16_t j = 0; j < UNITS.size(); j++){
+                    if(CURSOR == UNITS[j].tileID && UNITS[j].player != UNITS[i].player){
+                        if(UNITS[j].health <= UNITS[i].damage){
+                            render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
+                            UNITS.erase(UNITS.begin() + j);
+                            return;
+                        }
+                        else {
+                            UNITS[j].health -= UNITS[i].damage;
+                            render::Log("The unit is left at: " + std::to_string(UNITS[j].health) + "hp");
+                            return;
+                        }
+                    }
+                }
+                UNITS[i].movesLeft++;
+                }
+                break;
+            }
+    }
+}
+
+
+
+
+//Cleanup(move reset + income + player change)
 void endTurn(){
+    playersCash[currentPlayerTurn-1] += playersIncome[currentPlayerTurn-1]; //the player can be 1 or 2
     if(currentPlayerTurn == 1){
         currentPlayerTurn++;
     }
@@ -381,7 +525,7 @@ void endTurn(){
         UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
     }
 }
-
+//reading inputs from the player
 void playerTurn(uint8_t playerNum) {
     /*
         1000 // arrow up
@@ -450,6 +594,12 @@ void playerTurn(uint8_t playerNum) {
     }
     else if(komenda == 'e'){
         endTurn();
+    }
+    else if(komenda == 'q'){
+        cashExploit();
+    }
+    else if(komenda == 'x'){
+        unitShooting();
     }
     #ifdef TRUEDEBUG
     updateMap(CURSOR);
