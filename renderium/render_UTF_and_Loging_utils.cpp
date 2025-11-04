@@ -1,4 +1,6 @@
-﻿#pragma execution_character_set("utf-8")
+﻿#ifndef RENDER_UTF8_AND_LOGGING
+#define RENDER_UTF8_AND_LOGGING
+#pragma execution_character_set("utf-8")
 
 #include <cstddef>
 #include <cstdint>
@@ -10,7 +12,7 @@
 #include <fstream>
 
 namespace render {
-    std::ofstream logFile("log_renderium.txt", std::ios::out);
+    std::ofstream logFile("log_renderium.log", std::ios::out);
 
     std::string codeToUTF8(char32_t code)
     {
@@ -261,3 +263,4 @@ namespace render {
         return ret;
     }
 }
+#endif
