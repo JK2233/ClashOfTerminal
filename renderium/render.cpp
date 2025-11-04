@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+﻿#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -169,13 +169,16 @@ namespace render
     std::atomic<bool> mainThreadFinnishedDataTransfer = false;
     std::mutex LockRenderThread;
 
+    //a vector with all the objects that are ment to be rendered this is ment to be used by bouth threads
     std::vector<ScreenObject> ObjectsToRender;
+    
+    //Bad apple version 2 and 3 (to come) :)
     std::vector<VideoStreamMenager> VideoStreems;
 
     std::vector<std::u32string> TextStreams;
     std::vector<std::u32string> InternalTextStreams;
 
-
+    //OOP <3, esentialy the same as vector<ScreenObject> ObjectsToRender but spaced out and used exlucivly by render thread
     ScreenObjectType* objectTypeBuffer;
     uint8_t* objectVarBuffer;
     uint16_t* objectresorceIDBuffer;
@@ -187,20 +190,29 @@ namespace render
     uint8_t* objectSizeXBuffer;
     uint8_t* objectSizeYBuffer;
 
+    //Screen Intermediate buffers
     char32_t* screenCharBuffer;
     uint8_t* screenBacColorBuffer;
     uint8_t* screenForColorBuffer;
 
+    //the string that will be displayed at the end
     std::string screenOutputBuffer;
 
+    //animation menagement
     std::int32_t AnimationFrameCount = 0;
     std::int64_t FrameCount = 0;
     std::int64_t PhysicsFrameCount = 0;
+
+    //cls menagement (mostrly unused as of now)
     std::int64_t FramesSinceCls = 0;
     bool RelyOnCLS = false;
+
+    //framemerate diagnostics
     time_t timeSincePreviousFPSCalculation;
     std::int64_t FramesSinceFPSCalculation;
     double FPS = 0.0;
+
+    //frame time menagement
 #ifdef _WIN32
     std::chrono::time_point<std::chrono::steady_clock> previousFrameTime = std::chrono::high_resolution_clock::now();
 #else

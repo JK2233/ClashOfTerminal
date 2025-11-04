@@ -1,4 +1,4 @@
-/*
+﻿/*
 Higher beings, this code is for you alone.
 */
 #include "inputium.cpp"

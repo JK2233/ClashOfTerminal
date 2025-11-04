@@ -127,4 +127,137 @@ namespace render {
             std::abort();
         }
     }
+
+    std::u32string toUString(uint64_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        while (number > 0) {
+            ret += (char32_t)((number%10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(int64_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(int32_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(uint32_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(int16_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(uint16_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(int8_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+    std::u32string toUString(uint8_t number) {
+        std::u32string ret;
+        if (number == 0)
+        {
+            ret = U"0";
+        }
+        if (number < 0)
+        {
+            number = 0 - number;
+        }
+        while (number > 0) {
+            ret += (char32_t)((number % 10) + '0');
+            number /= 10;
+        }
+        std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
 }
