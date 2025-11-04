@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <locale>
 #include <sys/types.h>
+#include <type_traits>
 #pragma execution_character_set("utf-8")
 #include <iostream>
 #include <vector>
@@ -47,6 +48,7 @@ struct Unit {
 struct Tile {
     int tileID;
     enum TileTypes tileType;
+    int8_t bridge = -1;
 };
 
 //Map/Units vector
@@ -109,6 +111,85 @@ void GenerateMap() {
             case '|':
                 t1.tileID = numID++;
                 t1.tileType = e_Bridge;
+                switch(numID) {
+
+                    //LEFT BRIDGE
+
+                    case 381:
+                        t1.bridge = 1;
+                        break;
+                    case 382:
+                        t1.bridge = 1;
+                        break;
+                    case 383:
+                        t1.bridge = 1;
+                        break;
+                    case 410:
+                        t1.bridge = 1;
+                        break;
+                    case 411:
+                        t1.bridge = 1;
+                        break;
+                    case 412:
+                        t1.bridge = 1;
+                        break;
+                    case 439:
+                        t1.bridge = 1;
+                        break;
+                    case 440:
+                        t1.bridge = 1;
+                        break;
+                    case 441:
+                        t1.bridge = 1;
+                        break;
+                    case 468:
+                        t1.bridge = 1;
+                        break;
+                    case 469:
+                        t1.bridge = 1;
+                        break;
+                    case 470:
+                        t1.bridge = 1;
+                        break;
+
+                        //RIGHT BRIDGE
+                    case 393:
+                        t1.bridge = 2;
+                        break;
+                    case 394:
+                        t1.bridge = 2;
+                        break;
+                    case 395:
+                        t1.bridge = 2;
+                        break;
+                    case 422:
+                        t1.bridge = 2;
+                        break;
+                    case 423:
+                        t1.bridge = 2;
+                        break;
+                    case 424:
+                        t1.bridge = 2;
+                        break;
+                    case 451:
+                        t1.bridge = 2;
+                        break;
+                    case 452:
+                        t1.bridge = 2;
+                        break;
+                    case 453:
+                        t1.bridge = 2;
+                        break;
+                    case 480:
+                        t1.bridge = 2;
+                        break;
+                    case 481:
+                        t1.bridge = 2;
+                        break;
+                    case 482:
+                        t1.bridge = 2;
+                        break;
+                }
                 MAP.push_back(t1);
                 break;
             default:
@@ -293,6 +374,12 @@ void cashExploit(){
 }
 
 
+bool isWaterTile(int tile) {
+    if(MAP[tile].tileType == e_Water) return true;
+
+    return false;
+}
+
 //The bad function
 void moveUnit(){
     for(uint16_t i = 0; i < UNITS.size(); i++){ //checking if the cursor is on a tile with a unit
@@ -302,6 +389,10 @@ void moveUnit(){
                 UNITS[i].movesLeft--;
                 char32_t komenda = rawInput::readKey();
                 if (komenda == 1000 || komenda == 'w') { //move arrow up
+                    if(isWaterTile(UNITS[i].tileID - 29)) {
+                        UNITS[i].movesLeft++;
+                        break;
+                    }
                     if (UNITS[i].tileID >= 29) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
@@ -334,6 +425,10 @@ void moveUnit(){
                     }
                 }
                 else if (komenda == 1001 || komenda == 's') { //Same as everything above, but for moving down
+                    if(isWaterTile(UNITS[i].tileID + 29)) { 
+                        UNITS[i].movesLeft++; 
+                        break; 
+                    }
                     if (UNITS[i].tileID <= (MAP.size() - 1) - 29) { //move arrow down
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
@@ -366,6 +461,10 @@ void moveUnit(){
                     }
                 }
                 else if (komenda == 1002 || komenda == 'd') { //move arrow right
+                    if(isWaterTile(UNITS[i].tileID + 1)) { 
+                        UNITS[i].movesLeft++; 
+                        break; 
+                    }
                     if (UNITS[i].tileID != MAP.size() - 1) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
@@ -398,6 +497,10 @@ void moveUnit(){
                     }
                 }
                 else if (komenda == 1003 || komenda == 'a') { //move arrow left
+                    if(isWaterTile(UNITS[i].tileID - 1)) { 
+                        UNITS[i].movesLeft++; 
+                        break;
+                    }
                     if (UNITS[i].tileID != 0) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for(int j = 0; j < UNITS.size(); j++){
@@ -510,7 +613,41 @@ void unitShooting(){
 }
 
 
-
+void BridgeCashCheckOut() {
+        uint8_t numOfP1UnitsOnBridge1 = 0;
+        uint8_t numOfP1UnitsOnBridge2 = 0;
+        uint8_t numOfP2UnitsOnBridge1 = 0;
+        uint8_t numOfP2UnitsOnBridge2 = 0;
+        for(uint16_t i = 0; i < UNITS.size(); i++) {
+            if(UNITS[i].player == currentPlayerTurn && MAP[UNITS[i].tileID].bridge > 0) {
+                if(MAP[UNITS[i].tileID].bridge == 1) {
+                    if(currentPlayerTurn == 1) {
+                        numOfP1UnitsOnBridge1++;
+                    } else {
+                        numOfP2UnitsOnBridge1++;
+                    }
+                } else {
+                   if(currentPlayerTurn == 1) {
+                        numOfP1UnitsOnBridge2++;
+                    } else {
+                        numOfP2UnitsOnBridge2++;
+                    }
+                }
+            }
+        }
+        if(numOfP1UnitsOnBridge1 > numOfP2UnitsOnBridge1) {
+            playersCash[0] += 10;
+        } else if(numOfP1UnitsOnBridge1 < numOfP2UnitsOnBridge1){
+            playersCash[1] += 10;
+        }
+        if(numOfP1UnitsOnBridge2 > numOfP2UnitsOnBridge2) { 
+            playersCash[0] += 15;
+        } else if(numOfP1UnitsOnBridge2 < numOfP2UnitsOnBridge2){
+            playersCash[1] += 15;
+        }
+        render::Log("kasa gracza 1: "+ std::to_string(playersCash[0]));
+        render::Log("kasa gracza 2: "+ std::to_string(playersCash[1]));
+}
 
 //Cleanup(move reset + income + player change)
 void endTurn(){
@@ -519,6 +656,7 @@ void endTurn(){
         currentPlayerTurn++;
     }
     else{
+        BridgeCashCheckOut();
         currentPlayerTurn--;
     }
     for(uint_fast16_t i = 0; i < UNITS.size(); i++){
@@ -605,4 +743,3 @@ void playerTurn(uint8_t playerNum) {
     updateMap(CURSOR);
     #endif
 }
-
