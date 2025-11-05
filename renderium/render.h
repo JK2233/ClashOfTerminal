@@ -10,7 +10,7 @@ Pieniadze - start 100 + 10/tura
 
 Jednostki specjalne
 Farmer - 10g - Buduje na swoim tile farme (Farma = +1/tura)
-Motoryzacja - 25g - Rusz się na jednostkę sojuszniczą (nie czołg) aby dać mov + 2, hp + 20, dmg + 5
+Motoryzacja - 25g - Rusz się na jednostkę sojuszniczą (nie czołg) aby dać mov + 2, hp + 20, dmg + 5 --- to be done
 
 Jedonski wojskowe
 Piechota - 10g 10hp 5dmg 1mov range 0
