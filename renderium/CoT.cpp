@@ -45,6 +45,28 @@ int main()
     playersCash[1] = 100;
     playersIncome[0] = 10;
     playersIncome[1] = 10;
+    /**/
+    {
+        std::vector<render::Texel> tmpTexture;
+        render::Texel tmpTexel;
+        tmpTexel.character = U'W';
+        tmpTexel.bacColor = 250;
+        tmpTexel.forColor = 100;
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+        tmpTexel.character = U'Z';
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+        tmpTexel.character = U'K';
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+        tmpTexture.push_back(tmpTexel);
+
+        render::AddTextureTemplate("test", 3, 3, 0, tmpTexture);
+    }
+    /**/
     while (gameRunning) {
         {
 
@@ -94,6 +116,9 @@ int main()
 
             }
 
+            /**/
+            render::AddTextureInstance(40, 40, "test");
+            /**/
             render::EndFrame();
 
             std::this_thread::sleep_for(std::chrono::microseconds(1)); // Sleep 16 ms

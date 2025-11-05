@@ -12,6 +12,8 @@
 #include <fstream>
 #include <algorithm>
 
+constexpr char32_t UTF32BOM = U'\U0000FEFF';
+
 namespace render {
     std::ofstream logFile("log_renderium.log", std::ios::out);
 
