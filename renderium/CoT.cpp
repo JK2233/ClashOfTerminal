@@ -62,7 +62,7 @@ int main()
             playerTurn(currentPlayerTurn);
             render::StartNewFrame();
             {
-                int16_t currentLine = 0;
+                int16_t currentLine = 1;
                 render::AddLabel(U"Tura gracza " + render::toUString(currentPlayerTurn), 0, 0, playersColors[currentPlayerTurn-1]);
 
                 for (int i = 0; i < MAP.size(); i++) {
@@ -71,19 +71,19 @@ int main()
                         currentLine++;
                     }
                     if (MAP[i].tileType == e_Plains) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_plains" + std::to_string(StableRandom() % 8));
+                        render::AddTextureInstance(currentLine, (i % 29) * 2 + 1, "map_plains" + std::to_string(StableRandom() % 8));
                     }
                     else if (MAP[i].tileType == e_Water) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_water");
+                        render::AddTextureInstance(currentLine, (i % 29) * 2 + 1, "map_water");
                     }
                     else if (MAP[i].tileType == e_Base) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_base");
+                        render::AddTextureInstance(currentLine, (i % 29) * 2 + 1, "map_base");
                     }
                     else if (MAP[i].tileType == e_MainBase) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_mainBase");
+                        render::AddTextureInstance(currentLine, (i % 29) * 2 + 1, "map_mainBase");
                     }
                     else if (MAP[i].tileType == e_Bridge) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_bridge");
+                        render::AddTextureInstance(currentLine, (i % 29) * 2 + 1, "map_bridge");
                     }
                 }
                 currentLine++;
@@ -104,10 +104,10 @@ int main()
                         unitExisting[1]++;
                     }
                     if(UNITS[i].player == 1){
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 1, UNITS[i].tileID%29*2, playersColors[0], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2 + 1, playersColors[0], 16);
                     }
                     else {
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 1, UNITS[i].tileID%29*2, playersColors[1], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2 + 1, playersColors[1], 16);
                     }
                 }
                 //Wyswietlanie akcji
@@ -160,7 +160,7 @@ int main()
                     else {
                     render::AddLabel(U"Może atakować?: " + render::toUString(lastShownUnits[0].movesLeft), 12, 60, playersColors[lastShownUnits[0].player-1]);  
                     }
-                    render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 1, lastShownUnits[0].tileID%29*2, 16, playersColors[0]);
+                    render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 2, lastShownUnits[0].tileID%29*2 + 1, 16, playersColors[0]);
                 }
                 //Staty jednostki na ktora najechal kursor - druzyna 2
                 if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0){
@@ -176,11 +176,11 @@ int main()
                     else {
                     render::AddLabel(U"Może atakować?: " + render::toUString(lastShownUnits[1].movesLeft), 24, 60, playersColors[lastShownUnits[1].player-1]);  
                     }
-                    render::AddPoint(detectUnitType(lastShownUnits[1].unitType), lastShownUnits[1].tileID/29 + 1, lastShownUnits[1].tileID%29*2, 16, playersColors[1]);
+                    render::AddPoint(detectUnitType(lastShownUnits[1].unitType), lastShownUnits[1].tileID/29 + 2, lastShownUnits[1].tileID%29*2+1, 16, playersColors[1]);
  
                 }
                 //Kursor
-                render::AddCursor(U'▓', CURSOR/29 + 1, CURSOR%29*2, 57, 16);
+                render::AddCursor(U'▓', CURSOR/29 + 2, CURSOR%29*2 + 1, 57, 16);
                 //
             }
 
