@@ -18,3 +18,4 @@ renderium/log_renderium.txt
 # Specific problematic directories
 renderium/badExport/
 renderium/"bad apple"/*.bmp
+.vs/renderium/v17/Browse.VC.db

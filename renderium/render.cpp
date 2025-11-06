@@ -25,7 +25,7 @@
 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #define SCREEN_SIZE_X 200
-#define SCREEN_SIZE_Y 60
+#define SCREEN_SIZE_Y 45
 
 #define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
 #define LOG_OBJECTS_RENDERED false
@@ -572,6 +572,7 @@ namespace render
 #ifdef _WIN32
             system("chcp 65001");
 #endif // Win32
+            std::cout << "\033?25l";
             screenCharBuffer = new char32_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenBacColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenForColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
