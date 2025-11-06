@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\git-repositories\\ClashOfTerminal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\CLASHOFTERMINAL\\RENDERIUM\\RENDER.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\RENDER.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\git-repositories\\ClashOfTerminal\\renderium\\CoT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:renderium\\CoT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\CLASHOFTERMINAL\\RENDERIUM\\TEXTURES.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\TEXTURES.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\CLASHOFTERMINAL\\RENDERIUM\\UNITMANAGEMENT.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\UNITMANAGEMENT.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\CLASHOFTERMINAL\\RENDERIUM\\RENDER.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\RENDER.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\GIT-REPOSITORIES\\CLASHOFTERMINAL\\RENDERIUM\\TEXTURES.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|solutionrelative:RENDERIUM\\TEXTURES.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D11473FF-183B-4316-BE72-B02F31D305F9}|renderium\\renderium.vcxproj|D:\\git-repositories\\ClashOfTerminal\\RENDERIUM\\RENDER_UTF_AND_LOGING_UTILS.CPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -41,17 +45,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CoT.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\CoT.cpp",
               "RelativeDocumentMoniker": "renderium\\CoT.cpp",
-              "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\CoT.cpp*",
-              "RelativeToolTip": "renderium\\CoT.cpp*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAGAAAAAAAAAA==",
+              "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\CoT.cpp",
+              "RelativeToolTip": "renderium\\CoT.cpp",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAiwLYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-28T18:10:55.149Z",
               "IsPinned": true,
@@ -59,13 +63,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "textures.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\textures.cpp",
               "RelativeDocumentMoniker": "renderium\\textures.cpp",
               "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\textures.cpp",
               "RelativeToolTip": "renderium\\textures.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAwD4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-06T20:12:36.455Z",
               "IsPinned": true,
@@ -73,13 +77,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "render.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render.cpp",
               "RelativeDocumentMoniker": "renderium\\render.cpp",
-              "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render.cpp",
-              "RelativeToolTip": "renderium\\render.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
+              "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render.cpp*",
+              "RelativeToolTip": "renderium\\render.cpp*",
+              "ViewState": "AgIAAHIBAAAAAAAAAAAAAHkBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-23T15:37:24.128Z",
               "IsPinned": true,
@@ -87,13 +91,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "render_UTF_and_Loging_utils.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render_UTF_and_Loging_utils.cpp",
               "RelativeDocumentMoniker": "renderium\\render_UTF_and_Loging_utils.cpp",
               "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render_UTF_and_Loging_utils.cpp",
               "RelativeToolTip": "renderium\\render_UTF_and_Loging_utils.cpp",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAAAGcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAANMAAAAAAAAAAADwv+AAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T15:38:32.021Z",
               "IsPinned": true,
@@ -101,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Video_and_Texture_menagers.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\Video_and_Texture_menagers.cpp",
               "RelativeDocumentMoniker": "renderium\\Video_and_Texture_menagers.cpp",
@@ -131,7 +135,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "unitManagement.cpp",
+              "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\unitManagement.cpp",
+              "RelativeDocumentMoniker": "renderium\\unitManagement.cpp",
+              "ToolTip": "D:\\git-repositories\\ClashOfTerminal\\renderium\\unitManagement.cpp",
+              "RelativeToolTip": "renderium\\unitManagement.cpp",
+              "ViewState": "AgIAAKIBAAAAAAAAAADgv64BAACWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-06T21:54:12.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "random",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "inputium.cpp",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\inputium.cpp",
               "RelativeDocumentMoniker": "renderium\\inputium.cpp",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "render.h",
               "DocumentMoniker": "D:\\git-repositories\\ClashOfTerminal\\renderium\\render.h",
               "RelativeDocumentMoniker": "renderium\\render.h",

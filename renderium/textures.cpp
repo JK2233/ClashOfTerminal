@@ -42,9 +42,51 @@ void LoadTextures() {
     }
     {
         render::Texel tmpTexel[] = {
-            { 22, 28, U'🮕' }, { 22, 28, U'🮕' }
+            { 22, 28, U'🬤' }, { 22, 28, U'🬤' }
         };
-        render::AddTextureTemplate<1, 2, 0>("map_plains", tmpTexel);
+        render::AddTextureTemplate<1, 2, 0>("map_plains0", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U'🮕' }, { 22, 28, U'▚' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains1", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U'▖' }, { 22, 28, U'🮕' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains2", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U'▚' }, { 22, 28, U'🮕' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains3", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U' ' }, { 22, 28, U'▖' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains4", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U'▚' }, { 22, 28, U' ' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains5", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U' ' }, { 22, 28, U'🮕' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains6", tmpTexel);
+    }
+    {
+        render::Texel tmpTexel[] = {
+            { 22, 28, U'■' }, { 22, 28, U' ' }
+        };
+        render::AddTextureTemplate<1, 2, 0>("map_plains7", tmpTexel);
     }
     {
         render::Texel tmpTexel[] = {
