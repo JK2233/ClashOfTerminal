@@ -1,4 +1,5 @@
-﻿#include <cstdint>
+﻿#include "render_UTF_and_Loging_utils.cpp"
+#include <cstdint>
 #include <cstdio>
 #pragma execution_character_set("utf-8")
 #include <iostream>
@@ -19,7 +20,6 @@
 
 #include "render.h"
 #include "unitManagement.cpp"
-
 
 
 
@@ -82,19 +82,37 @@ int main()
 
                 for(int i = 0; i < UNITS.size(); i++){
                     if(UNITS[i].player == 1){
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 100, 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[0], 16);
                     }
                     else {
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, 150, 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[1], 16);
                     }
                 }
+                //Wyswietlanie akcji
+                render::AddLabel(U"Dostępne akcje: m - move; x - shoot; e - end turn; r - respawn; u - switch unit;", currentLine + 3, 0, 255);
+                
+                //Wyswietlanie pieniedzy -> pieniadze 1; income 1; --- pieniadze 2; income 2;
+                render::AddLabel(U"Player 1 cash: " + render::toUString(playersCash[0]), 3, 60, playersColors[0]);
+                render::AddLabel(U"Player 1 income: " + render::toUString(playersIncome[0]), 4,60, playersColors[0]);
+                render::AddLabel(U"Player 2 cash: " + render::toUString(playersCash[1]), currentLine-1,60, playersColors[1]);
+                render::AddLabel(U"Player 2 income: " + render::toUString(playersIncome[1]), currentLine,60, playersColors[1]);
+                
+                //Obecnie wybrana jednostka do zrespienia
+                render::AddLabel(U"Obecnie wybrana jednostka: " + getUnitName(SELECTED_UNIT) + U"; znak-> " + detectUnitType(SELECTED_UNIT), 16, 31*2,  playersColors[currentPlayerTurn-1]);
+                
+                //Staty jednostki na ktora najezdza kursor
 
+                //Staty ostatniej jednostki na ktora najechal kursor
+
+                //Kursor
                 render::AddCursor(U'▉', CURSOR/29 + 2, CURSOR%29*2 + 2, 100, 16);
-                render::AddPoint(detectUnitType(SELECTED_UNIT), 16, 31*2,  100,  16);
-
+                //
             }
 
+
+
             render::EndFrame();
+
 
             std::this_thread::sleep_for(std::chrono::microseconds(1)); // Sleep 16 ms
         }

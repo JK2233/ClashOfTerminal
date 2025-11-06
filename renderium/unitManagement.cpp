@@ -13,6 +13,10 @@
 
 #include "render_UTF_and_Loging_utils.cpp"
 
+//                  //
+//      GLOBALS     //
+//                  //
+
 enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT VALUE ASSIGNING | check ctrl + f -> STATS ASSIGNING
     e_Infantry = 0,
     e_LightTank,
@@ -66,6 +70,7 @@ int CURSOR = 0;
 uint8_t currentPlayerTurn;
 uint16_t playersCash[2];
 uint16_t playersIncome[2];
+uint8_t playersColors[2] = {82, 228};
 
 //"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
@@ -307,6 +312,30 @@ char32_t detectUnitType(UnitTypes unit){
             return U'"';
     }
 }
+
+std::u32string getUnitName(UnitTypes unit){
+    switch (unit) {
+        case e_Artillery:
+            return U"Artillery";
+        case e_Infantry:
+            return U"Infantry";
+        case e_Farm:
+            return U"Farm";
+        case e_LightTank:
+            return U"LightTank";
+        case e_MedTank:
+            return U"MediumTank";
+        case e_HeavyTank:
+            return U"HeavyTank";
+        case e_ATArtilery:
+            return U"AntiTankArtillery";
+        case e_Marines:
+            return U"Marines";
+        default:
+            return U"'";
+    }
+}
+
 uint8_t assignStrenght(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
