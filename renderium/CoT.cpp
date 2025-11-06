@@ -46,6 +46,16 @@ int main()
     playersCash[1] = 100;
     playersIncome[0] = 20;
     playersIncome[1] = 20;
+    /**/
+    {
+        render::Texel tmpTexel[] = {
+            { 100, 200, U'A' }, { 100, 200, U'B' }, { 100, 200, U'C' },
+            { 100, 200, U'U' }, { 100, 200, U'U' }, { 100, 200, U'U' },
+            { 100, 200, U'U' }, { 100, 200, U'V' }, { 100, 200, U'U' }
+        };
+        render::AddTextureTemplate<3, 3, 0>("test", tmpTexel);
+    }
+    /**/
     while (gameRunning) {
         {
 
@@ -144,6 +154,9 @@ int main()
 
 
 
+            /**/
+            render::AddTextureInstance(40, 40, "test");
+            /**/
             render::EndFrame();
 
 

@@ -1,4 +1,4 @@
-﻿#pragma execution_character_set("utf-8")
+#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -237,6 +237,8 @@ public:
 
     uint16_t frameNO = 0;
 private:
+    bool isCompresed;
+
     struct Frame
     {
         int32_t sizeX;
@@ -247,8 +249,6 @@ private:
     FileFormat format;
 
     std::vector<Frame> frames;
-
-    bool isCompresed;
 };
 
 
