@@ -1,4 +1,5 @@
 ﻿#include "render_UTF_and_Loging_utils.cpp"
+#include <cstddef>
 #include <cstdint>
 #include <cstdio>
 #pragma execution_character_set("utf-8")
@@ -43,8 +44,8 @@ int main()
     //MONEY!
     playersCash[0] = 100;
     playersCash[1] = 100;
-    playersIncome[0] = 10;
-    playersIncome[1] = 10;
+    playersIncome[0] = 20;
+    playersIncome[1] = 20;
     while (gameRunning) {
         {
 
@@ -79,8 +80,22 @@ int main()
                 }
                 currentLine++;
                 render::AddLabel(mapBuffer, currentLine, 0, 255);
-
+                uint8_t unitExisting[2] = {0, 0};
                 for(int i = 0; i < UNITS.size(); i++){
+                    if(UNITS[i].tileID == CURSOR){
+                        lastShownUnits[UNITS[i].player-1] = UNITS[i];
+                        unitExisting[UNITS[i].player-1]++;
+                    }
+                    else if(lastShownUnits[0].tileID == UNITS[i].tileID)
+                    {
+                        lastShownUnits[0] = UNITS[i];
+                        unitExisting[0]++;
+                    }
+                    else if(lastShownUnits[1].tileID == UNITS[i].tileID)
+                    {
+                        lastShownUnits[1] = UNITS[i];
+                        unitExisting[1]++;
+                    }
                     if(UNITS[i].player == 1){
                         render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[0], 16);
                     }
@@ -100,10 +115,28 @@ int main()
                 //Obecnie wybrana jednostka do zrespienia
                 render::AddLabel(U"Obecnie wybrana jednostka: " + getUnitName(SELECTED_UNIT) + U"; znak-> " + detectUnitType(SELECTED_UNIT), 16, 31*2,  playersColors[currentPlayerTurn-1]);
                 
-                //Staty jednostki na ktora najezdza kursor
+                //Staty jednostki na ktora najezdza kursor - druzyna 1
+                if(lastShownUnits[0].health >= 0 && unitExisting[0] == 1){
+                    render::AddLabel(U"Statystyki jednostki: ", 6, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddLabel(U"Rodzaj jednostki: " + getUnitName(lastShownUnits[0].unitType), 7, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddLabel(U"Zdrowie: " + render::toUString(lastShownUnits[0].health), 8, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddLabel(U"Zadawane obrażenia: " + render::toUString(lastShownUnits[0].damage), 9, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddLabel(U"Pozostały ruch: " + render::toUString(lastShownUnits[0].movesLeft), 10, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddLabel(U"Zasięg: " + render::toUString(lastShownUnits[0].range), 11, 60, playersColors[lastShownUnits[0].player-1]);
+                    render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 2, lastShownUnits[0].tileID%29*2+2, 16, playersColors[0]);
 
-                //Staty ostatniej jednostki na ktora najechal kursor
-
+                }
+                //Staty jednostki na ktora najechal kursor - druzyna 2
+                if(lastShownUnits[1].health >= 0 && unitExisting[1] == 1){
+                    render::AddLabel(U"Statystyki jednostki: ", 18, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddLabel(U"Rodzaj jednostki: " + getUnitName(lastShownUnits[1].unitType), 19, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddLabel(U"Zdrowie: " + render::toUString(lastShownUnits[1].health), 20, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddLabel(U"Zadawane obrażenia: " + render::toUString(lastShownUnits[1].damage), 21, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddLabel(U"Pozostały ruch: " + render::toUString(lastShownUnits[1].movesLeft), 22, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddLabel(U"Zasięg: " + render::toUString(lastShownUnits[1].range), 23, 60, playersColors[lastShownUnits[1].player-1]);
+                    render::AddPoint(detectUnitType(lastShownUnits[1].unitType), lastShownUnits[1].tileID/29 + 2, lastShownUnits[1].tileID%29*2+2, 16, playersColors[1]);
+ 
+                }
                 //Kursor
                 render::AddCursor(U'▉', CURSOR/29 + 2, CURSOR%29*2 + 2, 100, 16);
                 //

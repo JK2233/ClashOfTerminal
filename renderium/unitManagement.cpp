@@ -51,6 +51,7 @@ struct Unit {
     uint8_t damage;
     uint8_t range;
     uint8_t price; // i have realised that this is pointless uh, mabye to remove later?
+    bool canAttack;
 };
 
 struct Tile {
@@ -74,6 +75,7 @@ uint8_t playersColors[2] = {82, 228};
 
 //"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
+Unit lastShownUnits[2];
 
 
 //Generating the base for the map (see mapa.diasz for the map)
@@ -339,7 +341,7 @@ std::u32string getUnitName(UnitTypes unit){
 uint8_t assignStrenght(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
-            return  0;
+            return  10;
         case e_Infantry:
             return 5;
         case e_Farm:
@@ -383,7 +385,7 @@ uint8_t assingHealth(UnitTypes unit){
 }
 
 uint8_t assignCost(UnitTypes unit){
-            switch (unit) {
+    switch (unit) {
         case e_Artillery:
             return 50;
         case e_Infantry:
@@ -425,9 +427,9 @@ uint8_t assingRange(UnitTypes unit){
 // Unit spawning
 
 void spawnUnit(uint16_t place, UnitTypes unit){
-    if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
+    if(playersCash[currentPlayerTurn-1] >= assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
-        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit)};
+        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit), true};
         UNITS.push_back(u);
     }
     else { //If the player doesnt have cash
@@ -689,6 +691,7 @@ void unitShooting(){
 }
 
 
+
 void BridgeCashCheckOut() {
         uint8_t numOfP1UnitsOnBridge1 = 0;
         uint8_t numOfP1UnitsOnBridge2 = 0;
@@ -737,6 +740,7 @@ void endTurn(){
     }
     for(uint_fast16_t i = 0; i < UNITS.size(); i++){
         UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
+        UNITS[i].canAttack = true;
     }
     render::Log("kasa gracza 1: "+ std::to_string(playersCash[0]));
     render::Log("kasa gracza 2: "+ std::to_string(playersCash[1]));
