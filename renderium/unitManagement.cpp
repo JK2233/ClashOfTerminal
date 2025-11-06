@@ -43,7 +43,7 @@ struct Unit {
     enum UnitTypes unitType;
 
     //Unit info
-    uint16_t unitID; //Mabye to remove? whats the point of this
+    uint16_t unitID; 
     uint16_t tileID;
 
     //Unit stats
@@ -322,7 +322,7 @@ std::u32string getUnitName(UnitTypes unit){
         case e_Infantry:
             return U"Infantry";
         case e_Farm:
-            return U"Farm";
+            return U"Farmer";
         case e_LightTank:
             return U"LightTank";
         case e_MedTank:
@@ -429,7 +429,7 @@ uint8_t assingRange(UnitTypes unit){
 void spawnUnit(uint16_t place, UnitTypes unit){
     if(playersCash[currentPlayerTurn-1] >= assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
-        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit), true};
+        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)(UNITS.size()+1), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit), true};
         UNITS.push_back(u);
     }
     else { //If the player doesnt have cash
@@ -452,6 +452,15 @@ bool isWaterTile(int tile) {
         return true;
     }
     return false;
+}
+void farmToFarmer(uint16_t tile){
+    for(uint16_t i = 0; i < UNITS.size(); i++){
+        if(UNITS[i].tileID == tile){
+            UNITS[i].unitID = 0;
+            playersIncome[UNITS[i].player-1]++;
+            break;
+        }
+    }
 }
 
 //The bad function
@@ -629,6 +638,9 @@ void moveUnit(){
                 break;
             }
             if (unitIdToDelete != 10000) { //if the variable was changed, then an unit was killed, so we remove it
+                if(UNITS[unitIdToDelete].unitID == 0){
+                    playersIncome[UNITS[unitIdToDelete].player - 1]--;
+                }
                 UNITS.erase(UNITS.begin() + unitIdToDelete);
             }
         }
@@ -719,15 +731,15 @@ void BridgeCashCheckOut() {
         uint8_t numOfP2UnitsOnBridge1 = 0;
         uint8_t numOfP2UnitsOnBridge2 = 0;
         for(uint16_t i = 0; i < UNITS.size(); i++) {
-            if(UNITS[i].player == currentPlayerTurn && MAP[UNITS[i].tileID].bridge > 0) {
+            if(MAP[UNITS[i].tileID].bridge > 0) {
                 if(MAP[UNITS[i].tileID].bridge == 1) {
-                    if(currentPlayerTurn == 1) {
+                    if(UNITS[i].player == 1) {
                         numOfP1UnitsOnBridge1++;
                     } else {
                         numOfP2UnitsOnBridge1++;
                     }
                 } else {
-                   if(currentPlayerTurn == 1) {
+                   if(UNITS[i].player == 1) {
                         numOfP1UnitsOnBridge2++;
                     } else {
                         numOfP2UnitsOnBridge2++;
@@ -760,8 +772,10 @@ void endTurn(){
         currentPlayerTurn--;
     }
     for(uint_fast16_t i = 0; i < UNITS.size(); i++){
-        UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
-        UNITS[i].canAttack = true;
+        if (UNITS[i].unitID != 0) {
+            UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
+            UNITS[i].canAttack = true;          
+        }
     }
     render::Log("kasa gracza 1: "+ std::to_string(playersCash[0]));
     render::Log("kasa gracza 2: "+ std::to_string(playersCash[1]));
@@ -847,6 +861,9 @@ void playerTurn(uint8_t playerNum) {
     }
     else if(komenda == 'x'){
         unitShooting();
+    }
+    else if(komenda == 'p'){
+        farmToFarmer(CURSOR);
     }
     #ifdef TRUEDEBUG
     updateMap(CURSOR);

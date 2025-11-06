@@ -103,15 +103,19 @@ int main()
                         lastShownUnits[1] = UNITS[i];
                         unitExisting[1]++;
                     }
+                    uint_fast8_t bgColor = 16;
+                    if(UNITS[i].unitID == 0){
+                        bgColor = 117;
+                    }
                     if(UNITS[i].player == 1){
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[0], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[0], bgColor);
                     }
                     else {
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[1], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[1], bgColor);
                     }
                 }
                 //Wyswietlanie akcji
-                render::AddLabel(U"Dostępne akcje: m - move; x - shoot; e - end turn; r - respawn; u - switch unit;", currentLine + 3, 0, 255);
+                render::AddLabel(U"Dostępne akcje: m - ruch jednostki; x - strzał (artyleri); e - zakończ ture; r - kup jednostkę; u/y - zmień jednostkę; p - zamień farmera na farme", currentLine + 3, 0, 255);
                 
                 //Wyswietlanie pieniedzy -> pieniadze 1; income 1; --- pieniadze 2; income 2;
                 render::AddLabel(U"Player 1 cash: " + render::toUString(playersCash[0]), 3, 60, playersColors[0]);
@@ -121,21 +125,22 @@ int main()
                 
                 //Obecnie wybrana jednostka do zrespienia
                 if(SELECTED_UNIT-1 < e_Infantry){
-                    render::AddLabel(U"Poprzednia jednostka (Y): " + getUnitName((UnitTypes)(e_Farm)) + U"; znak-> " + detectUnitType((UnitTypes)(e_Farm))+ U"; Koszt-> " + render::toUString(assignCost((UnitTypes)(SELECTED_UNIT-1))), 14, 31*2,  playersColors[currentPlayerTurn-1]);
+                    render::AddLabel(U"Poprzednia jednostka (Y): " + getUnitName((UnitTypes)(e_Farm)), 14, 31*2,  playersColors[currentPlayerTurn-1]);
                 }
                 else{
-                    render::AddLabel(U"Poprzednia jednostka (Y): " + getUnitName((UnitTypes)(SELECTED_UNIT-1)) + U"; znak-> " + detectUnitType((UnitTypes)(SELECTED_UNIT-1))+ U"; Koszt-> " + render::toUString(assignCost((UnitTypes)(SELECTED_UNIT-1))), 14, 31*2,  playersColors[currentPlayerTurn-1]);
+                    render::AddLabel(U"Poprzednia jednostka (Y): " + getUnitName((UnitTypes)(SELECTED_UNIT-1)), 14, 31*2,  playersColors[currentPlayerTurn-1]);
                 }
-                render::AddLabel(U"Obecnie wybrana jednostka: " + getUnitName(SELECTED_UNIT) + U"; znak-> " + detectUnitType(SELECTED_UNIT)+ U"; Koszt-> " + render::toUString(assignCost((UnitTypes)SELECTED_UNIT)), 15, 31*2,  playersColors[currentPlayerTurn-1]);
+                render::AddLabel(U"Obecnie wybrana jednostka: " + getUnitName((UnitTypes)SELECTED_UNIT), 15, 31*2,  playersColors[currentPlayerTurn-1]);
                 if(SELECTED_UNIT+1 > e_Farm){
-                    render::AddLabel(U"Kolejna jednostka (U): " + getUnitName((UnitTypes)(e_Infantry)) + U"; znak-> " + detectUnitType((UnitTypes)(e_Infantry))+ U"; Koszt-> " + render::toUString(assignCost((UnitTypes)(SELECTED_UNIT+1))), 16, 31*2,  playersColors[currentPlayerTurn-1]);
+                    render::AddLabel(U"Kolejna jednostka (U): " + getUnitName((UnitTypes)(e_Infantry)), 16, 31*2,  playersColors[currentPlayerTurn-1]);
                 }
                 else {
-                    render::AddLabel(U"Kolejna jednostka (U): " + getUnitName((UnitTypes)(SELECTED_UNIT+1)) + U"; znak-> " + detectUnitType((UnitTypes)(SELECTED_UNIT+1))+ U"; Koszt-> " + render::toUString(assignCost((UnitTypes)(SELECTED_UNIT+1))), 16, 31*2,  playersColors[currentPlayerTurn-1]);
+                    render::AddLabel(U"Kolejna jednostka (U): " + getUnitName((UnitTypes)(SELECTED_UNIT+1)), 16, 31*2,  playersColors[currentPlayerTurn-1]);
                 }
 
                 //Wyświetlanie wszystkich dostępnych jednostek (i na które cie stać)
                 render::AddLabel(U"Lista dostępnych jednostek", 11, 126, playersColors[currentPlayerTurn-1]);
+                render::AddLabel(U"-->", 12 + SELECTED_UNIT, 126, 231);
                 for(int i = 0; i <= e_Farm; i++){
                     //12
                     if(assignCost((UnitTypes)i) <= playersCash[currentPlayerTurn-1]){
@@ -147,7 +152,7 @@ int main()
                 }
 
                 //Staty jednostki na ktora najezdza kursor - druzyna 1
-                if(lastShownUnits[0].health >= 0 && unitExisting[0] != 0){
+                if(lastShownUnits[0].health >= 0 && unitExisting[0] != 0 && lastShownUnits[0].unitID != 0){
                     render::AddLabel(U"Statystyki jednostki: ", 6, 60, playersColors[lastShownUnits[0].player-1]);
                     render::AddLabel(U"Rodzaj jednostki: " + getUnitName(lastShownUnits[0].unitType), 7, 60, playersColors[lastShownUnits[0].player-1]);
                     render::AddLabel(U"Zdrowie: " + render::toUString(lastShownUnits[0].health), 8, 60, playersColors[lastShownUnits[0].player-1]);
@@ -163,7 +168,7 @@ int main()
                     render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 2, lastShownUnits[0].tileID%29*2+2, 16, playersColors[0]);
                 }
                 //Staty jednostki na ktora najechal kursor - druzyna 2
-                if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0){
+                if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0 && lastShownUnits[0].unitID != 0){
                     render::AddLabel(U"Statystyki jednostki: ", 18, 60, playersColors[lastShownUnits[1].player-1]);
                     render::AddLabel(U"Rodzaj jednostki: " + getUnitName(lastShownUnits[1].unitType), 19, 60, playersColors[lastShownUnits[1].player-1]);
                     render::AddLabel(U"Zdrowie: " + render::toUString(lastShownUnits[1].health), 20, 60, playersColors[lastShownUnits[1].player-1]);
