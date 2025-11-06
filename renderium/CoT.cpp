@@ -1,12 +1,12 @@
-﻿#include "render_UTF_and_Loging_utils.cpp"
+﻿#pragma execution_character_set("utf-8")
 #include <cstddef>
 #include <cstdint>
 #include <cstdio>
-#pragma execution_character_set("utf-8")
 #include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
+#include <random>
 
 #define COMPILE_WITH_TOOLS
 
@@ -14,12 +14,20 @@
 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #define SCREEN_SIZE_X 200
-#define SCREEN_SIZE_Y 60
+#define SCREEN_SIZE_Y 45
 
 #define SCREEN_PIXEL_COUNT SCREEN_SIZE_X*SCREEN_SIZE_Y
 #define LOG_OBJECTS_RENDERED false
 
+//produces alays the same squence unless you do something wrong, also don't do that cuz you will break it for all others
+std::mt19937 StableRandom{ 15454 };
+//std::random_device TrueRandom;
+//std::mt19937 Random{ TrueRandom };
+
+
+#include "render_UTF_and_Loging_utils.cpp"
 #include "render.h"
+#include "textures.cpp"
 #include "unitManagement.cpp"
 
 
@@ -30,14 +38,15 @@ int main()
     render::Log("initializing the render namespace");
     render::Initialize();
 
+    LoadTextures();
+
     GenerateMap();
 
-    render::Log("EEEEEEEEEEEEEEEEEEEEEEEE");
     render::Log(std::to_string((MAP.size())));
-    // render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
-    // bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
+    //render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
+    //bootVideo.exportAsDzadzV("./badExport/apple.dzadzV", true);
     //render::VideoStreamMenager bootVideo2 = render::VideoStreamMenager("./badExport/apple.dzadzV", 6549, render::VideoStreamMenager::e_DzadzV);
-    //render::VideoStreems.push_back(bootVideo2);
+    //render::VideoStreems.push_back(bootVideo);
     
     static bool gameRunning = true;
     currentPlayerTurn = 1;
@@ -46,50 +55,37 @@ int main()
     playersCash[1] = 100;
     playersIncome[0] = 20;
     playersIncome[1] = 20;
-    /**/
-    {
-        render::Texel tmpTexel[] = {
-            { 100, 200, U'A' }, { 100, 200, U'B' }, { 100, 200, U'C' },
-            { 100, 200, U'U' }, { 100, 200, U'U' }, { 100, 200, U'U' },
-            { 100, 200, U'U' }, { 100, 200, U'V' }, { 100, 200, U'U' }
-        };
-        render::AddTextureTemplate<3, 3, 0>("test", tmpTexel);
-    }
-    /**/
+
     while (gameRunning) {
         {
 
-            playerTurn(currentPlayerTurn); //<--- Uncomment this to test the movement of arrows on the map
+            playerTurn(currentPlayerTurn);
             render::StartNewFrame();
             {
                 int16_t currentLine = 0;
-                std::u32string mapBuffer = U"mapBuffer";
 
                 for (int i = 0; i < MAP.size(); i++) {
                     
                     if (i % 29 == 0) {
                         currentLine++;
-                        render::AddLabel(mapBuffer, currentLine, 0, 255);
-                        mapBuffer = U" ";
                     }
                     if (MAP[i].tileType == e_Plains) {
-                        mapBuffer += U" -";
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_plains");
                     }
                     else if (MAP[i].tileType == e_Water) {
-                        mapBuffer += U" ~";
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_water");
                     }
                     else if (MAP[i].tileType == e_Base) {
-                        mapBuffer += U" U";
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_base");
                     }
                     else if (MAP[i].tileType == e_MainBase) {
-                        mapBuffer += U" O";
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_mainBase");
                     }
                     else if (MAP[i].tileType == e_Bridge) {
-                        mapBuffer += U" |";
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_bridge");
                     }
                 }
                 currentLine++;
-                render::AddLabel(mapBuffer, currentLine, 0, 255);
                 uint8_t unitExisting[2] = {0, 0};
                 for(int i = 0; i < UNITS.size(); i++){
                     if(UNITS[i].tileID == CURSOR){
