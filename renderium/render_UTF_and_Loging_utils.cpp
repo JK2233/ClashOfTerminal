@@ -12,6 +12,10 @@
 #include <fstream>
 #include <algorithm>
 
+
+#ifndef TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING 
+#define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
+#endif
 constexpr char32_t UTF32BOM = U'\U0000FEFF';
 
 namespace render {

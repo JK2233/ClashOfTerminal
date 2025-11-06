@@ -13,6 +13,10 @@
 
 #include "render_UTF_and_Loging_utils.cpp"
 
+//                  //
+//      GLOBALS     //
+//                  //
+
 enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT VALUE ASSIGNING | check ctrl + f -> STATS ASSIGNING
     e_Infantry = 0,
     e_LightTank,
@@ -47,6 +51,7 @@ struct Unit {
     uint8_t damage;
     uint8_t range;
     uint8_t price; // i have realised that this is pointless uh, mabye to remove later?
+    bool canAttack;
 };
 
 struct Tile {
@@ -66,9 +71,11 @@ int CURSOR = 0;
 uint8_t currentPlayerTurn;
 uint16_t playersCash[2];
 uint16_t playersIncome[2];
+uint8_t playersColors[2] = {82, 228};
 
 //"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
+Unit lastShownUnits[2];
 
 
 //Generating the base for the map (see mapa.diasz for the map)
@@ -307,10 +314,34 @@ char32_t detectUnitType(UnitTypes unit){
             return U'"';
     }
 }
+
+std::u32string getUnitName(UnitTypes unit){
+    switch (unit) {
+        case e_Artillery:
+            return U"Artillery";
+        case e_Infantry:
+            return U"Infantry";
+        case e_Farm:
+            return U"Farm";
+        case e_LightTank:
+            return U"LightTank";
+        case e_MedTank:
+            return U"MediumTank";
+        case e_HeavyTank:
+            return U"HeavyTank";
+        case e_ATArtilery:
+            return U"AntiTankArtillery";
+        case e_Marines:
+            return U"Marines";
+        default:
+            return U"'";
+    }
+}
+
 uint8_t assignStrenght(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
-            return  0;
+            return  10;
         case e_Infantry:
             return 5;
         case e_Farm:
@@ -354,7 +385,7 @@ uint8_t assingHealth(UnitTypes unit){
 }
 
 uint8_t assignCost(UnitTypes unit){
-            switch (unit) {
+    switch (unit) {
         case e_Artillery:
             return 50;
         case e_Infantry:
@@ -396,9 +427,9 @@ uint8_t assingRange(UnitTypes unit){
 // Unit spawning
 
 void spawnUnit(uint16_t place, UnitTypes unit){
-    if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
+    if(playersCash[currentPlayerTurn-1] >= assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
-        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit)};
+        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit), true};
         UNITS.push_back(u);
     }
     else { //If the player doesnt have cash
@@ -681,6 +712,7 @@ void unitShooting(){
 }
 
 
+
 void BridgeCashCheckOut() {
         uint8_t numOfP1UnitsOnBridge1 = 0;
         uint8_t numOfP1UnitsOnBridge2 = 0;
@@ -729,6 +761,7 @@ void endTurn(){
     }
     for(uint_fast16_t i = 0; i < UNITS.size(); i++){
         UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
+        UNITS[i].canAttack = true;
     }
     render::Log("kasa gracza 1: "+ std::to_string(playersCash[0]));
     render::Log("kasa gracza 2: "+ std::to_string(playersCash[1]));
