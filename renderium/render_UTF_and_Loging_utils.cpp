@@ -1,4 +1,4 @@
-﻿#ifndef RENDER_UTF8_AND_LOGGING
+#ifndef RENDER_UTF8_AND_LOGGING
 #define RENDER_UTF8_AND_LOGGING
 #pragma execution_character_set("utf-8")
 
@@ -159,6 +159,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -176,6 +177,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -189,10 +191,6 @@ namespace render {
         if (number == 0)
         {
             ret = U"0";
-        }
-        if (number < 0)
-        {
-            number = 0 - number;
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -210,6 +208,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -223,10 +222,6 @@ namespace render {
         if (number == 0)
         {
             ret = U"0";
-        }
-        if (number < 0)
-        {
-            number = 0 - number;
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -244,6 +239,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -261,12 +257,22 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
             number /= 10;
         }
         std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+
+    std::u32string toUString(bool _boolion) {
+        std::u32string ret = U"false";
+        if (_boolion)
+        {
+            ret = U"true";
+        }
         return ret;
     }
 }

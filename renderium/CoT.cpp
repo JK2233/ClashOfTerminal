@@ -21,8 +21,8 @@
 
 //produces alays the same squence unless you do something wrong, also don't do that cuz you will break it for all others
 std::mt19937 StableRandom{ 15454 };
-//std::random_device TrueRandom;
-//std::mt19937 Random{ TrueRandom };
+std::random_device TrueRandom;
+std::mt19937 Random{ TrueRandom()};
 
 
 #include "render_UTF_and_Loging_utils.cpp"
@@ -58,7 +58,7 @@ int main()
 
     while (gameRunning) {
         {
-
+            StableRandom.seed(15454);
             playerTurn(currentPlayerTurn);
             render::StartNewFrame();
             {
@@ -71,7 +71,7 @@ int main()
                         currentLine++;
                     }
                     if (MAP[i].tileType == e_Plains) {
-                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_plains");
+                        render::AddTextureInstance(currentLine, (i % 29) * 2, "map_plains" + std::to_string(StableRandom() % 8));
                     }
                     else if (MAP[i].tileType == e_Water) {
                         render::AddTextureInstance(currentLine, (i % 29) * 2, "map_water");
@@ -104,10 +104,10 @@ int main()
                         unitExisting[1]++;
                     }
                     if(UNITS[i].player == 1){
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[0], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 1, UNITS[i].tileID%29*2, playersColors[0], 16);
                     }
                     else {
-                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 2, UNITS[i].tileID%29*2+2, playersColors[1], 16);
+                        render::AddPoint(detectUnitType(UNITS[i].unitType), UNITS[i].tileID/29 + 1, UNITS[i].tileID%29*2, playersColors[1], 16);
                     }
                 }
                 //Wyswietlanie akcji
@@ -160,7 +160,7 @@ int main()
                     else {
                     render::AddLabel(U"Może atakować?: " + render::toUString(lastShownUnits[0].movesLeft), 12, 60, playersColors[lastShownUnits[0].player-1]);  
                     }
-                    render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 2, lastShownUnits[0].tileID%29*2+2, 16, playersColors[0]);
+                    render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 1, lastShownUnits[0].tileID%29*2, 16, playersColors[0]);
                 }
                 //Staty jednostki na ktora najechal kursor - druzyna 2
                 if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0){
@@ -176,19 +176,14 @@ int main()
                     else {
                     render::AddLabel(U"Może atakować?: " + render::toUString(lastShownUnits[1].movesLeft), 24, 60, playersColors[lastShownUnits[1].player-1]);  
                     }
-                    render::AddPoint(detectUnitType(lastShownUnits[1].unitType), lastShownUnits[1].tileID/29 + 2, lastShownUnits[1].tileID%29*2+2, 16, playersColors[1]);
+                    render::AddPoint(detectUnitType(lastShownUnits[1].unitType), lastShownUnits[1].tileID/29 + 1, lastShownUnits[1].tileID%29*2, 16, playersColors[1]);
  
                 }
                 //Kursor
-                render::AddCursor(U'▉', CURSOR/29 + 2, CURSOR%29*2 + 2, 100, 16);
+                render::AddCursor(U'▓', CURSOR/29 + 1, CURSOR%29*2, 57, 16);
                 //
             }
 
-
-
-            /**/
-            render::AddTextureInstance(40, 40, "test");
-            /**/
             render::EndFrame();
 
 

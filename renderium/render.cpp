@@ -572,6 +572,7 @@ namespace render
 #ifdef _WIN32
             system("chcp 65001");
 #endif // Win32
+            std::cout << "\033?25l";
             screenCharBuffer = new char32_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenBacColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];
             screenForColorBuffer = new uint8_t[SCREEN_SIZE_X * SCREEN_SIZE_Y];

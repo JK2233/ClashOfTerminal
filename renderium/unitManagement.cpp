@@ -71,7 +71,7 @@ int CURSOR = 0;
 uint8_t currentPlayerTurn;
 uint16_t playersCash[2];
 uint16_t playersIncome[2];
-uint8_t playersColors[2] = {82, 228};
+static const uint8_t playersColors[2] = {82, 228};
 
 //"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
