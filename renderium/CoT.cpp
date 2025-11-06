@@ -115,7 +115,7 @@ int main()
                     }
                 }
                 //Wyswietlanie akcji
-                render::AddLabel(U"Dostępne akcje: m - ruch jednostki; x - strzał (artyleri); e - zakończ ture; r - kup jednostkę; u/y - zmień jednostkę; p - zamień farmera na farme", currentLine + 3, 0, 255);
+                render::AddLabel(U"Dostępne akcje: m - ruch jednostki; x - strzał (artyleri); e - zakończ ture; r - kup jednostkę; u/y - zmień jednostkę; p - zamień farmera na farme", 44, 0, 255);
                 
                 //Wyswietlanie pieniedzy -> pieniadze 1; income 1; --- pieniadze 2; income 2;
                 render::AddLabel(U"Player 1 cash: " + render::toUString(playersCash[0]), 3, 60, playersColors[0]);
