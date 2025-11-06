@@ -431,6 +431,10 @@ namespace render
                     }
                     screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = InternalTextStreams[objectresorceIDBuffer[idx]][i];
                     screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectForColorBuffer[idx];
+                    if (objectBacColorBuffer[idx] != 0)
+                    {
+                        screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectBacColorBuffer[idx];
+                    }
                 }
 
                 break;
@@ -721,6 +725,7 @@ namespace render
         tmpObject.posY = _posY;
         tmpObject.posX = _posX;
         tmpObject.forColor = _forColor;
+        tmpObject.bacColor = 0;
 
 
         tmpObject.type = e_Label;
@@ -728,6 +733,21 @@ namespace render
         TextStreams.push_back(_text);
         ObjectsToRender.push_back(tmpObject);
     }
+
+    void AddLabel(std::u32string _text, int16_t _posY, int16_t _posX, uint8_t _forColor, uint8_t _bacColor) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = _bacColor;
+
+
+        tmpObject.type = e_Label;
+        tmpObject.resorceID = TextStreams.size();
+        TextStreams.push_back(_text);
+        ObjectsToRender.push_back(tmpObject);
+    }
+
     void AddPoint(char32_t _char, int16_t _posY, int16_t _posX, uint8_t _forColor, uint8_t _bacColor) {
         ScreenObject tmpObject;
         tmpObject.posY = _posY;
@@ -800,6 +820,23 @@ namespace render
         }
         textures.push_back(newTexture);
     }
+
+    template <uint16_t _sizeY, uint16_t _sizeX, uint16_t _amountOfAnimationFrames = 0> void AddTextureTemplate(std::string _name, Texel _Texture[_sizeY * _sizeX * (_amountOfAnimationFrames + 1)]) {
+        uint32_t totalSize = _sizeX * _sizeY;
+        Texture newTexture;
+        newTexture.sizeY = _sizeY;
+        newTexture.sizeX = _sizeX;
+        newTexture.animationFrames = _amountOfAnimationFrames;
+        newTexture.firstIDX = TextureData.size();
+        newTexture.name = _name;
+        for (size_t i = 0; i < (_amountOfAnimationFrames + 1) * totalSize; i++)
+        {
+            TextureData.push_back(_Texture[i]);
+        }
+        textures.push_back(newTexture);
+    }
+
+
     void AddTextureInstance(int16_t _posY, int16_t _posX, std::string _textureTemplateName) {
         ScreenObject tmpObject;
         tmpObject.posY = _posY;
