@@ -341,7 +341,7 @@ std::u32string getUnitName(UnitTypes unit){
 uint8_t assignStrenght(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
-            return  10;
+            return 15;
         case e_Infantry:
             return 5;
         case e_Farm:
@@ -366,7 +366,7 @@ uint8_t assingHealth(UnitTypes unit){
         case e_Artillery:
             return 5;
         case e_Infantry:
-            return 10;
+            return 15;
         case e_Farm:
             return 1;
         case e_LightTank:
@@ -387,13 +387,13 @@ uint8_t assingHealth(UnitTypes unit){
 uint8_t assignCost(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
-            return 50;
+            return 40;
         case e_Infantry:
             return 10;
         case e_Farm:
             return 10;
         case e_LightTank:
-            return 50;
+            return 55;
         case e_MedTank:
             return 100;
         case e_HeavyTank:
@@ -471,7 +471,7 @@ void moveUnit(){
                 case 1000:
                 case 'w':
                 {
-                    if (isWaterTile(UNITS[i].tileID - 29) || UNITS[i].unitType == e_Marines) {
+                    if (isWaterTile(UNITS[i].tileID - 29) && UNITS[i].unitType != e_Marines) {
                         UNITS[i].movesLeft++;
                         break;
                     }
@@ -479,7 +479,7 @@ void moveUnit(){
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for (int j = 0; j < UNITS.size(); j++) {
                             if (UNITS[j].tileID == UNITS[i].tileID - 29) { //is the tile occupied?
-                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)) { //is it an ally or not, and is it arti or not
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery) && UNITS[i].canAttack) { //is it an ally or not, and is it arti or not, and can we attack
                                     if (UNITS[j].health <= UNITS[i].damage) {  //enemy - can we kill it?
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
@@ -511,7 +511,7 @@ void moveUnit(){
                 case 1001:
                 case 's':
                 {
-                    if (isWaterTile(UNITS[i].tileID + 29) || UNITS[i].unitType == e_Marines) {
+                    if (isWaterTile(UNITS[i].tileID + 29)  && UNITS[i].unitType != e_Marines) {
                         UNITS[i].movesLeft++;
                         break;
                     }
@@ -519,7 +519,7 @@ void moveUnit(){
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for (int j = 0; j < UNITS.size(); j++) {
                             if (UNITS[j].tileID == UNITS[i].tileID + 29) {
-                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
                                     if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
@@ -551,7 +551,7 @@ void moveUnit(){
                 case 1002:
                 case 'd':
                 {
-                    if (isWaterTile(UNITS[i].tileID + 1) || UNITS[i].unitType == e_Marines) {
+                    if (isWaterTile(UNITS[i].tileID + 1)  && UNITS[i].unitType != e_Marines) {
                         UNITS[i].movesLeft++;
                         break;
                     }
@@ -559,7 +559,7 @@ void moveUnit(){
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for (int j = 0; j < UNITS.size(); j++) {
                             if (UNITS[j].tileID == UNITS[i].tileID + 1) {
-                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
                                     if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
@@ -591,7 +591,7 @@ void moveUnit(){
                 case 1003:
                 case 'a':
                 { //move arrow left
-                    if (isWaterTile(UNITS[i].tileID - 1) || UNITS[i].unitType == e_Marines) {
+                    if (isWaterTile(UNITS[i].tileID - 1)  && UNITS[i].unitType != e_Marines) {
                         UNITS[i].movesLeft++;
                         break;
                     }
@@ -599,7 +599,7 @@ void moveUnit(){
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
                         for (int j = 0; j < UNITS.size(); j++) {
                             if (UNITS[j].tileID == UNITS[i].tileID - 1) {
-                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
                                     if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
@@ -825,6 +825,12 @@ void playerTurn(uint8_t playerNum) {
         SELECTED_UNIT = (UnitTypes)((uint8_t)SELECTED_UNIT + (uint8_t)1);
         if (SELECTED_UNIT > e_Farm) {
             SELECTED_UNIT = e_Infantry;
+        }
+    }
+    else if(komenda == 'y'){
+        SELECTED_UNIT = (UnitTypes)((uint8_t)SELECTED_UNIT - (uint8_t)1);
+        if (SELECTED_UNIT > e_Farm) {
+            SELECTED_UNIT = e_Farm;
         }
     }
     else if (komenda == 'r'){

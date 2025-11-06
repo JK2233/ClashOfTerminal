@@ -47,4 +47,11 @@ Włochy - Jednostka wojskowa: Czołg przeciw pancerny (75g 15hp 10dmg *2na czolg
 
 5g za pkt kontrolny
 
+
+
+Beta v0.1 Balance changes
+Artyleria - 40g; 15dmg;
+Ltank - 55g;
+Piechota - 15hp;
+Jednostki atakują raz na rundę;
 */
