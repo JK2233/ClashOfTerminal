@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+﻿#pragma execution_character_set("utf-8")
 
 //includes
 #include <cstddef>
@@ -7,6 +7,7 @@
 #include <uchar.h>
 #include <vector>
 #include <string>
+#include <sstream>
 #include <iostream>
 #include <ctime>
 #include <chrono>
@@ -118,6 +119,13 @@ namespace render
         return ret;
     }
 
+    struct Texel
+    {
+        uint8_t bacColor;
+        uint8_t forColor;
+        char32_t character;
+    };
+
     struct ScreenObject
     {
         ScreenObjectType type;
@@ -169,55 +177,80 @@ namespace render
     std::atomic<bool> mainThreadFinnishedDataTransfer = false;
     std::mutex LockRenderThread;
 
+    //a vector with all the objects that are ment to be rendered this is ment to be used by bouth threads
     std::vector<ScreenObject> ObjectsToRender;
+    
+    //Bad apple version 2 and 3 (to come) :)
     std::vector<VideoStreamMenager> VideoStreems;
 
     std::vector<std::u32string> TextStreams;
     std::vector<std::u32string> InternalTextStreams;
 
-
-    ScreenObjectType* objectTypeBuffer;
-    uint8_t* objectVarBuffer;
-    uint16_t* objectresorceIDBuffer;
-    int16_t* objectPosXBuffer;
-    int16_t* objectPosYBuffer;
-    char32_t* objectCharacterBuffer;
-    uint8_t* objectBacColorBuffer;
-    uint8_t* objectForColorBuffer;
-    uint8_t* objectSizeXBuffer;
-    uint8_t* objectSizeYBuffer;
-
-    char32_t* screenCharBuffer;
-    uint8_t* screenBacColorBuffer;
-    uint8_t* screenForColorBuffer;
-
+    //the string that will be displayed at the end
     std::string screenOutputBuffer;
 
+    //animation menagement
     std::int32_t AnimationFrameCount = 0;
     std::int64_t FrameCount = 0;
     std::int64_t PhysicsFrameCount = 0;
+
+    //cls menagement (mostrly unused as of now)
     std::int64_t FramesSinceCls = 0;
     bool RelyOnCLS = false;
+
+    //framemerate diagnostics
     time_t timeSincePreviousFPSCalculation;
     std::int64_t FramesSinceFPSCalculation;
     double FPS = 0.0;
+
+    //frame time menagement
 #ifdef _WIN32
     std::chrono::time_point<std::chrono::steady_clock> previousFrameTime = std::chrono::high_resolution_clock::now();
 #else
     std::chrono::time_point previousFrameTime = std::chrono::high_resolution_clock::now();
 #endif // _WIN32
 
-
+    //This function needs to be called by the main thread to kick start rendering
+    inline void Initialize() {
+        while (!renderThreadBusIdle) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(1));
+        }
+        mainThreadFinnishedDataTransfer = true;
+        return;
+    }
 
     namespace internal {
-        //This function needs to be called by the main thread to kick start rendering
-        inline void Initialize() {
-            while (!renderThreadBusIdle) {
-                std::this_thread::sleep_for(std::chrono::milliseconds(1));
-            }
-            mainThreadFinnishedDataTransfer = true;
-            return;
-        }
+        //OOP <3, esentialy the same as vector<ScreenObject> ObjectsToRender but spaced out and used exlucivly by render thread
+        ScreenObjectType* objectTypeBuffer;
+        uint8_t* objectVarBuffer;
+        uint16_t* objectresorceIDBuffer;
+        int16_t* objectPosXBuffer;
+        int16_t* objectPosYBuffer;
+        char32_t* objectCharacterBuffer;
+        uint8_t* objectBacColorBuffer;
+        uint8_t* objectForColorBuffer;
+        uint8_t* objectSizeXBuffer;
+        uint8_t* objectSizeYBuffer;
+
+        //Screen Intermediate buffers
+        char32_t* screenCharBuffer;
+        uint8_t* screenBacColorBuffer;
+        uint8_t* screenForColorBuffer;
+
+        std::vector<Texel> TextureData;
+
+        //Textures
+        struct Texture
+        {
+            uint16_t sizeY;
+            uint16_t sizeX;
+            uint16_t animationFrames;
+            uint16_t firstIDX;
+            std::string name;
+        };
+
+        std::vector<Texture> textures;
+
         inline void cleenScreenBuffer() {
             for (int_fast32_t i = 0; i < SCREEN_PIXEL_COUNT; i++)
             {
@@ -312,31 +345,68 @@ namespace render
                 }
                 break;
             case e_BlinkingCursor:
+            {
+                if (objectPosXBuffer[idx] >= SCREEN_SIZE_X || objectPosXBuffer[idx] < 0 || objectPosYBuffer[idx] >= SCREEN_SIZE_Y || objectPosYBuffer[idx] < 0)
                 {
-                    if (objectPosXBuffer[idx] >= SCREEN_SIZE_X || objectPosXBuffer[idx] < 0 || objectPosYBuffer[idx] >= SCREEN_SIZE_Y || objectPosYBuffer[idx] < 0)
-                    {
-                        break;
-                    }
-                    if (AnimationFrameCount % 30 < 15) {
-                        screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectCharacterBuffer[idx];
-                        screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectForColorBuffer[idx];
-                        if (objectBacColorBuffer[idx] != 0)
-                        {
-                            screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
-                        }
-                    }
-                    else {
-                        if (objectBacColorBuffer[idx] != 0)
-                        {
-                            screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
-                        }
-                    }
-
                     break;
                 }
-            case e_Texture:
+                if (AnimationFrameCount % 30 < 15) {
+                    screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectCharacterBuffer[idx];
+                    screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectForColorBuffer[idx];
+                    if (objectBacColorBuffer[idx] != 0)
+                    {
+                        screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
+                    }
+                }
+                else {
+                    if (objectBacColorBuffer[idx] != 0)
+                    {
+                        screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
+                    }
+                }
 
                 break;
+            }
+            case e_Texture:
+            {
+                if (objectresorceIDBuffer[idx] > textures.size())
+                {
+                    ReportError("objectresorceIDBuffer is greater than all textures whitch is imposible. objectID: " + std::to_string(idx), true, true);
+                    //skip if trying to avoid crashing
+                    break;
+                }
+                for (int32_t Y = 0; Y < textures[objectresorceIDBuffer[idx]].sizeY; ++Y)
+                {
+                    for (int32_t X = 0; X < textures[objectresorceIDBuffer[idx]].sizeX; ++X)
+                    {
+                        int32_t posY = Y + objectPosYBuffer[idx];
+                        int32_t posX = X + objectPosXBuffer[idx];
+
+                        if (posX >= SCREEN_SIZE_X || posX < 0 || posY >= SCREEN_SIZE_Y || posY < 0)
+                        {
+                            break;
+                        }
+                        Texel currentTexel = TextureData[
+                              textures[objectresorceIDBuffer[idx]].firstIDX
+                            + Y * textures[objectresorceIDBuffer[idx]].sizeX
+                            + X
+                            + ((
+                                AnimationFrameCount
+                                * textures[objectresorceIDBuffer[idx]].sizeX
+                                * textures[objectresorceIDBuffer[idx]].sizeY
+                              ) % (textures[objectresorceIDBuffer[idx]].animationFrames + 1))
+                            ];
+
+                        screenCharBuffer[(posY * SCREEN_SIZE_X) + posX] = currentTexel.character;
+                        screenForColorBuffer[(posY * SCREEN_SIZE_X) + posX] = currentTexel.forColor;
+                        if (currentTexel.bacColor != 0)
+                        {
+                            screenBacColorBuffer[(posY * SCREEN_SIZE_X) + posX] = currentTexel.bacColor;
+                        }
+                    }
+                }
+                break;
+            } 
             case e_SquareMaskedTexture:
 
                 break;
@@ -361,6 +431,10 @@ namespace render
                     }
                     screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = InternalTextStreams[objectresorceIDBuffer[idx]][i];
                     screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectForColorBuffer[idx];
+                    if (objectBacColorBuffer[idx] != 0)
+                    {
+                        screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectBacColorBuffer[idx];
+                    }
                 }
 
                 break;
@@ -535,7 +609,6 @@ namespace render
 
                         //acknowlage reciving the data
                         mainThreadFinnishedDataTransfer = false;
-                        render::Log("Render thread recived data from main thread, starting data transfer to internal buffers");
 
                         //work asigned, coppy data to internal buffers and work on it
                         AnimationFrameCount = 0;
@@ -642,7 +715,6 @@ namespace render
         tmpObject.type = e_NewFrame;
         ObjectsToRender.push_back(tmpObject);
     }
-
     void EndFrame() {
         mainThreadFinnishedDataTransfer = true;
         LockRenderThread.unlock();
@@ -653,6 +725,21 @@ namespace render
         tmpObject.posY = _posY;
         tmpObject.posX = _posX;
         tmpObject.forColor = _forColor;
+        tmpObject.bacColor = 0;
+
+
+        tmpObject.type = e_Label;
+        tmpObject.resorceID = TextStreams.size();
+        TextStreams.push_back(_text);
+        ObjectsToRender.push_back(tmpObject);
+    }
+
+    void AddLabel(std::u32string _text, int16_t _posY, int16_t _posX, uint8_t _forColor, uint8_t _bacColor) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = _bacColor;
 
 
         tmpObject.type = e_Label;
@@ -711,6 +798,72 @@ namespace render
         tmpObject.character = _char;
 
         tmpObject.type = e_Ellipse;
+        ObjectsToRender.push_back(tmpObject);
+    }
+    
+    void AddTextureTemplate(std::string _name, uint16_t _sizeY, uint16_t _sizeX, uint16_t _amountOfAnimationFrames, std::vector<Texel> _Texture) {
+        uint32_t totalSize = _sizeX * _sizeY;
+        Texture newTexture;
+        newTexture.sizeY = _sizeY;
+        newTexture.sizeX = _sizeX;
+        newTexture.animationFrames = _amountOfAnimationFrames;
+        newTexture.firstIDX = TextureData.size();
+        newTexture.name = _name;
+        for (size_t i = 0; i < (_amountOfAnimationFrames + 1) * totalSize; i++)
+        {
+            if (_Texture.size() <= i)
+            {
+                ReportError("size of new Texture is larger than what was provided in a vecotor. name: " + _name + " fix your code or smth", true, true);
+                break;
+            }
+            TextureData.push_back(_Texture[i]);
+        }
+        textures.push_back(newTexture);
+    }
+
+    template <uint16_t _sizeY, uint16_t _sizeX, uint16_t _amountOfAnimationFrames = 0> void AddTextureTemplate(std::string _name, Texel _Texture[_sizeY * _sizeX * (_amountOfAnimationFrames + 1)]) {
+        uint32_t totalSize = _sizeX * _sizeY;
+        Texture newTexture;
+        newTexture.sizeY = _sizeY;
+        newTexture.sizeX = _sizeX;
+        newTexture.animationFrames = _amountOfAnimationFrames;
+        newTexture.firstIDX = TextureData.size();
+        newTexture.name = _name;
+        for (size_t i = 0; i < (_amountOfAnimationFrames + 1) * totalSize; i++)
+        {
+            TextureData.push_back(_Texture[i]);
+        }
+        textures.push_back(newTexture);
+    }
+
+
+    void AddTextureInstance(int16_t _posY, int16_t _posX, std::string _textureTemplateName) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.type = e_Texture;
+
+        for (int_fast32_t i = 0; i < textures.size(); ++i)
+        {
+            if (textures[i].name.size() != _textureTemplateName.size())
+            {
+                continue;
+            }
+            bool stringAreTheSame = true;
+            for (int_fast16_t j = 0; j < textures[i].name.size(); j++)
+            {
+                if (_textureTemplateName[j] != textures[i].name[j]) {
+                    stringAreTheSame = false;
+                    break;
+                }
+            }
+            if (stringAreTheSame)
+            {
+                tmpObject.resorceID = i;
+                break;
+            }
+        }
+
         ObjectsToRender.push_back(tmpObject);
     }
 }
