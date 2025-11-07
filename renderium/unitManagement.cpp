@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <locale>
 #include <sys/types.h>
+#include <termios.h>
 #include <type_traits>
 #pragma execution_character_set("utf-8")
 #include <iostream>
@@ -54,15 +55,53 @@ struct Unit {
 };
 
 struct Tile {
-    int tileID;
+    uint16_t tileID;
     enum TileTypes tileType;
     int8_t bridge = -1;
 };
 
-//Map/Units vector
+struct Base {
+    
+    // base tiles
+
+    //uint16_t baseTiles[4];
+    std::vector<uint16_t> baseTiles;
+    //uint16_t spawnableAreas[12];
+    std::vector<uint16_t> spawnableAreas;
+
+    //base info
+    uint8_t player;
+    uint8_t whichBase;  // 1 - left 
+                        // 2 - right
+    // Base stats
+    uint16_t health = 75;
+    uint16_t damage; // we can add this later to the game
+    uint16_t range;  // same with this
+};
+
+struct MainBase {
+
+    // main base tiles
+
+    //uint16_t mainBaseTiles[9];
+    std::vector<uint16_t> mainBaseTiles;
+
+    //uint16_t mainSpawnableAreas[16];
+    std::vector<uint16_t> mainSpawnableAreas;
+    // main base info
+    uint8_t player;
+
+    // Main Base stats
+    uint16_t health = 150;
+    uint16_t damage; // we can add this later to the game
+    uint16_t range;  // same with this
+};
+
+//Map/Units/Bases vector
 std::vector<Tile> MAP;
 std::vector<Unit> UNITS;
-
+std::vector<Base> BASES;
+std::vector<MainBase> MAINBASES;
 int CURSOR = 0;
 
 
@@ -84,16 +123,36 @@ void GenerateMap() {
         render::Log("error with file opening");
         return;
     }
-    int numID = 0;
-    while (!mapadiasz.eof()) {
-        std::string line;
-        getline(mapadiasz, line);
+    uint16_t numID = 0;
+    uint8_t baseIncrement = 0;
+    uint8_t spawnIncrement;
+    uint8_t baseTileIncrement;
+    uint16_t tempID;
+    bool isPlayerBase = true;
+    bool isPlayerMainBase = true; //works like a key
+    uint8_t tempPlayer = 1; // temporary player number
+    std::string line;
+    while (getline(mapadiasz, line)) {
 #ifdef TRUEDEBUG
         //std::cout << "LINIA" << "\n" << line << "\n";
 #endif
-        for (int i = 0; i < line.length(); i++) {
+        for (uint16_t i = 0; i < line.length(); i++) {
             Tile t1;
-
+            MainBase t3;
+            Base t2;
+            switch (numID) {
+                case 128:
+                    isPlayerBase = true;
+                    break;
+                case 703:
+                    isPlayerBase = true;
+                    break;
+                case 447:
+                    isPlayerMainBase = true;
+                    isPlayerBase = true;
+                    tempPlayer = 2;
+                    break;
+            }
             //HAHAHAHAHHAHAHAHHAHAHHA
             switch (line[i])
             {
@@ -108,14 +167,67 @@ void GenerateMap() {
                 MAP.push_back(t1);
                 break;
             case 'U':
-                t1.tileID = numID++;
+                t1.tileID = numID;
                 t1.tileType = e_Base;
+
+
+                if(isPlayerBase) {
+                    isPlayerBase = false;
+                    t2.player = tempPlayer;
+                    if(baseIncrement == 0) {
+                        t2.whichBase = 1;
+                        baseIncrement++;
+                    } else {
+                        t2.whichBase = 2;
+                        baseIncrement--;
+                    }
+                    tempID = numID - 30;
+                    spawnIncrement = 0;
+                    baseTileIncrement = 0;
+                    for(uint8_t k = 0; k < 4; k++) {
+                        for(uint8_t m = 0; m < 4; m++) {
+                            if(k == 0 || k == 4 - 1 || m == 0 || m == 4 - 1) {
+                                t2.spawnableAreas.push_back(tempID++);
+                            } else {
+                                t2.baseTiles.push_back(tempID++);
+                            }
+                        }
+                        tempID += 25;
+                    }
+                    BASES.push_back(t2);
+                }
+
+
                 MAP.push_back(t1);
+                numID++;
                 break;
             case 'O':
-                t1.tileID = numID++;
+                t1.tileID = numID;
                 t1.tileType = e_MainBase;
+
+                if(isPlayerMainBase) {
+                    isPlayerMainBase = false;
+                    t3.player = tempPlayer;
+                    tempID = numID - 30;
+                    spawnIncrement = 0;
+                    baseTileIncrement = 0;
+                    for(uint8_t k = 0; k < 5; k++) {
+                        for(uint8_t m = 0; m < 5; m++) {
+                            if(k == 0 || k == 5 - 1 || m == 0 || m == 5 - 1) {
+                                t3.mainSpawnableAreas.push_back(tempID++);
+                                spawnIncrement++;
+                            } else {
+                                t3.mainBaseTiles.push_back(tempID++);
+                            }
+                        }
+                        tempID += 24;
+                    }
+                    //MAINBASES[tempPlayer-1]
+                    MAINBASES.push_back(t3);
+                }
+
                 MAP.push_back(t1);
+                numID++;
                 break;
             case '|':
                 t1.tileID = numID++;
@@ -264,6 +376,25 @@ void updateMap(int CURSOR) { //this function is for debuging until map render wi
 }
 #endif
 
+
+void debugPrintBase() {
+    render::Log("działa?");
+    if (BASES.empty()) {
+        render::Log("Brak baz w wektorze BASES.");
+        return;
+    }
+    //render::Log(std::to_string(BASES[1].player));
+
+    for (size_t baza = 0; baza < BASES.size(); ++baza) {
+        render::Log("Baza " + std::to_string(baza) + 
+                    " - Gracz: " + std::to_string(BASES[baza].player) + 
+                    ", Ktora: " + std::to_string(BASES[baza].whichBase));
+        for(size_t i = 0; i < BASES[baza].spawnableAreas.size(); ++i) {
+             render::Log("  Spawnable Area ID [" + std::to_string(i) + "]: " + 
+                         std::to_string(BASES[baza].spawnableAreas[i]));
+        }
+    }
+}
 //STATS (+ moves) ASSIGNING
 
 inline uint8_t setMoves(UnitTypes unit){
@@ -424,7 +555,49 @@ uint8_t assingRange(UnitTypes unit){
 
 // Unit spawning
 
+bool isOnSpawnableTile(uint16_t place) {
+    bool basesGood = false;
+    bool mainBaseGood = false;
+
+    for(size_t i = 0; i < BASES.size(); ++i) { 
+        const auto& currentBase = BASES[i];
+        
+        for(size_t j = 0; j < currentBase.spawnableAreas.size(); ++j) {
+            if(place == currentBase.spawnableAreas[j] && 
+               currentPlayerTurn == currentBase.player) {
+                basesGood = true;
+                break;
+            }
+        }
+        if (basesGood) {
+            break;
+        }
+    }
+    
+    for(size_t i = 0; i < MAINBASES.size(); ++i) {
+        const auto& currentMainBase = MAINBASES[i];
+        
+        for(size_t j = 0; j < currentMainBase.mainSpawnableAreas.size(); ++j) {
+            if(place == currentMainBase.mainSpawnableAreas[j]) {
+                if(currentPlayerTurn == currentMainBase.player) {
+                    mainBaseGood = true;
+                    break;
+                }
+            }
+        }
+        if (mainBaseGood) {
+            break;
+        }
+    }
+    
+    return basesGood || mainBaseGood;
+}
 void spawnUnit(uint16_t place, UnitTypes unit){
+
+    if(!isOnSpawnableTile(place)) {
+        return;
+    }
+
     if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
         Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit)};
@@ -445,7 +618,7 @@ void cashExploit(){
 }
 
 
-bool isWaterTile(int tile) {
+bool isWaterTile(uint16_t tile) {
     if(MAP[tile].tileType == e_Water) return true;
 
     return false;

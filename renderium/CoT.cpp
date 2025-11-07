@@ -30,7 +30,7 @@ int main()
     render::Initialize();
 
     GenerateMap();
-
+    debugPrintBase();
     render::Log("EEEEEEEEEEEEEEEEEEEEEEEE");
     render::Log(std::to_string((MAP.size())));
     // render::VideoStreamMenager bootVideo = render::VideoStreamMenager("./bad apple/frame-#####.bmp", 6549, render::VideoStreamMenager::e_BMP);
