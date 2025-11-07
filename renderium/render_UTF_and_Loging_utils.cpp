@@ -1,4 +1,4 @@
-﻿#ifndef RENDER_UTF8_AND_LOGGING
+#ifndef RENDER_UTF8_AND_LOGGING
 #define RENDER_UTF8_AND_LOGGING
 #pragma execution_character_set("utf-8")
 
@@ -16,6 +16,7 @@
 #ifndef TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING 
 #define TRY_TO_RESOLVE_MINOR_ERRORS_INSTED_OF_CRASHING false
 #endif
+constexpr char32_t UTF32BOM = U'\U0000FEFF';
 
 namespace render {
     std::ofstream logFile("log_renderium.log", std::ios::out);
@@ -158,6 +159,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -175,6 +177,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -188,10 +191,6 @@ namespace render {
         if (number == 0)
         {
             ret = U"0";
-        }
-        if (number < 0)
-        {
-            number = 0 - number;
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -209,6 +208,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -222,10 +222,6 @@ namespace render {
         if (number == 0)
         {
             ret = U"0";
-        }
-        if (number < 0)
-        {
-            number = 0 - number;
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -243,6 +239,7 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
@@ -260,12 +257,22 @@ namespace render {
         if (number < 0)
         {
             number = 0 - number;
+            ret += U"-";
         }
         while (number > 0) {
             ret += (char32_t)((number % 10) + '0');
             number /= 10;
         }
         std::reverse(ret.begin(), ret.end());
+        return ret;
+    }
+
+    std::u32string toUString(bool _boolion) {
+        std::u32string ret = U"false";
+        if (_boolion)
+        {
+            ret = U"true";
+        }
         return ret;
     }
 }

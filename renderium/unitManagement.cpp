@@ -29,7 +29,7 @@ enum UnitTypes : uint8_t{ // WHEN CHECKING THIS, EDIT VALUE ASSIGNING | check ct
     e_Farm //Remember child, thou shall not moveth thine e_Farms in mine Uniteth.
 };
 
-enum TileTypes {
+enum TileTypes : uint8_t {
     e_Plains,
     e_Bridge,
     e_MainBase,
@@ -44,14 +44,14 @@ struct Unit {
     enum UnitTypes unitType;
 
     //Unit info
-    uint16_t unitID; //Mabye to remove? whats the point of this
+    uint16_t unitID; 
     uint16_t tileID;
 
     //Unit stats
     uint8_t health;
     uint8_t damage;
     uint8_t range;
-    uint8_t price; // i have realised that this is pointless uh, mabye to remove later?
+    bool canAttack;
 };
 
 struct Tile {
@@ -109,10 +109,11 @@ int CURSOR = 0;
 uint8_t currentPlayerTurn;
 uint16_t playersCash[2];
 uint16_t playersIncome[2];
-uint8_t playersColors[2] = {82, 228};
+static const uint8_t playersColors[2] = {82, 228};
 
 //"Showcase" variables (for the players to see next to the game meny)
 UnitTypes SELECTED_UNIT = e_Artillery;
+Unit lastShownUnits[2];
 
 
 //Generating the base for the map (see mapa.diasz for the map)
@@ -120,7 +121,7 @@ void GenerateMap() {
     std::ifstream mapadiasz;
     mapadiasz.open("mapa.diasz");
     if (!mapadiasz.is_open()) {
-        render::Log("error with file opening");
+        render::ReportError("error with opening MAP file - aborting", true, false);
         return;
     }
     uint16_t numID = 0;
@@ -451,7 +452,7 @@ std::u32string getUnitName(UnitTypes unit){
         case e_Infantry:
             return U"Infantry";
         case e_Farm:
-            return U"Farm";
+            return U"Farmer";
         case e_LightTank:
             return U"LightTank";
         case e_MedTank:
@@ -470,7 +471,7 @@ std::u32string getUnitName(UnitTypes unit){
 uint8_t assignStrenght(UnitTypes unit){
     switch (unit) {
         case e_Artillery:
-            return  0;
+            return 15;
         case e_Infantry:
             return 5;
         case e_Farm:
@@ -495,7 +496,7 @@ uint8_t assingHealth(UnitTypes unit){
         case e_Artillery:
             return 5;
         case e_Infantry:
-            return 10;
+            return 15;
         case e_Farm:
             return 1;
         case e_LightTank:
@@ -514,15 +515,15 @@ uint8_t assingHealth(UnitTypes unit){
 }
 
 uint8_t assignCost(UnitTypes unit){
-            switch (unit) {
+    switch (unit) {
         case e_Artillery:
-            return 50;
+            return 40;
         case e_Infantry:
             return 10;
         case e_Farm:
             return 10;
         case e_LightTank:
-            return 50;
+            return 55;
         case e_MedTank:
             return 100;
         case e_HeavyTank:
@@ -600,7 +601,8 @@ void spawnUnit(uint16_t place, UnitTypes unit){
 
     if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
-        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)UNITS.size(), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), assignCost(unit)};
+        Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)(UNITS.size()+1), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), true};
+
         UNITS.push_back(u);
     }
     else { //If the player doesnt have cash
@@ -618,31 +620,49 @@ void cashExploit(){
 }
 
 
-bool isWaterTile(uint16_t tile) {
-    if(MAP[tile].tileType == e_Water) return true;
-
+bool isWaterTile(int tile) {
+    if (MAP[tile].tileType == e_Water) {
+        return true;
+    }
     return false;
+}
+void farmToFarmer(uint16_t tile){
+    for(uint16_t i = 0; i < UNITS.size(); i++){
+        if(UNITS[i].tileID == tile){
+            UNITS[i].unitID = 0;
+            playersIncome[UNITS[i].player-1]++;
+            break;
+        }
+    }
 }
 
 //The bad function
 void moveUnit(){
     for(uint16_t i = 0; i < UNITS.size(); i++){ //checking if the cursor is on a tile with a unit
-        if(CURSOR == UNITS[i].tileID){ //up
-            if(UNITS[i].movesLeft != 0){ //if the unit has moves left
-                uint16_t unitIdToDelete = 10000; //placeholder
-                UNITS[i].movesLeft--;
-                char32_t komenda = rawInput::readKey();
-                if (komenda == 1000 || komenda == 'w') { //move arrow up
-                    if(isWaterTile(UNITS[i].tileID - 29) || UNITS[i].unitType == e_Marines) {
+        if(CURSOR != UNITS[i].tileID){ //up
+            continue;
+        }
+        if (UNITS[i].movesLeft == 0) { //if the unit has moves left
+            break;
+        }
+        {
+            uint16_t unitIdToDelete = 10000; //null
+            UNITS[i].movesLeft--;
+            char32_t komenda = rawInput::readKey();
+            switch (komenda) {
+                case 1000:
+                case 'w':
+                {
+                    if (isWaterTile(UNITS[i].tileID - 29) && UNITS[i].unitType != e_Marines) {
                         UNITS[i].movesLeft++;
                         break;
                     }
                     if (UNITS[i].tileID >= 29) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
-                        for(int j = 0; j < UNITS.size(); j++){
-                            if(UNITS[j].tileID == UNITS[i].tileID - 29){ //is the tile occupied?
-                                if(UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)){ //is it an ally or not, and is it arti or not
-                                    if(UNITS[j].health <= UNITS[i].damage){  //enemy - can we kill it?
+                        for (int j = 0; j < UNITS.size(); j++) {
+                            if (UNITS[j].tileID == UNITS[i].tileID - 29) { //is the tile occupied?
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery) && UNITS[i].canAttack) { //is it an ally or not, and is it arti or not, and can we attack
+                                    if (UNITS[j].health <= UNITS[i].damage) {  //enemy - can we kill it?
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
                                     }
@@ -654,13 +674,13 @@ void moveUnit(){
                                 }
                                 else { // ally - ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
-                                    render::Log("Unit from" +  std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
+                                    render::Log("Unit from" + std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
                                     isMoving++;
                                 }
                                 break;
                             }
                         }
-                        if(isMoving == 0){ //if the isMoving variable didnt change, the unit is allowed to move
+                        if (isMoving == 0) { //if the isMoving variable didnt change, the unit is allowed to move
                             UNITS[i].tileID -= 29;
                             CURSOR -= 29;
                             render::Log("UNIT MOVED TO: " + std::to_string(UNITS[i].tileID));
@@ -668,17 +688,21 @@ void moveUnit(){
                         }
                     }
                 }
-                else if (komenda == 1001 || komenda == 's') { //Same as everything above, but for moving down
-                    if(isWaterTile(UNITS[i].tileID + 29) || UNITS[i].unitType == e_Marines) { 
-                        UNITS[i].movesLeft++; 
-                        break; 
+                break;
+
+                case 1001:
+                case 's':
+                {
+                    if (isWaterTile(UNITS[i].tileID + 29)  && UNITS[i].unitType != e_Marines) {
+                        UNITS[i].movesLeft++;
+                        break;
                     }
                     if (UNITS[i].tileID <= (MAP.size() - 1) - 29) { //move arrow down
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
-                        for(int j = 0; j < UNITS.size(); j++){
-                            if(UNITS[j].tileID == UNITS[i].tileID + 29){
-                                if(UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)){
-                                    if(UNITS[j].health <= UNITS[i].damage){
+                        for (int j = 0; j < UNITS.size(); j++) {
+                            if (UNITS[j].tileID == UNITS[i].tileID + 29) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
+                                    if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
                                     }
@@ -690,13 +714,13 @@ void moveUnit(){
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
-                                    render::Log("Unit from" +  std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
+                                    render::Log("Unit from" + std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
                                     isMoving++;
                                 }
                                 break;
                             }
                         }
-                        if(isMoving == 0){
+                        if (isMoving == 0) {
                             UNITS[i].tileID += 29;
                             CURSOR += 29;
                             render::Log("UNIT MOVED TO: " + std::to_string(UNITS[i].tileID));
@@ -704,17 +728,21 @@ void moveUnit(){
                         }
                     }
                 }
-                else if (komenda == 1002 || komenda == 'd') { //move arrow right
-                    if(isWaterTile(UNITS[i].tileID + 1) || UNITS[i].unitType == e_Marines) { 
-                        UNITS[i].movesLeft++; 
-                        break; 
+                break;
+
+                case 1002:
+                case 'd':
+                {
+                    if (isWaterTile(UNITS[i].tileID + 1)  && UNITS[i].unitType != e_Marines) {
+                        UNITS[i].movesLeft++;
+                        break;
                     }
                     if (UNITS[i].tileID != MAP.size() - 1) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
-                        for(int j = 0; j < UNITS.size(); j++){
-                            if(UNITS[j].tileID == UNITS[i].tileID + 1){
-                                if(UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)){
-                                    if(UNITS[j].health <= UNITS[i].damage){
+                        for (int j = 0; j < UNITS.size(); j++) {
+                            if (UNITS[j].tileID == UNITS[i].tileID + 1) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
+                                    if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
                                     }
@@ -726,13 +754,13 @@ void moveUnit(){
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
-                                    render::Log("Unit from" +  std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
+                                    render::Log("Unit from" + std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
                                     isMoving++;
                                 }
                                 break;
                             }
                         }
-                        if(isMoving == 0){
+                        if (isMoving == 0) {
                             UNITS[i].tileID++;
                             CURSOR++;
                             render::Log("UNIT MOVED TO: " + std::to_string(UNITS[i].tileID));
@@ -740,17 +768,21 @@ void moveUnit(){
                         }
                     }
                 }
-                else if (komenda == 1003 || komenda == 'a') { //move arrow left
-                    if(isWaterTile(UNITS[i].tileID - 1) || UNITS[i].unitType == e_Marines) { 
-                        UNITS[i].movesLeft++; 
+                break;
+
+                case 1003:
+                case 'a':
+                { //move arrow left
+                    if (isWaterTile(UNITS[i].tileID - 1)  && UNITS[i].unitType != e_Marines) {
+                        UNITS[i].movesLeft++;
                         break;
                     }
                     if (UNITS[i].tileID != 0) {
                         uint8_t isMoving = 0; // 0 - yes; 1 - no
-                        for(int j = 0; j < UNITS.size(); j++){
-                            if(UNITS[j].tileID == UNITS[i].tileID - 1){
-                                if(UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)){
-                                    if(UNITS[j].health <= UNITS[i].damage){
+                        for (int j = 0; j < UNITS.size(); j++) {
+                            if (UNITS[j].tileID == UNITS[i].tileID - 1) {
+                                if (UNITS[i].player != UNITS[j].player && (UNITS[i].unitType != e_ATArtilery || UNITS[i].unitType != e_Artillery)&& UNITS[i].canAttack) {
+                                    if (UNITS[j].health <= UNITS[i].damage) {
                                         render::Log("Unit from " + std::to_string(UNITS[j].tileID) + " has been deleted by " + std::to_string(UNITS[i].tileID));
                                         unitIdToDelete = j;
                                     }
@@ -762,13 +794,13 @@ void moveUnit(){
                                 }
                                 else { // ILLEGAL MOVE
                                     UNITS[i].movesLeft++;
-                                    render::Log("Unit from" +  std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
+                                    render::Log("Unit from" + std::to_string(UNITS[i].tileID) + " tried to do an illegal move");
                                     isMoving++;
                                 }
                                 break;
                             }
                         }
-                        if(isMoving == 0){
+                        if (isMoving == 0) {
                             UNITS[i].tileID--;
                             CURSOR--;
                             render::Log("UNIT MOVED TO: " + std::to_string(UNITS[i].tileID));
@@ -776,13 +808,16 @@ void moveUnit(){
                         }
                     }
                 }
-                if(unitIdToDelete != 10000){ //if the variable was changed, then an unit was killed, so we remove it
-                    UNITS.erase(UNITS.begin() + unitIdToDelete);
-                }
+                break;
             }
-
-            break;
+            if (unitIdToDelete != 10000) { //if the variable was changed, then an unit was killed, so we remove it
+                if(UNITS[unitIdToDelete].unitID == 0){
+                    playersIncome[UNITS[unitIdToDelete].player - 1]--;
+                }
+                UNITS.erase(UNITS.begin() + unitIdToDelete);
+            }
         }
+        break;
     }
 }
 
@@ -862,21 +897,22 @@ void unitShooting(){
 }
 
 
+
 void BridgeCashCheckOut() {
         uint8_t numOfP1UnitsOnBridge1 = 0;
         uint8_t numOfP1UnitsOnBridge2 = 0;
         uint8_t numOfP2UnitsOnBridge1 = 0;
         uint8_t numOfP2UnitsOnBridge2 = 0;
         for(uint16_t i = 0; i < UNITS.size(); i++) {
-            if(UNITS[i].player == currentPlayerTurn && MAP[UNITS[i].tileID].bridge > 0) {
+            if(MAP[UNITS[i].tileID].bridge > 0) {
                 if(MAP[UNITS[i].tileID].bridge == 1) {
-                    if(currentPlayerTurn == 1) {
+                    if(UNITS[i].player == 1) {
                         numOfP1UnitsOnBridge1++;
                     } else {
                         numOfP2UnitsOnBridge1++;
                     }
                 } else {
-                   if(currentPlayerTurn == 1) {
+                   if(UNITS[i].player == 1) {
                         numOfP1UnitsOnBridge2++;
                     } else {
                         numOfP2UnitsOnBridge2++;
@@ -909,7 +945,10 @@ void endTurn(){
         currentPlayerTurn--;
     }
     for(uint_fast16_t i = 0; i < UNITS.size(); i++){
-        UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
+        if (UNITS[i].unitID != 0) {
+            UNITS[i].movesLeft = setMoves(UNITS[i].unitType);
+            UNITS[i].canAttack = true;          
+        }
     }
     render::Log("kasa gracza 1: "+ std::to_string(playersCash[0]));
     render::Log("kasa gracza 2: "+ std::to_string(playersCash[1]));
@@ -975,6 +1014,12 @@ void playerTurn(uint8_t playerNum) {
             SELECTED_UNIT = e_Infantry;
         }
     }
+    else if(komenda == 'y'){
+        SELECTED_UNIT = (UnitTypes)((uint8_t)SELECTED_UNIT - (uint8_t)1);
+        if (SELECTED_UNIT > e_Farm) {
+            SELECTED_UNIT = e_Farm;
+        }
+    }
     else if (komenda == 'r'){
         spawnUnit(CURSOR, SELECTED_UNIT);
     }
@@ -989,6 +1034,9 @@ void playerTurn(uint8_t playerNum) {
     }
     else if(komenda == 'x'){
         unitShooting();
+    }
+    else if(komenda == 'p'){
+        farmToFarmer(CURSOR);
     }
     #ifdef TRUEDEBUG
     updateMap(CURSOR);
