@@ -170,7 +170,7 @@ int main()
                     render::AddPoint(detectUnitType(lastShownUnits[0].unitType), lastShownUnits[0].tileID/29 + 2, lastShownUnits[0].tileID%29*2 + 1, 16, playersColors[0]);
                 }
                 //Staty jednostki na ktora najechal kursor - druzyna 2
-                if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0 && lastShownUnits[0].unitID != 0){
+                if(lastShownUnits[1].health >= 0 && unitExisting[1] != 0 && lastShownUnits[1].unitID != 0){
                     render::AddLabel(U"Statystyki jednostki: ", 18, 60, playersColors[lastShownUnits[1].player-1]);
                     render::AddLabel(U"Rodzaj jednostki: " + getUnitName(lastShownUnits[1].unitType), 19, 60, playersColors[lastShownUnits[1].player-1]);
                     render::AddLabel(U"Zdrowie: " + render::toUString(lastShownUnits[1].health), 20, 60, playersColors[lastShownUnits[1].player-1]);

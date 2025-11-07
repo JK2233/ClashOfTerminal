@@ -231,7 +231,7 @@ void GenerateMap() {
                 numID++;
                 break;
             case '|':
-                t1.tileID = numID++;
+                t1.tileID = numID;
                 t1.tileType = e_Bridge;
                 switch(numID) {
 
@@ -312,6 +312,7 @@ void GenerateMap() {
                         t1.bridge = 2;
                         break;
                 }
+                numID++;
                 MAP.push_back(t1);
                 break;
             default:
@@ -599,7 +600,7 @@ void spawnUnit(uint16_t place, UnitTypes unit){
         return;
     }
 
-    if(playersCash[currentPlayerTurn-1] > assignCost(unit)){ //If the player has cash
+    if(playersCash[currentPlayerTurn-1] >= assignCost(unit)){ //If the player has cash
         playersCash[currentPlayerTurn-1] -= assignCost(unit);
         Unit u = {currentPlayerTurn, setMoves(unit), unit, (uint16_t)(UNITS.size()+1), place, assingHealth(unit), assignStrenght(unit), assingRange(unit), true};
 
@@ -628,7 +629,7 @@ bool isWaterTile(int tile) {
 }
 void farmToFarmer(uint16_t tile){
     for(uint16_t i = 0; i < UNITS.size(); i++){
-        if(UNITS[i].tileID == tile){
+        if(UNITS[i].tileID == tile && UNITS[i].unitID != 0){
             UNITS[i].unitID = 0;
             playersIncome[UNITS[i].player-1]++;
             break;
