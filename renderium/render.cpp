@@ -64,7 +64,9 @@ namespace render
         //Bad Apple player from txt files, used for testing of the rendering pipeline
         e_BadApple,
         //Renders a video from a VideoStreamMenager object
-        e_Video
+        e_Video,
+        //displays the FPS counter
+        e_FPS
     };
     std::string getNameOfScreenObjectType(ScreenObjectType type) {
         std::string ret = "Unknown";
@@ -114,6 +116,9 @@ namespace render
             break;
         case e_BadApple:
             ret = "BadApple";
+            break;
+        case e_FPS:
+            ret = "FPS";
             break;
         }
         return ret;
@@ -350,7 +355,8 @@ namespace render
                 {
                     break;
                 }
-                if (AnimationFrameCount % 30 < 15) {
+                
+                if (AnimationFrameCount % 28 < 14) {
                     screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectCharacterBuffer[idx];
                     screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectForColorBuffer[idx];
                     if (objectBacColorBuffer[idx] != 0)
@@ -364,6 +370,13 @@ namespace render
                         screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx]] = objectBacColorBuffer[idx];
                     }
                 }
+
+                if (objectPosXBuffer[idx] + 1 >= SCREEN_SIZE_X || objectPosXBuffer[idx] + 1 < 0 || objectPosYBuffer[idx] >= SCREEN_SIZE_Y || objectPosYBuffer[idx] < 0)
+                {
+                    break;
+                }
+                screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx] + 1] = U'←';
+                screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + objectPosXBuffer[idx] + 1] = objectForColorBuffer[idx];
 
                 break;
             }
@@ -553,6 +566,25 @@ namespace render
                 objectCharacterBuffer[idx]++;
                 break;
             }
+            case e_FPS:
+            {
+                int frameTimes = 1000 / FPS;
+                std::u32string fps_as_string = toUString(frameTimes);
+                for (int_fast32_t i = 0; i < fps_as_string.size(); ++i) {
+                    int32_t positionX = i + objectPosXBuffer[idx];
+                    if (positionX >= SCREEN_SIZE_X || positionX < 0 || objectPosYBuffer[idx] >= SCREEN_SIZE_Y || objectPosYBuffer[idx] < 0)
+                    {
+                        break;
+                    }
+                    screenCharBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = fps_as_string[i];
+                    screenForColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectForColorBuffer[idx];
+                    if (objectBacColorBuffer[idx] != 0)
+                    {
+                        screenBacColorBuffer[(objectPosYBuffer[idx] * SCREEN_SIZE_X) + positionX] = objectBacColorBuffer[idx];
+                    }
+                }
+                break;
+            }
             default:
                 std::string tmp = "Unrecognized objectType detected at idx: ";
                 tmp += std::to_string(idx) + "\nobject position is " + std::to_string(objectPosXBuffer[idx]) + "/" + std::to_string(objectPosYBuffer[idx]);
@@ -702,6 +734,17 @@ namespace render
         std::this_thread::sleep_for(std::chrono::milliseconds(20));
         RenderThread.detach();
         return;
+    }
+
+    void AddFPSCounter(int16_t _posY, int16_t _posX, uint8_t _forColor) {
+        ScreenObject tmpObject;
+        tmpObject.posY = _posY;
+        tmpObject.posX = _posX;
+        tmpObject.forColor = _forColor;
+        tmpObject.bacColor = 0;
+
+        tmpObject.type = e_FPS;
+        ObjectsToRender.push_back(tmpObject);
     }
 
     void StartNewFrame() {

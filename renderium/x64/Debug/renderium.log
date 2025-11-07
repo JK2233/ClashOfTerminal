@@ -13,36 +13,39 @@ D:\git-repositories\ClashOfTerminal\renderium\render_UTF_and_Loging_utils.cpp(56
 D:\git-repositories\ClashOfTerminal\renderium\render_UTF_and_Loging_utils.cpp(56,37): warning C4244:         ]
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(294,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(299,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(295,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(300,41): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(733,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(571,32): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(747,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(776,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(780,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(790,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(781,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(823,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(794,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(824,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(795,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(837,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(811,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(838,27): warning C4244: '=': conversion from 'int16_t' to 'uint8_t', possible loss of data
   (compiling source file 'CoT.cpp')
   
-D:\git-repositories\ClashOfTerminal\renderium\render.cpp(831,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(854,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
   (compiling source file 'CoT.cpp')
-      D:\git-repositories\ClashOfTerminal\renderium\render.cpp(831,47):
+  
+D:\git-repositories\ClashOfTerminal\renderium\render.cpp(874,47): warning C4267: '=': conversion from 'size_t' to 'uint16_t', possible loss of data
+  (compiling source file 'CoT.cpp')
+      D:\git-repositories\ClashOfTerminal\renderium\render.cpp(874,47):
       the template instantiation context (the oldest one first) is
           D:\git-repositories\ClashOfTerminal\renderium\textures.cpp(14,17):
           see reference to function template instantiation 'void render::AddTextureTemplate<3,3,0>(std::string,render::Texel [])' being compiled

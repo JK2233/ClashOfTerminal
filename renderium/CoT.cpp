@@ -187,6 +187,7 @@ int main()
                 //Kursor
                 render::AddCursor(U'▓', CURSOR/29 + 2, CURSOR%29*2 + 1, 57, 16);
                 //
+                render::AddFPSCounter(0, 190, 100);
             }
 
             render::EndFrame();
